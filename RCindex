@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+
+<head>
+<!--
+<link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
+-->
+<link rel='stylesheet' href='rpgCSS.css'>
+<title>RPG home</title>
+<meta charset="uft-8">
+
+</head>
+
+
+<!---->
+<nav>
+<div id="logo">
+	<a href="rpgIndex.html">Reality Check</a>
+</div>
+
+<ul class="topNav1">
+	<li><a href="rpgGeneral.html">General</a></li>
+	<li><a href="rpgSkills.html">Skills</a></li>
+	<li><a href="rpgCombat.html">Combat</a></li>
+	<li><a href="rpgItems.html">Items</a></li>
+	<li><a href="rpgSpellcasting.html">Spellcasting</a></li>
+	<li><a href="rpgCharacterCreation.html">Character Creation</a></li>
+	<li><a href="rpgRaces.html">Races</a></li>
+	<li><a href="rpgFeats.html">Feats</a></li>
+	<li><a href="rpgThemes.html">Themes</a></li>
+	<li><a href="rpgSpells.html">Spells</a></li>
+</ul>
+
+</nav>
+
+
+<!-- NAV 2 -->
+<div class="nav2">
+
+<ul>
+
+	<li class="nav2main general">
+		<span class="arrow2">&#9660 </span>
+		<a href="rpgGeneral.html">General</a>
+		<ul class="dropDown2">
+			<li><a href="rpgGeneral.html#RolePlaying">Role-Playing</a></li>
+			<li><a href="rpgGeneral.html#Rules">Rules</a></li>
+			<li><a href="rpgGeneral.html#AbilityScores">Ability Scores</a></li>
+			<li><a href="rpgGeneral.html#Terminology">Terminology</a></li>
+		</ul>
+	</li>
+	
+	<li class="nav2main skills">
+		<span class="arrow2">&#9660 </span>
+		<a href="rpgSkills.html">Skills</a>
+		<ul class="dropDown2">
+				<li><a href="rpgSkills.html#UBS">Upper Body Strength</a></li>
+				<li><a href="rpgSkills.html#LBS">Lower Body Strength</a></li>
+				<li><a href="rpgSkills.html#Swim">Swim</a></li>
+				<li><a href="rpgSkills.html#Fly">Fly</a></li>
+				<li><a href="rpgSkills.html#Acrobatics">Acrobatics</a></li>
+				<li><a href="rpgSkills.html#Stealth">Stealth</a></li>
+				<li><a href="rpgSkills.html#SleightOfHand">Sleight of Hand</a></li>
+				<li><a href="rpgSkills.html#DisableDevice">Disable Device</a></li>
+				<li><a href="rpgSkills.html#Appraise">Appraise</a></li>
+				<li><a href="rpgSkills.html#Craft">Craft</a></li>
+				<li><a href="rpgSkills.html#Investigation">Investigation</a></li>
+				<li><a href="rpgSkills.html#Awareness">Awareness</a></li>
+			<ul>
+				<li><a href="rpgSkills.html#Insight">Insight</a></li>
+				<li><a href="rpgSkills.html#Heal">Heal</a></li>
+				<li><a href="rpgSkills.html#Initiative">Initiative</a></li>
+				<li><a href="rpgSkills.html#Reason">Reason</a></li>
+				<li><a href="rpgSkills.html#Inspire">Inspire</a></li>
+				<li><a href="rpgSkills.html#Discourage">Discourage</a></li>
+				<li><a href="rpgSkills.html#Deceive">Deceive</a></li>
+				<li><a href="rpgSkills.html#Intimidate">Intimidate</a></li>
+				<li><a href="rpgSkills.html#Acculturation">Acculturation</a></li>
+				<li><a href="rpgSkills.html#HandleAnimal">Handle Animal</a></li>
+				<li><a href="rpgSkills.html#Knowledge">Knowledge</a></li>
+				<li><a href="rpgSkills.html#Talents">Talents</a></li>
+			</ul>
+		</ul>
+	</li>
+		
+	<li class="nav2main combat">
+		<span class="arrow2">&#9660 </span>
+		<a href="something.html">Combat</a>
+		<ul class="dropDown2">
+			<li><a href="something.html">Energy & Stamina</a></li>
+			<li><a href="something.html">Ranged Combat</a></li>
+			<li><a href="something.html">Melee Combat</a></li>
+			<li><a href="something.html">Attacking</a></li>
+			<li><a href="something.html">Defending</a></li>
+			<li><a href="something.html">Facing</a></li>
+			<li><a href="something.html">Surprise</a></li>
+			<li><a href="something.html">Comabt Proficiencies</a></li>
+			<li><a href="something.html">Maneuvers</a></li>
+			<li><a href="something.html">Conditions</a></li>
+			
+		</ul>
+	</li>
+	<li class="nav2main items">
+		<span class="arrow2">&#9660 </span>
+		<a href="something.html">Items</a>
+		<ul class="dropDown2">
+			<li><a href="something.html">Weapons</a></li>
+			<li><a href="something.html">Armor</a></li>
+			<li><a href="something.html">Mundane Items</a></li>
+			<li><a href="something.html">Magic Items</a></li>
+			<li><a href="something.html">Implements</a></li>
+		</ul>
+	</li>
+	<li class="nav2main spellcasting">
+		<span class="arrow2">&#9660 </span>
+		<a href="something.html">Spellcasting</a>
+		<ul class="dropDown2">
+			<li><a href="something.html">Terminology</a></li>
+			<li><a href="something.html">Magic Proficiency</a></li>
+			<li><a href="something.html">Schools</a></li>
+			<li><a href="something.html">Methods</a></li>
+			<li><a href="something.html">SPELLS</a></li>
+		</ul>
+	</li>
+		
+</ul>
+
+</div>
+
+
+<!-- NAV 3 -->
+<div class="nav3">
+
+<ul>
+	<li class="nav3main characterCreation">
+		<a href="characterCreation.html">Character Creation</a>
+	</li>
+	
+	<li class="nav3main races">
+		<a href="rpgRaces.html">Races</a>
+	</li>
+	
+	<li class="nav3main feats">
+		<a href="something.html">Feats</a>
+	</li>
+	
+	<li class="nav3main themes">
+		<a href="something.html">Themes</a>
+	</li>
+	
+	<li class="nav3main spells">
+		<a href="something.html">Spells</a>
+	</li>
+		
+</ul>
+
+</div>
+
+
+<main>
+
+
+<h2>
+<span>Welcome to my website!</span>
+</h2>
+
+<p><strong>This website will house all the rules required to play the tabletop roleplaying game I am creating! Right now only the General, Skills, and Races pages are active. I would specifically like feedback on what you like about the navigation system :D</strong>
+</p><br><p>The purpose of this game is to give players the freedom to create whatever type of character they want, and be able to play it effectively! There are no classes so characters are defined by their race, background traits, feats, themes, combat styles, combat and spellcasting abilities, and of course, their personality! There are virtually unlimited ways to customize your character! Because there is so much information to filter through, I will create a search database which you can use to quickly find the options you are looking for: <a href="something.html">-database has yet to be made-</a>
+</p><p>The second goal of this game is to be more realistic and intuitive than other 
+roleplaying games. Combat flows more smoothly, skills are more evenly and comprehensively 
+laid out, and the weapons/armour system closely resembles real-world combat without 
+being overly complicated.
+</p><p>There is a grand world to explore, and lore (which is not on the site yet) which I 
+encourage you to take a look at!
+</p><p>If you are looking for a highly customizable game system with easy to learn 
+rules, realistic mechanics, and an emphasis  on flexible gameplay, this is the game 
+for you! All the rules are explained on this site, so have at it!
+</p>
+
+<h2>
+<span>Another Header!</span>
+</h2>
+<p>This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. <br>
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. <br>
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. <br>
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. <br>
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. <br>
+</p><p><br> <br>
+qwertyuiop <br>
+asdfghjkl <br>
+zxcvbnm <br>
+</p><p><br> <br>
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook.  
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook.  
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+</p>
+<h2>
+<span>Heading 3! ---- this is a very long header for experimenting purposes! ... () **</span>
+</h2>
+<p>This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook.  
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook. 
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook.  
+This is gobbledygook. This is gobbledygook. This is gobbledygook. This is gobbledygook.
+</p>
+<br>
+</main>
+
+<!---->
+
+<footer>
+<small>
+Copyright: none
+<br>
+<a href="mailto:daniel@hickman.com">daniel@hickman.com</a>
+<br>
+This page was created by Daniel Hickman.
+</small>
+</footer>
+
+</body>
+
+</html>
