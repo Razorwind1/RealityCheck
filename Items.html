@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+
+<head>
+<!--
+<link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
+-->
+<link rel='stylesheet' href='rpgCSS.css'>
+<title>Items</title>
+<meta charset="uft-8">
+
+</head>
+
+<!---->
+<nav>
+<div id="logo">
+	<a href="Index.html">Reality Check</a>
+</div>
+
+<ul class="topNav1">
+	<li><a href="General.html">General</a></li>
+	<li><a href="Skills.html">Skills</a></li>
+	<li><a href="Combat.html">Combat</a></li>
+	<li style="color:rgb(10, 210, 239);font-size:200%;"><a href="Items.html">Items</a></li>
+	<li><a href="Spellcasting.html">Spellcasting</a></li>
+	<li><a href="CharacterCreation.html">Character Creation</a></li>
+	<li><a href="Races.html">Races</a></li>
+	<li><a href="Feats.html">Feats</a></li>
+	<li><a href="Themes.html">Themes</a></li>
+	<li><a href="Spells.html">Spells</a></li>
+</ul>
+
+</nav>
+
+
+<!-- NAV 2 -->
+<div class="nav2">
+
+<ul>
+
+	<li class="nav2main general">
+		<span class="arrow2">&#9660 </span>
+		<a href="General.html">General</a>
+		<ul class="dropDown2">
+			<li><a href="General.html#RolePlaying">Role-Playing</a></li>
+			<li><a href="General.html#Rules">Rules</a></li>
+			<li><a href="General.html#AbilityScores">Ability Scores</a></li>
+			<li><a href="General.html#Terminology">Terminology</a></li>
+		</ul>
+	</li>
+	
+	<li class="nav2main skills">
+		<span class="arrow2">&#9660 </span>
+		<a href="Skills.html">Skills</a>
+		<ul class="dropDown2">
+				<li><a href="Skills.html#UBS">Upper Body Strength</a></li>
+				<li><a href="Skills.html#LBS">Lower Body Strength</a></li>
+				<li><a href="Skills.html#Swim">Swim</a></li>
+				<li><a href="Skills.html#Fly">Fly</a></li>
+				<li><a href="Skills.html#Acrobatics">Acrobatics</a></li>
+				<li><a href="Skills.html#Stealth">Stealth</a></li>
+				<li><a href="Skills.html#SleightOfHand">Sleight of Hand</a></li>
+				<li><a href="Skills.html#DisableDevice">Disable Device</a></li>
+				<li><a href="Skills.html#Appraise">Appraise</a></li>
+				<li><a href="Skills.html#Craft">Craft</a></li>
+				<li><a href="Skills.html#Investigation">Investigation</a></li>
+				<li><a href="Skills.html#Awareness">Awareness</a></li>
+			<ul>
+				<li><a href="Skills.html#Insight">Insight</a></li>
+				<li><a href="Skills.html#Heal">Heal</a></li>
+				<li><a href="Skills.html#Initiative">Initiative</a></li>
+				<li><a href="Skills.html#Reason">Reason</a></li>
+				<li><a href="Skills.html#Inspire">Inspire</a></li>
+				<li><a href="Skills.html#Discourage">Discourage</a></li>
+				<li><a href="Skills.html#Deceive">Deceive</a></li>
+				<li><a href="Skills.html#Intimidate">Intimidate</a></li>
+				<li><a href="Skills.html#Acculturation">Acculturation</a></li>
+				<li><a href="Skills.html#HandleAnimal">Handle Animal</a></li>
+				<li><a href="Skills.html#Knowledge">Knowledge</a></li>
+				<li><a href="Skills.html#Talents">Talents</a></li>
+			</ul>
+		</ul>
+	</li>
+		
+	<li class="nav2main combat">
+		<span class="arrow2">&#9660 </span>
+		<a href="Combat.html">Combat</a>
+		<ul class="dropDown2">
+			<li><a href="Combat.html#Initiative">Initiative</a></li>
+			<li><a href="Combat.html#Actions">Actions</a></li>
+            <li><a href="Combat.html#Attacking">Attacking</a></li>
+			<li><a href="Combat.html#MeleeCombat">Melee Combat</a></li>
+			<li><a href="Combat.html#RangedCombat">Ranged Combat</a></li>
+			<li><a href="Combat.html#Defenses">Defenses</a></li>
+			<li><a href="Combat.html#WeakAndRes">Weaknesses/Resistances</a></li>
+			<li><a href="Combat.html#Facing">Facing</a></li>
+			<li><a href="Combat.html#Surprise">Surprise</a></li>
+			<li><a href="Combat.html#OpportunityAttacks">Opportunity Attacks</a></li>
+            <li><a href="Combat.html#Aura">Aura</a></li>
+            <li><a href="Combat.html#Death">Death</a></li>
+			
+		</ul>
+	</li>
+	<li class="nav2main items">
+		<span class="arrow2">&#9660 </span>
+		<a href="Items.html">Items</a>
+		<ul class="dropDown2">
+			<li><a href="Items.html#Weapons">Weapons</a></li>
+			<li><a href="Items.html#Armor">Armor</a></li>
+			<li><a href="Items.html#MundaneItems">Mundane Items</a></li>
+			<li><a href="Items.html#MagicItems">Magic Items</a></li>
+			<li><a href="Items.html#Implements">Implements</a></li>
+		</ul>
+	</li>
+	<li class="nav2main spellcasting">
+		<span class="arrow2">&#9660 </span>
+		<a href="Spellcasting.html">Spellcasting</a>
+		<ul class="dropDown2">
+			<li><a href="Spellcasting.html#Proficiencies">Proficiencies</a></li>
+			<li><a href="Spellcasting.html#KeywordBonuses">Keyword Bonuses</a></li>
+			<li><a href="Spellcasting.html#Schools">Schools</a></li>
+			<li><a href="Spellcasting.html#Methods">Methods</a></li>
+			<li><a href="Spellcasting.html#Elements">Elements</a></li>
+		</ul>
+	</li>
+		
+</ul>
+
+</div>
+
+
+<!-- NAV 3 -->
+<div class="nav3">
+
+<ul>
+	<li class="nav3main characterCreation">
+		<a href="CharacterCreation.html">Character Creation</a>
+	</li>
+	
+	<li class="nav3main races">
+		<a href="Races.html">Races</a>
+	</li>
+	
+	<li class="nav3main feats">
+		<a href="Feats.html">Feats</a>
+	</li>
+	
+	<li class="nav3main themes">
+		<a href="Themes.html">Themes</a>
+	</li>
+	
+	<li class="nav3main spells">
+		<a href="Spells.html">Spells</a>
+	</li>
+		
+</ul>
+
+</div>
+
+<main>
+
+
+<h2 id="Weapons">
+<span>Weapons</span>
+</h2>
+
+<p>Simple, Martial, Superior weapons represent the amount of skill required to make a certain weapon viable. Better versions of similar weapons are also found in Martial and Superior tiers which represent the overall skill in which a character can wield the weapon.
+</p>
+<table border="1" class="tableFloat">
+<caption>Simple Melee Weapons</caption>
+    <tr>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Reach</th>
+        <th>Damage</th>
+        <th>AV</th>
+        <th>EC</th>
+        <th width="40%">Properties</th>
+    </tr>
+    <tr>
+        <td>Dagger</td>
+        <td></td>
+        <td>0</td>
+        <td>1d8</td>
+        <td>+1</td>
+        <td>+2</td>
+        <td>Light, Thrown (4/8/12)</td>
+    </tr>
+    <tr>
+        <td>Light Hammer</td>
+        <td></td>
+        <td>0</td>
+        <td>1d4</td>
+        <td>+2</td>
+        <td>+2</td>
+        <td>Light, Thrown (4/8/12), 1d6 when thrown</td>
+    </tr>
+    <tr>
+        <td>Handaxe</td>
+        <td></td>
+        <td>0</td>
+        <td>1d6</td>
+        <td>+2</td>
+        <td>+1</td>
+        <td>Light, Thrown (4/8/12)</td>
+    </tr>
+    <tr>
+        <td>Club</td>
+        <td></td>
+        <td>1</td>
+        <td>1d4</td>
+        <td>+1</td>
+        <td>+3</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Greatclub</td>
+        <td></td>
+        <td>1</td>
+        <td>2d6</td>
+        <td>+1</td>
+        <td>+3</td>
+        <td>2-handed, Heavy</td>
+    </tr>
+    <tr>
+        <td>Cutlass</td>
+        <td></td>
+        <td>1</td>
+        <td>-</td>
+        <td>+3</td>
+        <td>+1</td>
+        <td>Brutal 2</td>
+    </tr>
+    <tr>
+        <td>Sickle</td>
+        <td></td>
+        <td>1</td>
+        <td>1d4</td>
+        <td>+2</td>
+        <td>+2</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Spear</td>
+        <td></td>
+        <td>2</td>
+        <td>1d6</td>
+        <td>+1</td>
+        <td>+3</td>
+        <td>Versitile(1d8), Thrown (4/8/12)</td>
+    </tr>
+    <tr>
+		<td colspan="7" class="tableNote">
+            <br>
+		</td>
+	</tr>
+</table>
+<table border="1" class="tableFloat">
+<caption>Simple Ranged Weapons</caption>
+    <tr>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Damage</th>
+        <th>Accuracy</th>
+        <th>Loading</th>
+        <th>Range</th>
+        <th width="25%">Properties</th>
+    </tr>
+    <tr>
+        <td>Light Crossbow</td>
+        <td></td>
+        <td>1d10</td>
+        <td>+2</td>
+        <td>Standard</td>
+        <td>5/60/240</td>
+        <td>2-Handed, Light</td>
+    </tr>
+    <tr>
+        <td>Flat-Bow</td>
+        <td></td>
+        <td>1d6</td>
+        <td>+2</td>
+        <td>Swift</td>
+        <td>5/40/160</td>
+        <td>2-Handed, Light [not usable on horseback]</td>
+    </tr>
+    <tr>
+        <td>Dart</td>
+        <td></td>
+        <td>1d4</td>
+        <td>+2</td>
+        <td>-</td>
+        <td>Thrown(4/8/12)</td>
+        <td>-</td>
+    </tr>
+    <tr>
+       <td>Sling</td>
+        <td></td>
+        <td>1d6</td>
+        <td>+2</td>
+        <td>Swift</td>
+        <td>Thrown(2/12/36)</td>
+        <td>-</td>
+    </tr>
+    <tr>
+		<td colspan="7" class="tableNote">
+            <br>
+		</td>
+	</tr>
+</table>   
+<div style="clear:both;"></div>
+<table border="1" class="tableFloat">
+<caption>Martial Melee Weapons</caption>
+    <tr>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Reach</th>
+        <th>Damage</th>
+        <th>AV</th>
+        <th>EC</th>
+        <th width="43%">Properties</th>
+    </tr>
+    <tr>
+        <td>Kunai</td>
+        <td></td>
+        <td>0</td>
+        <td>2d6</td>
+        <td>+1</td>
+        <td>+2</td>
+        <td>Light, Thrown (4/8/12) [is well suited to be used as a crowbar or other similar tool]</td>
+    </tr>
+    <tr>
+        <td>Longsword</td>
+        <td></td>
+        <td>1</td>
+        <td>1d8</td>
+        <td>+2</td>
+        <td>+4</td>
+        <td>Versatile(1d10 &apm; Reach2)</td>
+    </tr>
+    <tr>
+        <td>Battleaxe</td>
+        <td></td>
+        <td>1</td>
+        <td>1d8</td>
+        <td>+2</td>
+        <td>+3</td>
+        <td>Versatile (1d10), Brutal 1</td>
+    </tr>
+    <tr>
+        <td>Mace</td>
+        <td></td>
+        <td>1</td>
+        <td>1d8</td>
+        <td>+2</td>
+        <td>+3</td>
+        <td>Versatile(1d8), Devastate</td>
+    </tr>
+    <tr>
+        <td>Flail</td>
+        <td></td>
+        <td>1</td>
+        <td>1d6</td>
+        <td>+1</td>
+        <td>+3</td>
+        <td>Trip, Disarm, Devastate, Exposing 1</td>
+    </tr>
+    <tr>
+        <td>Cudgel</td>
+        <td></td>
+        <td>1</td>
+        <td>1d6</td>
+        <td>+3</td>
+        <td>+3</td>
+        <td>Light [may willingly deal Non-Lethal]</td>
+    </tr>
+    <tr>
+        <td>Shortsword</td>
+        <td></td>
+        <td>1</td>
+        <td>1d10</td>
+        <td>+2</td>
+        <td>+3</td>
+        <td>Light</td>
+    </tr>
+    <tr>
+        <td>Greatsword</td>
+        <td></td>
+        <td>2</td>
+        <td>2d6</td>
+        <td>+2</td>
+        <td>+4</td>
+        <td>2-handed, Heavy</td>
+    </tr>
+    <tr>
+        <td>Warhammer</td>
+        <td></td>
+        <td>2</td>
+        <td>1d12</td>
+        <td>+1</td>
+        <td>+3</td>
+        <td>2-handed, Heavy, Devastate</td>
+    </tr>
+    <tr>
+        <td>Greataxe</td>
+        <td></td>
+        <td>2</td>
+        <td>1d10</td>
+        <td>+1</td>
+        <td>+4</td>
+        <td>2-handed, Heavy, Brutal 1, Precise 1</td>
+    </tr>
+    <tr>
+        <td>Quarterstaff</td>
+        <td></td>
+        <td>2</td>
+        <td>1d6</td>
+        <td>+3</td>
+        <td>+6</td>
+        <td>2-handed, Brace, Light</td>
+    </tr>
+    <tr>
+        <td>Whip</td>
+        <td></td>
+        <td>2</td>
+        <td>1d4</td>
+        <td>+3</td>
+        <td>+2</td>
+        <td>Trip, Disarm, Light</td>
+    </tr>
+    <tr>
+        <td>Javelin</td>
+        <td></td>
+        <td>2</td>
+        <td>1d6</td>
+        <td>+1</td>
+        <td>+2</td>
+        <td>Brace, Thrown (5/15/50) [Brutal 3 when thrown]</td>
+    </tr>
+    <tr>
+        <td>Halberd</td>
+        <td></td>
+        <td>3</td>
+        <td>1d10</td>
+        <td>+2</td>
+        <td>+4</td>
+        <td>2-handed, Brace, Heavy</td>
+    </tr>
+     <tr>
+        <td>Lance</td>
+        <td></td>
+        <td>3</td>
+        <td>1d6</td>
+        <td>+2</td>
+        <td>+3</td>
+        <td>2-handed (1 when mounted), [Brutal 3 if Charging]  [Disadvantage when used on enemies within 1m]</td>
+    </tr>
+    <tr>
+		<td colspan="7" class="tableNote">
+            <br>
+		</td>
+	</tr>
+</table>
+<table border="1" class="tableFloat">
+<caption>Martial Ranged Weapons</caption>
+    <tr>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Damage</th>
+        <th>Accuracy</th>
+        <th>Loading</th>
+        <th>Range</th>
+        <th width="25%">Properties</th>
+    </tr>
+    <tr>
+        <td>Blowgun</td>
+        <td></td>
+        <td>1d4</td>
+        <td>+3</td>
+        <td>Swift</td>
+        <td>5/30/80</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Hand Crossbow</td>
+        <td></td>
+        <td>1d6</td>
+        <td>+3</td>
+        <td>Swift</td>
+        <td>5/30/120</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Heavy Crossbow</td>
+        <td></td>
+        <td>1d10</td>
+        <td>+2</td>
+        <td>Standard</td>
+        <td>10/80/320)</td>
+        <td>Two-handed, Brutal 1, [not usable on horseback]</td>
+    </tr>
+    <tr>
+       <td>Compound Bow</td>
+        <td></td>
+        <td>1d8</td>
+        <td>+3</td>
+        <td>Swift</td>
+        <td>Thrown(2/12/36)</td>
+        <td>Two-handed</td>
+    </tr>
+    <tr>
+       <td>Net</td>
+        <td></td>
+        <td>-</td>
+        <td>+3</td>
+        <td>-</td>
+        <td>Thrown(1/5/10)</td>
+        <td>[special when thrown]</td>
+    </tr>
+    <tr>
+		<td colspan="7" class="tableNote">
+            <br>
+		</td>
+	</tr>
+</table> 
+<div style="clear:both;"></div>
+<table border="1" class="tableFloat">
+<caption>Superior Melee Weapons</caption>
+    <tr>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Reach</th>
+        <th>Damage</th>
+        <th>AV</th>
+        <th>EC</th>
+        <th width="40%">Properties</th>
+    </tr>
+    <tr>
+        <td>Long-Knife</td>
+        <td></td>
+        <td>0</td>
+        <td>2d6</td>
+        <td>+1</td>
+        <td>+3</td>
+        <td>Light, Thrown(4/8/12), Precise 1</td>
+    </tr>
+    <tr>
+        <td>Stiletto</td>
+        <td></td>
+        <td>0</td>
+        <td>2d6</td>
+        <td>+1</td>
+        <td>+2</td>
+        <td>Light, Devastate</td>
+    </tr>
+    <tr>
+        <td>Throwing Knife</td>
+        <td></td>
+        <td>0</td>
+        <td>2d4</td>
+        <td>+1</td>
+        <td>+2</td>
+        <td>Light, Thrown(8/16/32), Precise 2</td>
+    </tr>
+    <tr>
+        <td>Kusarigama</td>
+        <td></td>
+        <td>0 or 1</td>
+        <td>1d12/1d8</td>
+        <td>+3</td>
+        <td>+4</td>
+        <td>2-handed, Trip, Disarm [reach0=1d12, reach1=1d8]</td>
+    </tr>
+    <tr>
+        <td>Rapier</td>
+        <td></td>
+        <td>1</td>
+        <td>1d8</td>
+        <td>+3</td>
+        <td>+3</td>
+        <td>[+1 AV and +1 EC if only held item]</td>
+    </tr>
+    <tr>
+        <td>Pole-axe</td>
+        <td></td>
+        <td>1</td>
+        <td>1d8</td>
+        <td>+3</td>
+        <td>+3</td>
+        <td>Versatile(1d8 &amp; reach2), Heavy, Brace, Devastate, Trip, Disarm</td>
+    </tr>
+    <tr>
+        <td>Battle Scythe</td>
+        <td></td>
+        <td>1</td>
+        <td>1d8</td>
+        <td>+2</td>
+        <td>+5</td>
+        <td>2-handed, Heavy, Brutal 3</td>
+    </tr>
+    <tr>
+        <td>War Pick</td>
+        <td></td>
+        <td>1</td>
+        <td>1d6</td>
+        <td>+1</td>
+        <td>+2</td>
+        <td>Brutal 3</td>
+    </tr>
+    <tr>
+        <td>Scimitar</td>
+        <td></td>
+        <td>1</td>
+        <td>1d8</td>
+        <td>+2</td>
+        <td>+3</td>
+        <td>Precise 2</td>
+    </tr>
+    <tr>
+        <td>Morningstar</td>
+        <td></td>
+        <td>1</td>
+        <td>1d8</td>
+        <td>+2</td>
+        <td>+4</td>
+        <td>Heavy, Versatile (1d12), Exposing 1</td>
+    </tr>
+    <tr>
+        <td>Heavy Flail</td>
+        <td></td>
+        <td>2</td>
+        <td>1d10</td>
+        <td>+2</td>
+        <td>+3</td>
+        <td>2-handed, Devastate, Brutal 1, Heavy</td>
+    </tr>
+    <tr>
+        <td>Bola</td>
+        <td></td>
+        <td>3</td>
+        <td>1d6</td>
+        <td>+2</td>
+        <td>+2</td>
+        <td>Versatile(1d8), Trip, Disarm, Thrown(20/10) [special when thrown]</td>
+    </tr>
+    <tr>
+        <td>Rope Dart</td>
+        <td></td>
+        <td>4</td>
+        <td>1d8</td>
+        <td>+3</td>
+        <td>+2</td>
+        <td>-handed, Light, Precise 1</td>
+    </tr>
+    <tr>
+        <td>Pike</td>
+        <td></td>
+        <td>3-6</td>
+        <td>1d10</td>
+        <td>+3</td>
+        <td>+3</td>
+        <td>2-handed, Brace [1d4 damage when used more than 1m less than maximum Reach]</td>
+    </tr>
+    <tr>
+		<td colspan="7" class="tableNote">
+            <br>
+		</td>
+	</tr>
+</table>
+<table border="1" class="tableFloat">
+<caption>Superior Ranged Weapons</caption>
+    <tr>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Damage</th>
+        <th>Accuracy</th>
+        <th>Loading</th>
+        <th>Range</th>
+        <th width="20%">Properties</th>
+    </tr>
+    <tr>
+        <td>Shuriken</td>
+        <td></td>
+        <td>1d4</td>
+        <td>+2</td>
+        <td>-</td>
+        <td>Thrown(5/30/80)</td>
+        <td>Light, [1d8 when thrown], [+3EC]</td>
+    </tr>
+    <tr>
+        <td>Recurve Bow</td>
+        <td></td>
+        <td>1d8</td>
+        <td>+3</td>
+        <td>Swift</td>
+        <td>10/80/320</td>
+        <td>Two-handed, Precise 1</td>
+    </tr>
+    <tr>
+        <td>Siege Crossbow</td>
+        <td></td>
+        <td>1d8</td>
+        <td>+3</td>
+        <td>Standard &amp; Swift</td>
+        <td>10/100/300</td>
+        <td>Two-handed, Brutal 3, Heavy, [not usable on horseback]</td>
+    </tr>
+    <tr>
+       <td>Longbow</td>
+        <td></td>
+        <td>1d8</td>
+        <td>+3</td>
+        <td>Swift</td>
+        <td>15/100/400</td>
+        <td>Two-handed, [not usable on horseback]</td>
+    </tr>
+    <tr>
+       <td>Atlatl</td>
+        <td></td>
+        <td>2d6</td>
+        <td>+3</td>
+        <td>Standard</td>
+        <td>10/40/80</td>
+        <td>-</td>
+    </tr>
+    <tr>
+		<td colspan="7" class="tableNote">
+            <br>
+		</td>
+	</tr>
+</table>  
+
+<div style="clear: both;"></div>
+
+
+<h2>
+<span>Weapon Properties</span>
+</h2>
+<p>
+</p><p><strong>Brutal #: </strong># extra damage which ignores armor and damage reduction
+</p><p><strong>Precise #: </strong>Crit range is increased by #
+</p><p><strong>Devastating: </strong>This weapon deals double damage to shields and ignores half of the AB of armor (rounding the amount ignored up).
+</p><p><strong>Versatile: </strong>The weapon can be used one-handed or two-handed (die in parentheses is for two-handed wielding damage). When used as a two-handed weapon, all versatile weapons gain +1 EC.
+</p><p><strong>Two-handed: </strong>Requires two hands to use.
+</p><p><strong>Brace: </strong>Brace: If you are prepared for a creature you are facing to cross your maximum Reach distance and they do, you can make the typical Opportunity Attack, but if you hit them their Movement is stopped (they do not get past your maximum Reach).
+</p><p><strong>Trip: </strong>When you perform the Trip Combat Maneuver, you may deal damage on the attack.
+</p><p><strong>Disarm: </strong>When you perform the Disarm Combat Maneuver, you do not roll with Disadvantage.
+</p><p><strong>Exposing #: </strong>
+</p><p><strong></strong>You Expose yourself on Attack Rolls # higher than you otherwise would.
+</p><p><strong>Thrown: </strong>This item can be thrown as a Ranged Attack using the UBS Throwing Table for additional range. The 3 numbers in parenthesis are typical ranged values indicating Advantage and Disadvantage on the Attack Roll. For example: (5/10/20) would mean if the target is 5m or closer, you have Advantage on the Attack Roll. If the target is over 10m away, you have Disadvantage on your Attack Roll. 20m is the maximum range of the weapon in which you can hope to be accurate.
+</p><p><strong>Ranged: </strong>This weapon’s range and damage can be increased based on the USB Draw Weight table. The 3 numbers in parenthesis are typical ranged values indicating Advantage and Disadvantage on the Attack Roll. For example: (5/10/20) would mean if the target is 5m or closer, you have Advantage on the Attack Roll. If the target is over 10m away, you have Disadvantage on your Attack Roll. 20m is the maximum range of the weapon in which you can hope to be accurate.
+</p><p><strong>Loading: </strong>This weapon takes some amount of extra time to load. The weapon must be loaded using two hands (meaning no shield, weapon, or other item in the other hand). The weapon also requires ammunition (bolt, arrow, dart, rock, etc.).
+</p><p><strong>Light: </strong>This weapon’s EC bonus does not help you defend against Heavy weapons.
+</p><p><strong>Heavy: </strong> This weapon ignores the EC bonus of Light weapons.
+</p>
+
+<h2>
+<span>Reach</span>
+</h2>
+<p>
+</p><p><strong>Reach0 </strong>is for weapons under half a meter or so in length. You can hit targets 1m away (adjacent to you)
+</p><p><strong>Reach1 </strong>is for weapons about a meter in length. You can hit targets up two 2m away (1 space in-between you).
+</p><p><strong>Reach2 </strong>is for weapons about 2 meters in length. You can hit targets 3 spaces away (2 spaces in-between you).
+</p><p><strong>Higher Reach values follow this same pattern…</strong>
+</p><p>When a creature tries to go through your maximum Reach, they provoke an Opportunity Attack (for instance, an orc charges you from 5m away in order to grapple you, and you are wielding a Longsword (Reach1), when the orc tries to move adjacent to you, you may attack him)
+</p><p>Most fights take place with one space between combatants. This is the case with most swords, axes, maces, and hammers. However, the space in-between is not unoccupied. The combatants are constantly stepping in and out of that space to attack and defend. So, if the entire 1m of space between them is a pit, then they cannot attack each other with Reach1 weapons, as their weapons can only reach the edge of the space on the other side. This also means no one can run in between them while they are engaged. <em>Always assume any attack with Reach1 or greater requires the attacker to step into the space immediately in front of them</em> (if they are using the weapon at its greatest Reach).
+</p><p>
+</p>
+<h2>
+<span>Range</span>
+</h2>
+<p>
+</p><p>
+</p>
+<table>
+<caption>Draw Weight Table</caption>
+    <tr>
+        <th>Passive Upper Body Strength</th>
+        <th>Draw Weight (lb)</th>
+        <th>Range (m)</th>
+        <th>Extra Brutal Damage</th>
+        <th>Restrictions</th>
+    </tr>
+    <tr>
+        <td>&lt;10</td>
+        <td>50</td>
+        <td>-2/-4</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>60</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>70</td>
+        <td>+2/+4</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>80</td>
+        <td>+3/+6</td>
+        <td>+1</td>
+        <td>Max for hand crossbows</td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td>100</td>
+        <td>+6/+12</td>
+        <td>+2</td>
+        <td>Max for Simple weapons</td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td>120</td>
+        <td>+9/+18</td>
+        <td>+3</td>
+        <td>Max for Martial weapons</td>
+    </tr>
+    <tr>
+        <td>35</td>
+        <td>140</td>
+        <td>+12/+24</td>
+        <td>+4</td>
+        <td>Max for most Superior weapons</td>
+    </tr>
+    <tr>
+        <td>40</td>
+        <td>160</td>
+        <td>+15/+30</td>
+        <td>+5</td>
+        <td>Heavy and siege crossbow only</td>
+    </tr>
+    <tr>
+        <td>45</td>
+        <td>180</td>
+        <td>+18/+36</td>
+        <td>+6</td>
+        <td>Siege crossbow only</td>
+    </tr>
+    <tr>
+        <td>&gt;=50</td>
+        <td>200</td>
+        <td>+26/+52</td>
+        <td>+7</td>
+        <td>Siege crossbow only</td>
+    </tr>
+    <tr>
+		<td colspan="5" class="tableNote">
+		Note: Passive UBS is your UBS + 10 <br>
+        Note: 2-handed Crossbows give an additional +10
+		</td>
+	</tr>
+</table>
+<table>
+<caption>Throwing Table</caption>
+    <tr>
+        <th>Passive Upper Body Strength</th>
+        <th>Extra Distance (Light Weapon)</th>
+        <th>Extra Distance (Medium Weapon)</th>
+        <th>Extra Distance (Heavy Weapon)</th>
+    </tr>
+    <tr>
+        <td>&lt;10</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-1/2/4</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>+0/2/4</td>
+        <td>+0/0/2</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>+2/+4</td>
+        <td>+1/2/4</td>
+        <td>+0/0/2</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>+2/4/8</td>
+        <td>+1/3/6</td>
+        <td>+1/2/4</td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td>+3/5/10</td>
+        <td>+2/4/8</td>
+        <td>+1/3/6</td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td>+4/6/12</td>
+        <td>+3/5/10</td>
+        <td>+2/4/8</td>
+    </tr>
+    <tr>
+        <td>35</td>
+        <td>+4/7/14</td>
+        <td>+3/6/12</td>
+        <td>+2/5/10</td>
+    </tr>
+    <tr>
+        <td>40</td>
+        <td>+5/8/16</td>
+        <td>+4/7/14</td>
+        <td>+3/6/12</td>
+    </tr>
+    <tr>
+        <td>45</td>
+        <td>+5/8/16</td>
+        <td>+4/8/16</td>
+        <td>+3/7/14</td>
+    </tr>
+    <tr>
+        <td>&gt;=50</td>
+        <td>+6/8/16</td>
+        <td>+5/8/16</td>
+        <td>+4/8/16</td>
+    </tr>
+    <tr>
+		<td colspan="5" class="tableNote">
+		Note: Passive UBS is your UBS + 10
+		</td>
+	</tr>
+</table>
+
+</main>
+
+<!---->
+
+<footer>
+<small>
+Copyright: none
+<br>
+<a href="mailto:daniel@hickman.com">daniel@hickman.com</a>
+<br>
+This page was created by Daniel Hickman.
+</small>
+</footer>
+
+</body>
+
+</html>
+

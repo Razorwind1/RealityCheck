@@ -297,7 +297,7 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 	position: fixed;
 	left: -333px;
 	/*background-color: #bbbb00;*/
-	padding-top: 30px; padding-right:20px;
+	padding-top: 30px; padding-right:20px; padding-bottom: 80px;
 	height: 282px;
 	/*centers*/
 	top:50%;
@@ -634,13 +634,18 @@ h2 span { /*main headers*/
 	padding: 0 8px 0 8px; font-size: 25px;
 	background-color: rgb(193, 226, 241); color: black;
 	/*rgb(193, 226, 241)*/
-	/*background-image:
-	linear-gradient(180deg,
+	/*background-color: rgb(51, 214, 255);
+background-image: linear-gradient(90deg, rgba(0, 143, 179,.3) 30%, transparent 50%),
+linear-gradient(90deg, rgba(0, 102, 128,.23) 10%, transparent 60%),
+linear-gradient(90deg, transparent 50%, rgba(21, 234, 21, .25) 50%),
+linear-gradient(90deg, transparent 60%, rgba(179, 248, 109,.40) 60%);
+background-size: 13px, 29px, 37px, 53px;*/
+    /*linear-gradient(180deg,
 		rgb(157, 208, 225),
 		rgb(56, 135, 214) 55%,
 		rgb(23, 70, 104) 85%,
 		rgb(14, 48, 62));*/
-	/* Nav-blue colors
+	/*
 	linear-gradient( to bottom,
 		rgb(157, 208, 225) 10%,
 		rgb(94, 183, 213) 31%,
@@ -648,14 +653,15 @@ h2 span { /*main headers*/
 		rgb(56, 135, 214) 65%,	
 		rgb(24, 103, 133) 85%,
 		rgb(19, 64, 83));
-	*/
-		/*	
+	   */
+    /*linear-gradient(45deg,
 		rgb(255, 255, 0), 
 		rgb(0, 255, 6) 85%,
-		rgb(0, 240, 6));*/ /*brighter*/
+		rgb(0, 240, 6));*/
 	border-radius: 10px 10px 0 0;
 	border: 2px solid rgb(9, 32, 42);
-	border-bottom: none;
+    border-bottom:none;
+	
 }
 h3 { /*top of page*/
 	margin-bottom:40px; /*won't work in span (not block?)*/
@@ -811,9 +817,101 @@ table.invisible td {
 table.invisible tr {
 	background-color:transparent;
 }
-
-
-
+table.spell {
+	margin-right: 20px;
+	margin-bottom: 30px;
+	border: 5px solid black;
+	border-spacing:0; border-radius:30px;
+}
+table.spell td{
+	text-align:center;
+	padding-left:8px; padding-right:8px;
+	padding-top:4px; padding-bottom:4px;
+    margin:2px;
+	width:700px;
+}
+table.spell th {
+    text-align:center;
+    font-size:25px;
+    border: 1px solid black; 
+    border-top: none; border-left:none; 
+    border-radius: 25px 0 0 0;
+}
+table.spell .MagicCircles {
+    border: 1px solid black;
+    border-top: none; border-right:none;
+    border-radius: 0 25px 0 0;
+    text-align:left;
+}
+table.spell .DC {
+    font-size:23px;
+    border: 1px solid black; border-left:none;
+}
+table.spell .Type {
+    border: 1px solid black;
+}
+table.spell .Action {
+    border: 1px solid black;
+}
+table.spell .Range {
+    border: 1px solid black;
+    border-right:none;
+}
+table.spell .Content {
+    border: 1px solid black;
+    border-right:none; border-left:none;
+    border-radius: 0 0 25px 25px;
+    text-align:left; padding-left: 15px;
+}
+.spellCircle td{
+    padding: 6px;
+    text-align: center;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+}
+.spellCircle tr td:first-of-type{
+    border-radius:0 0 0 25px;
+    padding-left:15px;
+}
+.spellCircle tr td:last-of-type{
+    border-radius:0 0 25px 0;
+    padding-right:12px;
+}
+.feat {
+	margin-bottom: 30px;
+	border: 5px solid black;
+	border-radius:30px; width: 800px;
+}
+.feat th {
+    font-weight:bold; padding-left:12px;
+    font-size:24px; padding-right:10px;
+    border-radius: 25px 0 0 0; border-right: solid black 2px;
+    border-bottom: solid black 2px;
+}
+.requirements {
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+}
+.tier {
+    border-radius: 0 25px 0 0; border-bottom: solid black 2px;
+}
+.featContent {
+    border-radius: 0 0 25px 25px;
+    text-align:left; padding-left:15px;
+}
+.reallySmall {
+    font-size:50%;
+}
+h4 {
+    margin:0; margin-top: 30px;
+    text-decoration:underline;
+}
+ul.theme {
+    margin-top:5px;
+}
+.propBig {
+    width: 700px;
+}
 
 
 footer {
@@ -832,6 +930,30 @@ footer a:visited {
 }	
 footer a:hover {
 	color: #00aa00;
+}
+
+
+form {
+    background-color:azure;
+    padding:10px;border-radius:25px;
+}
+input[type="submit"] {
+		margin:40;
+	}
+label {
+	display:block; float:left;
+	text-align:left; padding-left: 20px;
+	width:220px; padding-right:10px;
+}
+input, textarea {
+	display:block;
+	margin-bottom:20px;
+}
+textarea {
+    
+}
+input[type="submit"] {
+	margin-left:20px;
 }
 
 /*add :focus specifications?*/
