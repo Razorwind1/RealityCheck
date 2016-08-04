@@ -1005,13 +1005,13 @@ input[type="submit"] {
 
 /*add :focus specifications?*/
 
-/*firefox fix*/
+/*firefox fix [old: no longer using inline-table]*//*
 @-moz-document url-prefix() {
     nav ul li a.arrow {
 		margin-right:-6px;
 	}
 }
-
+*/
 
 
 
