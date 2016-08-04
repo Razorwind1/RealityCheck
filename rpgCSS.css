@@ -81,7 +81,7 @@ a:visited {
 	font-weight: bold; font-family: "Book Antiqua", Palatino, serif;
 }
 nav {
-	background-color:rgb(0, 255, 6);
+	background-color:rgb(157, 208, 225);
 	background-image: 
 		linear-gradient( to bottom,
 		rgb(157, 208, 225) 10%,
@@ -121,7 +121,8 @@ nav {
 .topNav1 > li {
 	display: inline;
 	padding: 10px;
-	color: black; /*for inherit*/
+	color: black;/*for inherit*/
+    /*text-shadow:1px 1px 10px white;*/
 }
 .topNav1 a {
 	color:inherit;
@@ -342,11 +343,11 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 }
 
 .nav2 ul li.nav2main > a:hover {
-	background-color: rgb(10, 210, 239); text-shadow: 2px 1px 1px white;
+	background-color: rgb(0, 225, 255); text-shadow: 2px 1px 1px white;
 	transition: .1s linear; /*rgb(5, 250, 12)*/
 }
 .arrow2:hover {
-	background-color: rgb(10, 210, 239); text-shadow: 2px -1px 1px white;
+	background-color: rgb(0, 225, 255); text-shadow: 2px -1px 1px white;
 	transition: .1s linear;
 	
 }
@@ -368,6 +369,7 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 	position: relative;
 	/*background-color:cyan;*/
 	font-size: 15px; font-weight: normal;
+
 	
 	
 }
@@ -389,24 +391,24 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 	padding-top: 10px;
 }
 .dropDown2 li a:hover{
-	background-color: rgb(10, 210, 239);
+	background-color: rgb(0, 225, 255);
 	font-weight:600; text-shadow: 2px 1px 1px white;
 }
 .dropDown2 li:last-of-type a{
-	border-radius: 0 0 10px 0px;
+	border-radius: 0 0 10px 0;
 }
+
 /*for Skills...*/
-.skills .dropDown2 li a {
+.skills .dropDown2 > li a {
 	padding-left: 10px;
 }
 .skills .dropDown2{
 	padding-left: 0px; /*adjust for automatic ul padding*/
 	right: 10px;
-	
 }
-.skills .dropDown2 > ul {
+.skills .dropDown2 > li > ul {
 	position: absolute;
-	top: -1px;
+	bottom: -1px;
 	right: -11px;
 	padding-left: 0px; /*adjust for automatic ul padding*/
 	list-style: none; font-size: 15px; font-weight: normal;
@@ -414,8 +416,12 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 	/*visibility: hidden;
 	opacity: 0;*/
 }
-.skills .dropDown2 > ul a{
+.skills .dropDown2 > li > ul a{
 	width:130px;
+    border-radius: 0;
+}
+.skills .dropDown2 > li > ul li:last-of-type a{
+    border-radius: 0 0 10px 0;
 }
 
 	/*Z-INDEXES*/
@@ -467,7 +473,7 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 	transition: .3s ease-in;
 }
 .nav3 ul li.nav3main a:hover {
-	background-color: rgb(10, 210, 239);
+	background-color: rgb(0, 225, 255);
 	text-shadow: 2px 1px 1px white;
 	transition: .1s linear;
 }
@@ -744,6 +750,7 @@ table {
 	margin-bottom: 30px;
 	border: 5px solid black; border-top:none;
 	border-spacing:0; border-radius:0 0 30px 30px;
+    table-layout:fixed;
 }
 table caption {
 	font-family:Times, serif;
@@ -757,7 +764,7 @@ td, th {
 	padding-left:8px; padding-right:8px;
 	padding-top:4px; padding-bottom:4px;
 	border: 0; margin:0;
-	max-width:150px;
+	/*max-width:150px;*/
 }
 tr:nth-of-type(odd) {
 	background-color:rgb(89, 199, 240);
@@ -774,12 +781,24 @@ tr:nth-of-type(even) {
 	padding-left: 30px;
 }
 
-.tableSmall td, .tableSmall th{
-	width:180px;
-}
-.tableLarge td, .tableLarge th{
-	max-width:315px;
-}
+.table0 td, .table0 th{max-width:120px;}
+.table1 td, .table1 th{max-width:150px;}
+.table2 td, .table2 th{max-width:220px;}
+.table3 td, .table3 th{max-width:315px;}
+
+.tableWidth700 { width:700px; }
+.tableWidth750 { width:750px; }
+.tableWidth850 { width:850px; }
+
+.width30 { width: 30px;}
+.width50 { width: 50px; }
+.width80 { width: 80px; }
+.width100 { width: 100px; }
+.width150 { width: 150px; }
+.width200 { width: 200px; }
+.width280 { width: 280px; }
+.width330 { width: 330px; }
+
 .tableFloat {
 	float: left;
 	margin-left:30px;
@@ -801,6 +820,7 @@ tr:nth-of-type(even) {
 	padding-left: 30px;
 }
 
+
 table.invisible {
 	margin: 0;
 	margin-bottom: 30px;
@@ -817,6 +837,8 @@ table.invisible td {
 table.invisible tr {
 	background-color:transparent;
 }
+
+
 table.spell {
 	margin-right: 20px;
 	margin-bottom: 30px;
@@ -862,6 +884,7 @@ table.spell .Content {
     border-right:none; border-left:none;
     border-radius: 0 0 25px 25px;
     text-align:left; padding-left: 15px;
+    background-color: rgb(163, 255, 153);
 }
 .spellCircle td{
     padding: 6px;
@@ -869,6 +892,7 @@ table.spell .Content {
     border-left: solid black 1px;
     border-right: solid black 1px;
 }
+
 .spellCircle tr td:first-of-type{
     border-radius:0 0 0 25px;
     padding-left:15px;
@@ -880,13 +904,16 @@ table.spell .Content {
 .feat {
 	margin-bottom: 30px;
 	border: 5px solid black;
-	border-radius:30px; width: 800px;
+	border-radius:30px;
 }
 .feat th {
     font-weight:bold; padding-left:12px;
     font-size:24px; padding-right:10px;
     border-radius: 25px 0 0 0; border-right: solid black 2px;
     border-bottom: solid black 2px;
+}
+.featName {
+    width:67%;
 }
 .requirements {
     border-right: solid black 2px;
@@ -899,6 +926,9 @@ table.spell .Content {
     border-radius: 0 0 25px 25px;
     text-align:left; padding-left:15px;
 }
+
+
+
 .reallySmall {
     font-size:50%;
 }
@@ -912,6 +942,8 @@ ul.theme {
 .propBig {
     width: 700px;
 }
+
+
 
 
 footer {
@@ -933,12 +965,27 @@ footer a:hover {
 }
 
 
+
+
+
+div.clearBoth {
+    clear: both;
+}
+.currentPage {
+    color:rgb(10, 210, 239);
+    font-size:200%;
+}
+
+iframe{
+    border:0;
+}
+
 form {
     background-color:azure;
     padding:10px;border-radius:25px;
 }
 input[type="submit"] {
-		margin:40;
+		margin:40px;
 	}
 label {
 	display:block; float:left;
@@ -960,7 +1007,7 @@ input[type="submit"] {
 
 /*firefox fix*/
 @-moz-document url-prefix() {
-    nav ul li a.arrow{
+    nav ul li a.arrow {
 		margin-right:-6px;
 	}
 }

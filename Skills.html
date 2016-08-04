@@ -2,7 +2,6 @@
 <html lang="en">
 
 
-<body>
 
 <head>
 <!--
@@ -10,10 +9,12 @@
 -->
 <link rel='stylesheet' href='rpgCSS.css'>
 <title>Skills</title>
-<meta charset="uft-8">
+<meta charset="UTF-8">
 
 </head>
 
+
+<body>
 <!---->
 <nav>
 <div id="logo">
@@ -42,7 +43,7 @@
 <ul>
 
 	<li class="nav2main general">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="General.html">General</a>
 		<ul class="dropDown2">
 			<li><a href="General.html#RolePlaying">Role-Playing</a></li>
@@ -53,7 +54,7 @@
 	</li>
 	
 	<li class="nav2main skills">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Skills.html">Skills</a>
 		<ul class="dropDown2">
 				<li><a href="Skills.html#UBS">Upper Body Strength</a></li>
@@ -68,7 +69,7 @@
 				<li><a href="Skills.html#Craft">Craft</a></li>
 				<li><a href="Skills.html#Investigation">Investigation</a></li>
 				<li><a href="Skills.html#Awareness">Awareness</a></li>
-			<ul>
+			<li><ul>
 				<li><a href="Skills.html#Insight">Insight</a></li>
 				<li><a href="Skills.html#Heal">Heal</a></li>
 				<li><a href="Skills.html#Initiative">Initiative</a></li>
@@ -81,12 +82,12 @@
 				<li><a href="Skills.html#HandleAnimal">Handle Animal</a></li>
 				<li><a href="Skills.html#Knowledge">Knowledge</a></li>
 				<li><a href="Skills.html#Talents">Talents</a></li>
-			</ul>
+			</ul></li>
 		</ul>
 	</li>
 		
 	<li class="nav2main combat">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Combat.html">Combat</a>
 		<ul class="dropDown2">
 			<li><a href="Combat.html#Initiative">Initiative</a></li>
@@ -105,7 +106,7 @@
 		</ul>
 	</li>
 	<li class="nav2main items">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Items.html">Items</a>
 		<ul class="dropDown2">
 			<li><a href="Items.html#Weapons">Weapons</a></li>
@@ -116,7 +117,7 @@
 		</ul>
 	</li>
 	<li class="nav2main spellcasting">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Spellcasting.html">Spellcasting</a>
 		<ul class="dropDown2">
 			<li><a href="Spellcasting.html#Proficiencies">Proficiencies</a></li>
@@ -184,7 +185,7 @@
 </p><p><strong>Tables for Strength-based Checks:</strong>
 </p>
 
-<table border="1" class="tableFloat">
+<table border="1" class="tableFloat table2">
 <caption>Sprint</caption>
 	<tr>
 		<th>Lower</th>
@@ -227,14 +228,14 @@
 		<td>+8m</td>
 	</tr>
 	<tr>
-		<td colspan="5" class="tableNote">Durring Run Action<br>
+		<td colspan="2" class="tableNote">During Run Action<br>
 		Cost: 1 Stamina
 		<br>Note: By Sprinting you already move your Speed +2m
 		</td>
 	</tr>
 </table>
 
-<table border="1" class="tableFloat">
+<table border="1" class="tableFloat table1">
 <caption>Climbing</caption>
 	<tr>
 		<th>Upper AND Lower</th>
@@ -284,7 +285,7 @@
 	</tr>
 </table>
 
-<table border="1" class="tableFloat">
+<table border="1" class="tableFloat table1">
 <caption>Ignore Difficult Terrain</caption>
 	<tr>
 		<th>Lower</th>
@@ -320,13 +321,13 @@
 		<td>All difficult terrain ignored</td>
 	</tr>
 	<tr>
-		<td colspan="2" class="tableNote">Durring Movement Action<br>
+		<td colspan="2" class="tableNote">During Movement Action<br>
 		Cost: 1 Stamina<br>
 		Note: Must be proficient in LBS to make Check</td>
 	</tr>
 </table>
 
-<table border="1" class="tableSmall tableFloat">
+<table border="1" class="table3 tableFloat">
 <caption>Breaking Down Door/Wall</caption>
 	<tr>
 		<th>Upper OR Lower</th>
@@ -369,7 +370,7 @@
 	</tr>
 </table>
 
-<table border="1" class="tableLarge tableFloat">
+<table border="1" class="table3 tableFloat">
 <caption>Swim (if not proficient in Swim)</caption>
 	<tr>
 		<th>Upper AND Lower</th>
@@ -401,7 +402,7 @@
 	</tr>
 </table>
 
-<table border="1" class="tableFloat tableSmall">
+<table border="1" class="tableFloat table2">
 <caption>Jump</caption>
 	<tr>
 		<th>Lower</th>
@@ -428,7 +429,7 @@
 		<td>+5m</td>
 	</tr>
 	<tr>
-		<td colspan="5" class="tableNote">No Action<br>
+		<td colspan="2" class="tableNote">No Action<br>
 		Cost: 1 Stamina to Jump + 1 Stamina for Check<br>
 		Note: +2m if you Sprint immediately before you Jump<br>
 		Note: Rolling to Jump is optional</td>
@@ -436,7 +437,7 @@
 </table>
 
 
-<div style="clear: both;"></div>
+<div class="clearBoth"></div>
 
 <p>
 </p><p><strong>Breaking down a door or wall:</strong> As a general guideline, an old or poorly made wooden door is pretty easy to break down with a DC of around 20 while a thick stone door could be 50 or more. The check is made as a Standard Action and can be repeated several times. Charging into the structure by spending a Swift Action immediately before the Check to run at least 2m towards the door adds +5 to the Check. If the door/target is large enough, multiple people may be able to help on the check. In this case, only one d20 is rolled, but all character's UBS or LBS modifiers are added (if they are charging, the +5 bonuses also stack).
@@ -465,11 +466,11 @@
 </h2>
 <p>Your ability to swim quickly and through difficult conditions.
 </p>
-<h4><span>Drowning<span></h4>
+    <h4><span>Drowning</span></h4>
 <p>While in water, you may be required to make a Fortitude Save to hold your breath, not gulp in water, and stay afloat. If you fail three Fortitude Saves in a row, you fall unconscious, and begin to drown. Also, if your Energy is reduced to 0, you fall unconscious and begin to drown.
 </p><p>If you are trained in Swim, you have a base Swim Speed of 3m (difficult conditions can reduce this speed as seen below). While in the water, moving is a Full Round Action and depending on the conditions, you may be forced to roll a Swim Check. You may also willingly roll a Swim Check to try to increase your movement.
 </p>
-<table border="1">
+<table border="1" class="table1">
 <caption>Movement on a Swim Check</caption>
 	<tr>
 		<th>Conditions:</th>
@@ -578,10 +579,10 @@
 <span>Sleight Of Hand(Dex)*</span>
 </h2>
 <p>Used to manipulate objects discreetly.
-</p><p><strong id="big">DC 10: </strong>Palm a small object and make it disappear<br>
+</p><p><strong class="big">DC 10: </strong>Palm a small object and make it disappear<br>
 Perform an entertaining display of finger dexterity
-</p><p><strong id="big">DC 25: </strong>Lift a small object from a creature's pocket or bag (coins, pen, key, parchment, etc.)
-</p><p><strong id="big">DC 40: </strong>Lift an object a creature is wearing (necklace, ring, watch, belt, sword, etc.)
+</p><p><strong class="big">DC 25: </strong>Lift a small object from a creature's pocket or bag (coins, pen, key, parchment, etc.)
+</p><p><strong class="big">DC 40: </strong>Lift an object a creature is wearing (necklace, ring, watch, belt, sword, etc.)
 </p><p>When making a Slight Of Hand Check to take an object from a creature, that creature may make an Awareness Check with a DC of the Sleight Of Hand Check in order to notice the attempt (whether successful or not).
 </p><p>Sleight Of Hand can also be used to attempt escape from bonds. A single Check takes about a minute. If you fail, you may spend another minute to add +1 to the check. You may do this up to 10 times for +10 to the check.
 </p><p>Sleight Of Hand can also be used to attempt escape from bonds. A single Check takes about a minute. You may spend another minute to add +1 to the check. You may continue this for up to +10 to your Check. You may not try to escape the same bonds with a second Check under the same circumstances.
@@ -591,7 +592,7 @@ Perform an entertaining display of finger dexterity
 </p>
 
 <h2 id="DisableDevice">
-<span>DisableDevice(Dex)</span>
+<span>Disable Device(Dex)</span>
 </h2>
 <p>Used to pick locks and tamper with mechanical devices.
 </p>
@@ -627,7 +628,7 @@ Perform an entertaining display of finger dexterity
 	</tr>
 	<tr>
 		<td colspan="2" class="tableNote">
-		Lockpicking tools gives +5 <br>
+		Lock picking tools gives +5 <br>
 		Up to +10 from extra rounds</td>
 	</tr>
 </table>
@@ -820,7 +821,7 @@ Perform an entertaining display of finger dexterity
 <table border="1">
 <caption>DC for Changing a Person's Attitude</caption>
 	<tr>
-		<th rowspan="7" class="tableSideBar"><span class="tableSideBarSpan">Starting<span></th>
+        <th rowspan="7" class="tableSideBar"><span class="tableSideBarSpan">Starting</span></th>
 		<th colspan="5">Becomes</th>
 	</tr>
 	<tr>
@@ -866,7 +867,7 @@ Perform an entertaining display of finger dexterity
 </table>
 
 
-</p><p><strong>Asking for Something:</strong> The DC for persuading someone to help you out or do a favor for you is dependent on the situation. It is up to the DM to determine the DC for each situation.
+<p><strong>Asking for Something:</strong> The DC for persuading someone to help you out or do a favor for you is dependent on the situation. It is up to the DM to determine the DC for each situation.
 </p><p>Some people are more responsive one method of persuasion than another. For instance, someone may be most swayed by Reason and resistant to Intimidation. Keep in mind that the type of person you are dealing with, their personality and their current mood can have a powerful effect on the DC of a Charisma based check.
 </p><p><strong>Note:</strong> Reason, Inspire, and Discourage checks become more difficult when dealing with low-intelligence creatures (say, an Intelligence Score of 6 or lower). In fact, against animals, these skills are no longer effective. (That would be within the purview of Animal Handling)
 </p><p>

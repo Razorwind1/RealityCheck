@@ -2,7 +2,6 @@
 <html lang="en">
 
 
-<body>
 
 <head>
 <!--
@@ -10,10 +9,12 @@
 -->
 <link rel='stylesheet' href='rpgCSS.css'>
 <title>Combat</title>
-<meta charset="uft-8">
+<meta charset="utf-8">
 
 </head>
 
+
+<body>
 <!---->
 <nav>
 <div id="logo">
@@ -42,7 +43,7 @@
 <ul>
 
 	<li class="nav2main general">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="General.html">General</a>
 		<ul class="dropDown2">
 			<li><a href="General.html#RolePlaying">Role-Playing</a></li>
@@ -53,7 +54,7 @@
 	</li>
 	
 	<li class="nav2main skills">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Skills.html">Skills</a>
 		<ul class="dropDown2">
 				<li><a href="Skills.html#UBS">Upper Body Strength</a></li>
@@ -68,7 +69,7 @@
 				<li><a href="Skills.html#Craft">Craft</a></li>
 				<li><a href="Skills.html#Investigation">Investigation</a></li>
 				<li><a href="Skills.html#Awareness">Awareness</a></li>
-			<ul>
+			<li><ul>
 				<li><a href="Skills.html#Insight">Insight</a></li>
 				<li><a href="Skills.html#Heal">Heal</a></li>
 				<li><a href="Skills.html#Initiative">Initiative</a></li>
@@ -81,12 +82,12 @@
 				<li><a href="Skills.html#HandleAnimal">Handle Animal</a></li>
 				<li><a href="Skills.html#Knowledge">Knowledge</a></li>
 				<li><a href="Skills.html#Talents">Talents</a></li>
-			</ul>
+			</ul></li>
 		</ul>
 	</li>
 		
 	<li class="nav2main combat">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Combat.html">Combat</a>
 		<ul class="dropDown2">
 			<li><a href="Combat.html#Initiative">Initiative</a></li>
@@ -105,7 +106,7 @@
 		</ul>
 	</li>
 	<li class="nav2main items">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Items.html">Items</a>
 		<ul class="dropDown2">
 			<li><a href="Items.html#Weapons">Weapons</a></li>
@@ -116,7 +117,7 @@
 		</ul>
 	</li>
 	<li class="nav2main spellcasting">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Spellcasting.html">Spellcasting</a>
 		<ul class="dropDown2">
 			<li><a href="Spellcasting.html#Proficiencies">Proficiencies</a></li>
@@ -187,7 +188,7 @@
 </p> -->
 <p>At the beginning of each round, you gain Energy based on your Stamina:
 </p>
-<table border="1" class="tableFloat">
+<table  class="tableFloat table1">
 <caption>Energy Per Round</caption>
 	<tr>
 		<th>Stamina</th>
@@ -195,7 +196,7 @@
 	</tr>
 	<tr>
 		<td>0</td>
-		<td>unconcious</td>
+		<td>unconscious</td>
 	</tr>
 	<tr>
 		<td>1</td>
@@ -230,7 +231,7 @@
 		</td>
 	</tr>
 </table>
-<table border="1" class="tableFloat">
+<table  class="tableFloat table1">
 <caption>Spending Stamina</caption>
 	<tr>
 		<th>Action</th>
@@ -249,7 +250,7 @@
 		<td>1</td>
 	</tr>
 	<tr>
-		<td>Ignore Dificult Terain</td>
+		<td>Ignore Difficult Terrain</td>
 		<td>1</td>
 	</tr>
 	<tr>
@@ -267,7 +268,7 @@
 	</tr>
 </table>
 
-<div style="clear: both;"></div>
+<div class="clearBoth"></div>
 
 <p>Negative Stamina does not exist. If you are supposed to lose more Stamina than you have, you simply drop to (or stay at) zero.
 </p><p>You may spend a Standard Action to regain 1 Stamina.
@@ -334,7 +335,7 @@
 </ul>
 <p>
 </p>
-<h2 id="Melee Combat">
+<h2 id="MeleeCombat">
     <span>Melee Combat</span>
 </h2>
 <p class="pIndent"><strong>Melee AV:</strong> 5 + MASAB + Weapon Attack Bonus
@@ -356,13 +357,13 @@
 </p><p>If you do not have Combat Proficiency with the weapon you are using, it's miss chance may be increased (DM discretion).
 </p><p>SPELLS are often Ranged Attacks. In this case, the Cast Roll is also the Attack Roll and thus determines whether or not the attack misses. Miss Chance for Spells is calculated thus:</p><p class="pIndent"><strong>Miss Chance:</strong> Spell DC + 5
     <!--If the target is 5m or closer, and you are Proficient in the weapon you are using, you hit even if your Attack Roll is lower than the Miss Chance.
-</p><!--<p><strong>Range Categories:</strong> 0m-10m, 11m-20m, 21m-30m and on in increments of 10. For every category beyond 0m-10m, your Miss Chance increases by 1.
+</p><p><strong>Range Categories:</strong> 0m-10m, 11m-20m, 21m-30m and on in increments of 10. For every category beyond 0m-10m, your Miss Chance increases by 1.
 </p>--><p>If the target of a Ranged Attack is not facing where the attack is coming from, they do not Roll EC, but are automatically hit if the attack is on target.
 </p><p>If the target of a Ranged Attack IS facing the attack they may roll EC, but not count their weapon EC bonuses toward the roll (shield bonuses still apply).
 </p><p>If your Attack hits but the Attack Roll is less than the Miss Chance + the target's AC, you hit the target's armor. If the Attack is greater than or equal to the Miss Chance AC, you ignore the target's armor.
 </p><p>Miss Chance can also increase or decrease depending on the size of the target (DM discretion).
 </p>
-<table>
+<table class="table1">
 <caption>Draw Weight Table</caption>
     <tr>
         <th>Passive Upper Body Strength</th>

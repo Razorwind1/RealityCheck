@@ -2,18 +2,18 @@
 <html lang="en">
 
 
-<body>
-
 <head>
 <!--
 <link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
 -->
 <link rel='stylesheet' href='rpgCSS.css'>
 <title>Spellcasting</title>
-<meta charset="uft-8">
+<meta charset="UTF-8">
 
 </head>
 
+
+<body>
 <!---->
 <nav>
 <div id="logo">
@@ -42,7 +42,7 @@
 <ul>
 
 	<li class="nav2main general">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="General.html">General</a>
 		<ul class="dropDown2">
 			<li><a href="General.html#RolePlaying">Role-Playing</a></li>
@@ -53,7 +53,7 @@
 	</li>
 	
 	<li class="nav2main skills">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Skills.html">Skills</a>
 		<ul class="dropDown2">
 				<li><a href="Skills.html#UBS">Upper Body Strength</a></li>
@@ -68,7 +68,7 @@
 				<li><a href="Skills.html#Craft">Craft</a></li>
 				<li><a href="Skills.html#Investigation">Investigation</a></li>
 				<li><a href="Skills.html#Awareness">Awareness</a></li>
-			<ul>
+			<li><ul>
 				<li><a href="Skills.html#Insight">Insight</a></li>
 				<li><a href="Skills.html#Heal">Heal</a></li>
 				<li><a href="Skills.html#Initiative">Initiative</a></li>
@@ -81,12 +81,12 @@
 				<li><a href="Skills.html#HandleAnimal">Handle Animal</a></li>
 				<li><a href="Skills.html#Knowledge">Knowledge</a></li>
 				<li><a href="Skills.html#Talents">Talents</a></li>
-			</ul>
+			</ul></li>
 		</ul>
 	</li>
 		
 	<li class="nav2main combat">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Combat.html">Combat</a>
 		<ul class="dropDown2">
 			<li><a href="Combat.html#Initiative">Initiative</a></li>
@@ -105,7 +105,7 @@
 		</ul>
 	</li>
 	<li class="nav2main items">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Items.html">Items</a>
 		<ul class="dropDown2">
 			<li><a href="Items.html#Weapons">Weapons</a></li>
@@ -116,7 +116,7 @@
 		</ul>
 	</li>
 	<li class="nav2main spellcasting">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Spellcasting.html">Spellcasting</a>
 		<ul class="dropDown2">
 			<li><a href="Spellcasting.html#Proficiencies">Proficiencies</a></li>
@@ -167,21 +167,23 @@
 </h2>
 <p>Here is an example Spell:
 </p>
-<table class="spell tableFloat">
+<table class="spell tableFloat table1">
     <tr>
         <th colspan="2">Frost Lance</th>
         <td colspan="2" class="MagicCircles">Combat &#9679; Incantation, Magic Implement &#9679; Ice</td>
     </tr>
+    <tr>
         <td class="DC">12</td>
         <td class="Type">At-Will</td>
         <td class="Action">Standard Action</td>
         <td class="Range">Range: 12/48 m</td>
-    <tr>
     </tr>
+    <tr>
         <td colspan="4" class="Content"><strong>Hit:</strong> 1d4 + Spellcasting Modifier Cold Damage and the target must succeed on a Fortitude Save or lose 1 Stamina</td>
+    </tr>
 </table>
 
-<div style="clear: both;"></div>
+<div class="clearBoth"></div>
 
 <p>All spells require a Cast Roll to determine if they are successfully executed. For a spell to succeed the Cast Roll must be greater than its DC (the number under the spell title). Some spells are also attacks, in which case the 1d20 on the Cast Roll acts as the Attack Roll and the AV is equal to your Spell Value. Other spells allow the target to make a Will or Fortitude save, in which case the DC for these saves is also your Spell Value.
 </p><p>A natural 20 on the cast roll of a spell is an automatic success (and a crit for the Attack Roll if there is one) and a natural 1 means the spell fails.

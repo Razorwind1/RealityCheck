@@ -2,18 +2,19 @@
 <html lang="en">
 
 
-<body>
-
 <head>
 <!--
 <link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
 -->
 <link rel='stylesheet' href='rpgCSS.css'>
 <title>Items</title>
-<meta charset="uft-8">
+<meta charset="UTF-8">
 
 </head>
 
+
+
+<body>
 <!---->
 <nav>
 <div id="logo">
@@ -42,7 +43,7 @@
 <ul>
 
 	<li class="nav2main general">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="General.html">General</a>
 		<ul class="dropDown2">
 			<li><a href="General.html#RolePlaying">Role-Playing</a></li>
@@ -53,7 +54,7 @@
 	</li>
 	
 	<li class="nav2main skills">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Skills.html">Skills</a>
 		<ul class="dropDown2">
 				<li><a href="Skills.html#UBS">Upper Body Strength</a></li>
@@ -68,7 +69,7 @@
 				<li><a href="Skills.html#Craft">Craft</a></li>
 				<li><a href="Skills.html#Investigation">Investigation</a></li>
 				<li><a href="Skills.html#Awareness">Awareness</a></li>
-			<ul>
+			<li><ul>
 				<li><a href="Skills.html#Insight">Insight</a></li>
 				<li><a href="Skills.html#Heal">Heal</a></li>
 				<li><a href="Skills.html#Initiative">Initiative</a></li>
@@ -81,12 +82,12 @@
 				<li><a href="Skills.html#HandleAnimal">Handle Animal</a></li>
 				<li><a href="Skills.html#Knowledge">Knowledge</a></li>
 				<li><a href="Skills.html#Talents">Talents</a></li>
-			</ul>
+			</ul></li>
 		</ul>
 	</li>
 		
 	<li class="nav2main combat">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Combat.html">Combat</a>
 		<ul class="dropDown2">
 			<li><a href="Combat.html#Initiative">Initiative</a></li>
@@ -105,7 +106,7 @@
 		</ul>
 	</li>
 	<li class="nav2main items">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Items.html">Items</a>
 		<ul class="dropDown2">
 			<li><a href="Items.html#Weapons">Weapons</a></li>
@@ -116,7 +117,7 @@
 		</ul>
 	</li>
 	<li class="nav2main spellcasting">
-		<span class="arrow2">&#9660 </span>
+		<span class="arrow2">&#9660; </span>
 		<a href="Spellcasting.html">Spellcasting</a>
 		<ul class="dropDown2">
 			<li><a href="Spellcasting.html#Proficiencies">Proficiencies</a></li>
@@ -169,16 +170,16 @@
 
 <p>Simple, Martial, Superior weapons represent the amount of skill required to make a certain weapon viable. Better versions of similar weapons are also found in Martial and Superior tiers which represent the overall skill in which a character can wield the weapon.
 </p>
-<table border="1" class="tableFloat">
+<table class="tableFloat tableWidth700">
 <caption>Simple Melee Weapons</caption>
     <tr>
-        <th>Name</th>
+        <th class="width100">Name</th>
         <th>Cost</th>
         <th>Reach</th>
         <th>Damage</th>
         <th>AV</th>
         <th>EC</th>
-        <th width="40%">Properties</th>
+        <th class="width200">Properties</th>
     </tr>
     <tr>
         <td>Dagger</td>
@@ -250,7 +251,7 @@
         <td>1d6</td>
         <td>+1</td>
         <td>+3</td>
-        <td>Versitile(1d8), Thrown (4/8/12)</td>
+        <td>Versatile(1d8), Thrown (4/8/12)</td>
     </tr>
     <tr>
 		<td colspan="7" class="tableNote">
@@ -258,16 +259,16 @@
 		</td>
 	</tr>
 </table>
-<table border="1" class="tableFloat">
+<table  class="tableFloat tableWidth750">
 <caption>Simple Ranged Weapons</caption>
     <tr>
         <th>Name</th>
-        <th>Cost</th>
+        <th class="width50">Cost</th>
         <th>Damage</th>
         <th>Accuracy</th>
         <th>Loading</th>
         <th>Range</th>
-        <th width="25%">Properties</th>
+        <th class="width200">Properties</th>
     </tr>
     <tr>
         <td>Light Crossbow</td>
@@ -276,7 +277,7 @@
         <td>+2</td>
         <td>Standard</td>
         <td>5/60/240</td>
-        <td>2-Handed, Light</td>
+        <td class="width200">2-Handed, Light</td>
     </tr>
     <tr>
         <td>Flat-Bow</td>
@@ -293,7 +294,7 @@
         <td>1d4</td>
         <td>+2</td>
         <td>-</td>
-        <td>Thrown(4/8/12)</td>
+        <td>T(4/8/12)</td>
         <td>-</td>
     </tr>
     <tr>
@@ -302,7 +303,7 @@
         <td>1d6</td>
         <td>+2</td>
         <td>Swift</td>
-        <td>Thrown(2/12/36)</td>
+        <td>T(2/12/36)</td>
         <td>-</td>
     </tr>
     <tr>
@@ -311,17 +312,17 @@
 		</td>
 	</tr>
 </table>   
-<div style="clear:both;"></div>
-<table border="1" class="tableFloat">
+<div class="clearBoth"></div>
+<table  class="tableFloat tableWidth700">
 <caption>Martial Melee Weapons</caption>
     <tr>
-        <th>Name</th>
+        <th class="width100">Name</th>
         <th>Cost</th>
         <th>Reach</th>
         <th>Damage</th>
         <th>AV</th>
         <th>EC</th>
-        <th width="43%">Properties</th>
+        <th class="width200">Properties</th>
     </tr>
     <tr>
         <td>Kunai</td>
@@ -330,7 +331,7 @@
         <td>2d6</td>
         <td>+1</td>
         <td>+2</td>
-        <td>Light, Thrown (4/8/12) [is well suited to be used as a crowbar or other similar tool]</td>
+        <td class="width250">Light, Thrown (4/8/12) [is well suited to be used as a crowbar or other similar tool]</td>
     </tr>
     <tr>
         <td>Longsword</td>
@@ -339,7 +340,7 @@
         <td>1d8</td>
         <td>+2</td>
         <td>+4</td>
-        <td>Versatile(1d10 &apm; Reach2)</td>
+        <td>Versatile(1d10 &amp; Reach2)</td>
     </tr>
     <tr>
         <td>Battleaxe</td>
@@ -438,7 +439,7 @@
         <td>1d6</td>
         <td>+1</td>
         <td>+2</td>
-        <td>Brace, Thrown (5/15/50) [Brutal 3 when thrown]</td>
+        <td>Brace, Thrown(5/15/50) [Brutal 3 when thrown]</td>
     </tr>
     <tr>
         <td>Halberd</td>
@@ -464,16 +465,16 @@
 		</td>
 	</tr>
 </table>
-<table border="1" class="tableFloat">
+<table  class="tableFloat tableWidth750">
 <caption>Martial Ranged Weapons</caption>
     <tr>
-        <th>Name</th>
-        <th>Cost</th>
+        <th class="width100">Name</th>
+        <th class="width50">Cost</th>
         <th>Damage</th>
         <th>Accuracy</th>
         <th>Loading</th>
         <th>Range</th>
-        <th width="25%">Properties</th>
+        <th class="width200">Properties</th>
     </tr>
     <tr>
         <td>Blowgun</td>
@@ -499,7 +500,7 @@
         <td>1d10</td>
         <td>+2</td>
         <td>Standard</td>
-        <td>10/80/320)</td>
+        <td>10/80/320</td>
         <td>Two-handed, Brutal 1, [not usable on horseback]</td>
     </tr>
     <tr>
@@ -508,7 +509,7 @@
         <td>1d8</td>
         <td>+3</td>
         <td>Swift</td>
-        <td>Thrown(2/12/36)</td>
+        <td>T(2/12/36)</td>
         <td>Two-handed</td>
     </tr>
     <tr>
@@ -517,7 +518,7 @@
         <td>-</td>
         <td>+3</td>
         <td>-</td>
-        <td>Thrown(1/5/10)</td>
+        <td>T(1/5/10)</td>
         <td>[special when thrown]</td>
     </tr>
     <tr>
@@ -526,17 +527,17 @@
 		</td>
 	</tr>
 </table> 
-<div style="clear:both;"></div>
-<table border="1" class="tableFloat">
+<div class="clearBoth"></div>
+<table  class="tableFloat tableWidth700">
 <caption>Superior Melee Weapons</caption>
     <tr>
-        <th>Name</th>
+        <th class="width100">Name</th>
         <th>Cost</th>
         <th>Reach</th>
         <th>Damage</th>
         <th>AV</th>
         <th>EC</th>
-        <th width="40%">Properties</th>
+        <th class="width200">Properties</th>
     </tr>
     <tr>
         <td>Long-Knife</td>
@@ -670,16 +671,16 @@
 		</td>
 	</tr>
 </table>
-<table border="1" class="tableFloat">
+<table  class="tableFloat tableWidth750">
 <caption>Superior Ranged Weapons</caption>
     <tr>
         <th>Name</th>
-        <th>Cost</th>
+        <th class="width50">Cost</th>
         <th>Damage</th>
         <th>Accuracy</th>
         <th>Loading</th>
         <th>Range</th>
-        <th width="20%">Properties</th>
+        <th class="width200">Properties</th>
     </tr>
     <tr>
         <td>Shuriken</td>
@@ -687,7 +688,7 @@
         <td>1d4</td>
         <td>+2</td>
         <td>-</td>
-        <td>Thrown(5/30/80)</td>
+        <td>T(5/30/80)</td>
         <td>Light, [1d8 when thrown], [+3EC]</td>
     </tr>
     <tr>
@@ -733,7 +734,7 @@
 	</tr>
 </table>  
 
-<div style="clear: both;"></div>
+<div class="clearBoth"></div>
 
 
 <h2>
@@ -775,7 +776,7 @@
 <p>
 </p><p>
 </p>
-<table>
+<table class="table2">
 <caption>Draw Weight Table</caption>
     <tr>
         <th>Passive Upper Body Strength</th>
@@ -861,7 +862,7 @@
 		</td>
 	</tr>
 </table>
-<table>
+<table class="table2">
 <caption>Throwing Table</caption>
     <tr>
         <th>Passive Upper Body Strength</th>
@@ -930,7 +931,7 @@
         <td>+4/8/16</td>
     </tr>
     <tr>
-		<td colspan="5" class="tableNote">
+		<td colspan="4" class="tableNote">
 		Note: Passive UBS is your UBS + 10
 		</td>
 	</tr>
