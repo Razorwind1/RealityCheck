@@ -775,7 +775,7 @@ tr:nth-of-type(even) {
 .boldData{
 	font-weight:bold;
 }
-.tableNote{
+td.tableNote{
 	border-radius:0 0 25px 25px;
 	font-size:85%; text-align:left; font-style: italic;
 	padding-left: 30px;
@@ -785,6 +785,7 @@ tr:nth-of-type(even) {
 .table1 td, .table1 th{max-width:150px;}
 .table2 td, .table2 th{max-width:220px;}
 .table3 td, .table3 th{max-width:315px;}
+.table4 td, .table4 th{max-width:450px;}
 
 .tableWidth700 { width:700px; }
 .tableWidth750 { width:750px; }
@@ -928,7 +929,6 @@ table.spell .Content {
 }
 
 
-
 .reallySmall {
     font-size:50%;
 }
@@ -963,9 +963,6 @@ footer a:visited {
 footer a:hover {
 	color: #00aa00;
 }
-
-
-
 
 
 div.clearBoth {

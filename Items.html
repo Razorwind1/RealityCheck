@@ -509,7 +509,7 @@
         <td>1d8</td>
         <td>+3</td>
         <td>Swift</td>
-        <td>T(2/12/36)</td>
+        <td>(10/50/200)</td>
         <td>Two-handed</td>
     </tr>
     <tr>
@@ -937,13 +937,243 @@
 	</tr>
 </table>
 
+<h2 class="Shields">
+<span>Shields</span>
+</h2>
+<p>
+Sheilds are not considered Weapons or Armor.</p>
+<p>When in combat, you may choose to target an opponent’s shield instead of them. If your attack gets past their EC not including the shield, then you hit the shield and deal damage to its Durability equal to your damage minus the shield’s Hardness.</p>
+<p><strong class="pIndent">Hardness:</strong> Is subtracted from any damage dealt to the item.</p>
+<p><strong class="pIndent">Durability:</strong> How much damage an item must take to be rendered useless.
+</p><p><strong class="pIndent">Skill Penalty: </strong>Negatively modifies your Strength and Dexterity based skills (passively) while you wear armor is worn or wield a shield.
+</p><p><strong class="pIndent">Energy Cost: </strong>Some armor and shields slow you down, requiring you to spend more Energy to perform certain tasks. Normally you gain 7 Energy per turn, but with a -1 Energy Cost you gain one less Energy per turn. You can still spend Stamina normally.
+</p>
+<table class="table4">
+<caption>Shields</caption>
+    <tr>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>EC</th>
+        <th>Hardness</th>
+        <th>Durrability</th>
+        <th>Skill Penalty</th>
+        <th>Energy Cost</th>
+        <th>Properties</th>
+    </tr>
+    <tr>
+        <th>Light</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Buckler</td>
+        <td>40</td>
+        <td>+3</td>
+        <td>5</td>
+        <td>10</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Light</td>
+    </tr>
+    <tr>
+        <th>Medium</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Light Shield</td>
+        <td>80</td>
+        <td>+4</td>
+        <td>8</td>
+        <td>20</td>
+        <td>-1</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <th>Heavy</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Hevy Shield</td>
+        <td>140</td>
+        <td>+5</td>
+        <td>10</td>
+        <td>30</td>
+        <td>-1</td>
+        <td>-1</td>
+        <td>Heavy</td>
+    </tr>
+    <tr>
+		<td colspan="8" class="tableNote">
+        Note: You must be Proficient in Light Armor to use a Light Shield, Medium Armor to us a Medium Shield, and Heavy Armor to use a Heavy Shield.
+		</td>
+	</tr>
+</table>    
+
+<h2>
+<span>Armor</span>
+</h2>
+<p>There is no Armor Proficiency. It's not hard to wear armor.
+</p><p><strong class="pIndent">Armor Rating (AR): </strong>Is subtracted from damage taken IF the armor is hit.
+</p><p><strong class="pIndent">Armor Coverage (AC): </strong>Is used to determine if Armor is hit. A 1d20 roll (an Attack Roll or Melee Attacks and a Chance Roll for Ranged Attacks) is compared against the AC and if it is lower than the AC, the Armor is hit and the AR is subtracted from the damage taken (potentially down to 0 damage).
+</p><p><strong class="pIndent">Skill Penalty: </strong>Negatively modifies your Strength and Dexterity based skills (passively) while you wear armor is worn or wield a shield.
+</p><p><strong class="pIndent">Energy Cost: </strong>Some armor and shields slow you down, requiring you to spend more Energy to perform certain tasks. Normally you gain 7 Energy per turn, but with a -1 Energy Cost you gain one less Energy per turn. You can still spend Stamina normally.
+</p><p>You may wear both an Over-Armor set and an Under-Armor set. Under-Armor uses the Coverage value of your Over-Armor.
+</p><p>
+</p>
+<table class="table4">
+<caption>Armor</caption>
+    <tr>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>AR</th>
+        <th>Coverage</th>
+        <th>Skill Penalty</th>
+        <th>Energy Cost</th>
+        <th>Properties</th>
+    </tr>
+    <tr>
+        <th>Light</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gambison</td>
+        <td>20</td>
+        <td>1</td>
+        <td>(6)</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Under-Armor</td>
+    </tr>
+    <tr>
+        <td>Lamellar</td>
+        <td>80</td>
+        <td>2</td>
+        <td>12</td>
+        <td>-1</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Scale</td>
+        <td>100</td>
+        <td>3</td>
+        <td>8</td>
+        <td>-1</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <th>Medium</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Mail</td>
+        <td>140</td>
+        <td>2</td>
+        <td>(6)</td>
+        <td>-2</td>
+        <td>-</td>
+        <td>Under-Armor</td>
+    </tr>
+    <tr>
+        <td>Brigandine</td>
+        <td>200</td>
+        <td>4</td>
+        <td>12</td>
+        <td>-2</td>
+        <td>-1</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Laminar</td>
+        <td>240</td>
+        <td>5</td>
+        <td>16</td>
+        <td>-</td>
+        <td>-2</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <th>Heavy</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Thick Chainmail</td>
+        <td>200</td>
+        <td>3</td>
+        <td>(8)</td>
+        <td>-1</td>
+        <td>-1</td>
+        <td>Under-Armor</td>
+    </tr>
+    <tr>
+        <td>Plated Mail</td>
+        <td>500</td>
+        <td>6</td>
+        <td>14</td>
+        <td>-2</td>
+        <td>-1</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Thick Chainmail</td>
+        <td>900</td>
+        <td>7</td>
+        <td>Complete</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>-5 Awareness (if visor is down)</td>
+    </tr>
+    <tr>
+		<td colspan="7" class="tableNote">
+        Note: Heavy Armor reduces your Movement Speed by 1m (not each piece individually, just if you have any Heavy Armor).
+		</td>
+	</tr>
+</table>
+<p>If you Rest in Medium Armor your maximum Stamina is reduced to 7 + half your Stamina above 7 until your next Rest without the armor on. If you rest in Heavy Armor your max Stamina is reduced to 7 until your next Rest without the Armor on.
+</p><p>Consider that putting on armor takes time. Especially with full plate armor which may take 10 minutes.
+</p><p>
+</p>
 </main>
 
 <!---->
 
 <footer>
 <small>
-Copyright: none
+
 <br>
 <a href="mailto:daniel@hickman.com">daniel@hickman.com</a>
 <br>
