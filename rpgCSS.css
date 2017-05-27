@@ -48,15 +48,15 @@ body {
         rgb(122, 152, 239) 300px,
 		rgb(187, 206, 247) 900px,
 		rgb(223, 224, 251) 2000px,
-		rgb(239, 239, 250));
+		rgb(245, 245, 250));
 	color: #000000;
-	font-family: "Varanda", "Arial", "sans-serif";
+	font-family: "Georgia", "Arial", "sans-serif";
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0;
 	/*width: 85%;*/
-	min-width: 960px;
-	max-width: 2048px;
+	min-width: 400px;
+	max-width: 2000px;
 	/*background-color: #ffff00; /*only color that changed nav*/
 	/*box-shadow: 3px 3px #2E0000;
 	*/
@@ -66,7 +66,7 @@ main {
 	margin-left: 6%; margin-right: 5%;
 	padding-top: 30px; padding-bottom: 50px;
 	clear: both;
-	font-size:115%;
+	font-size:100%;
 }
 a:visited {
 	color: blue; /*rgb(0, 0, 128)*/
@@ -78,7 +78,7 @@ a:visited {
 #logo a{
 	font-size: 50px; text-decoration: none; color: black;
 	letter-spacing:4px; text-shadow: 4px 5px 5px rgb(24, 103, 133);
-	font-weight: bold; font-family: "Book Antiqua", Palatino, serif;
+	font-weight: bold; font-family: "Book Antiqua", "Palatino Linotype", serif;
 }
 nav {
 	background-color:rgb(157, 208, 225);
@@ -107,7 +107,6 @@ nav {
 		rgb(24, 24, 105));*/
 	
 	padding-bottom: 10px; border-bottom: 2px solid black;
-	height: 110px;
 	position:relative;
 }
 
@@ -116,7 +115,7 @@ nav {
 	list-style-type: none; margin:0;
 	position: relative;
 	text-align: center;
-	font-family: "Book Antiqua", Palatino, serif;
+	font-family: "Book Antiqua", "Palatino Linotype", serif;
 }
 .topNav1 > li {
 	display: inline;
@@ -129,7 +128,7 @@ nav {
 	text-decoration:none;
 }
 .topNav1 > li:hover {
-	color:rgb(10, 210, 239);
+	color:rgb(0, 225, 255)/*rgb(10, 210, 239)*/;
 }
 
 /* OLD NAV
@@ -308,12 +307,12 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 	margin-bottom: 30px;
 	font-size: 1.5em;
 	font-weight: bold;
-	
+	font-family: "Book Antiqua", "Palatino Linotype", serif;
 	position: relative; /*to line up dropdowns*/
 }
 .nav2 ul li.nav2main > a{
 	text-decoration: none;
-	color: black; background-color: rgb(193, 226, 241);
+	color: black; background-color: rgb(41, 124, 163);
 	padding: 5px 30px 5px 10px;
 	border-radius: 0px 10px 10px 0px;
 	border: 2px solid black; border-left: none;
@@ -328,7 +327,7 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 .arrow2 {
 	border: 2px solid black; border-right: none;
 	padding: 5px 5px 5px 10px;
-	background-color: rgb(193, 226, 241);
+	background-color: rgb(41, 124, 163);
 	display: inline-block; /*to fit with anchor*/
 	position: relative;
 	left: 7px; /*make up for gap between arror and anchor*/
@@ -343,11 +342,11 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 }
 
 .nav2 ul li.nav2main > a:hover {
-	background-color: rgb(0, 225, 255); text-shadow: 2px 1px 1px white;
+	background-color: rgb(0, 225, 255); /*text-shadow: 2px 1px 1px white;*/
 	transition: .1s linear; /*rgb(5, 250, 12)*/
 }
 .arrow2:hover {
-	background-color: rgb(0, 225, 255); text-shadow: 2px -1px 1px white;
+	background-color: rgb(0, 225, 255); /*text-shadow: 2px -1px 1px white;*/
 	transition: .1s linear;
 	
 }
@@ -392,21 +391,24 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 }
 .dropDown2 li a:hover{
 	background-color: rgb(0, 225, 255);
-	font-weight:600; text-shadow: 2px 1px 1px white;
+	font-weight:600; /*text-shadow: 2px 1px 1px white;*/
 }
 .dropDown2 li:last-of-type a{
 	border-radius: 0 0 10px 0;
 }
 
-/*for Skills...*/
-.skills .dropDown2 > li a {
+/*Two Rows in Nav2*/
+.twoRows .dropDown2 > li a {
 	padding-left: 10px;
 }
-.skills .dropDown2{
+.twoRows .dropDown2{
 	padding-left: 0px; /*adjust for automatic ul padding*/
 	right: 10px;
 }
-.skills .dropDown2 > li > ul {
+.twoRows .dropDown2 > li > ul li:last-of-type a{
+    border-radius: 0 0 10px 0;
+}
+.twoRows .dropDown2 > li > ul { 
 	position: absolute;
 	bottom: -1px;
 	right: -11px;
@@ -416,12 +418,13 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 	/*visibility: hidden;
 	opacity: 0;*/
 }
-.skills .dropDown2 > li > ul a{
+.skills .dropDown2 > li > ul a{ /*for SKILLS*/
 	width:130px;
     border-radius: 0;
 }
-.skills .dropDown2 > li > ul li:last-of-type a{
-    border-radius: 0 0 10px 0;
+.combat .dropDown2 > li > ul a{ /*for COMBAT*/
+	width:160px;
+    border-radius: 0;
 }
 
 	/*Z-INDEXES*/
@@ -454,7 +457,14 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 .nav3 ul > li.nav3main {
 	margin-bottom: 30px;
 	font-size: 1.5em; font-weight: bold;
+    font-family: "Book Antiqua", "Palatino Linotype", serif;
 	position: relative; /*to line up dropdowns*/
+}
+.nav3 ul > li.characterCreation {
+    margin-bottom: 5px;
+}
+.nav3 ul > li.races {
+    margin-top: 25px;
 }
 .nav3 ul li.nav3main > a{
 	text-decoration: none; text-align: right;
@@ -464,7 +474,26 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 	display: inline-block; /*block for width acceptance
 							inline for no new line*/
 	width: 240px;
-	background-color: #bbddff;
+	background-color: rgb(41, 124, 163);
+	position:relative; /*for z-index*/
+}
+
+.nav3 ul > li.nav3small {
+	margin-top: 5px;
+    margin-bottom: 5px;
+	font-size: 1.2em; font-weight: bold;
+    font-family: "Book Antiqua", "Palatino Linotype", serif;
+	position: relative; /*to line up dropdowns*/
+}
+.nav3 ul li.nav3small > a{
+	text-decoration: none; text-align: right;
+	color: black;
+	padding: 0px 10px 0px 10px; border-radius: 10px 0px 0px 10px;
+	border: 2px solid black; border-right: none;
+	display: inline-block; /*block for width acceptance
+							inline for no new line*/
+	width: 240px;
+	background-color: rgb(41, 124, 163);
 	position:relative; /*for z-index*/
 }
 
@@ -472,9 +501,9 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 	right: 1px;
 	transition: .3s ease-in;
 }
-.nav3 ul li.nav3main a:hover {
+.nav3 ul li a:hover {
 	background-color: rgb(0, 225, 255);
-	text-shadow: 2px 1px 1px white;
+	/*text-shadow: 2px 1px 1px white;*/
 	transition: .1s linear;
 }
 
@@ -612,10 +641,13 @@ main > p {
 	margin-left: 50px;
     padding-bottom:3px;
 }
-div.hangingIndent p{
+div.hangingIndent p:not(.indent){
     padding-left:70px;
     text-indent: -30px;
     margin-left: 30px;
+}
+div.hangingIndent p.indent {
+    padding-left:100px;
 }
 
 
@@ -633,12 +665,14 @@ p.pList {
 
 h2 {
 	margin-top:50px;
+    background-color: rgb(41, 124, 163);
 }
 
 h2 span { /*main headers*/
-	font-family: "Georgia", "Times New Roman", "serif";
+	/*font-family: "Georgia", "Times New Roman", "serif";*/
+    font-family: "Book Antiqua", "Palatino Linotype", serif;
 	padding: 0 8px 0 8px; font-size: 25px;
-	background-color: rgb(193, 226, 241); color: black;
+	background-color: rgb(41, 124, 163); color: white;
 	/*rgb(193, 226, 241)*/
 	/*background-color: rgb(51, 214, 255);
 background-image: linear-gradient(90deg, rgba(0, 143, 179,.3) 30%, transparent 50%),
@@ -665,15 +699,15 @@ background-size: 13px, 29px, 37px, 53px;*/
 		rgb(0, 255, 6) 85%,
 		rgb(0, 240, 6));*/
 	border-radius: 10px 10px 0 0;
-	border: 2px solid rgb(9, 32, 42);
-    border-bottom:none;
+	/*border: 2px solid rgb(9, 32, 42);
+    border-bottom:none;*/
 	
 }
 h3 { /*top of page*/
 	margin-bottom:40px; /*won't work in span (not block?)*/
 }
 h3 span { /*top of page: color*/
-	font-family: "Georgia", "Times New Roman", "serif";
+	font-family: "Book Antiqua", "Palatino Linotype", serif;
 	font-size: 35px; letter-spacing: .5px;
 	padding: 0 8px 0 8px;
 	background-color: rgb(193, 226, 241);
@@ -689,7 +723,8 @@ h3 span { /*top of page: color*/
 }
 
 h4 span { /*small headers - no background*/
-	font-weight: 800;
+	font-family: "Book Antiqua", "Palatino Linotype", serif;
+    font-weight: 800;
 	font-size: 110%;
 	text-decoration: underline;
 	margin:0;
@@ -702,13 +737,15 @@ strong.big {
 
 dt {
 	font-size:110%;
+	font-weight: normal;
+    text-decoration: none;
+    margin-top:40px
+}
+dt span {
+	font-size:110%;
 	font-weight: 800;
 	margin-bottom: 5px;
 	text-decoration: underline;
-}
-dt span {
-	font-size:100%;
-	font-weight: normal;
 }
 dd br {
 	display:block;
@@ -721,6 +758,7 @@ dd {
 }
 dl.smallList {
 	margin-left:20px;
+    margin-top:-15px;
 }
 dl.smallList dt {
 	font-size: 100%;
@@ -754,8 +792,8 @@ table {
 }
 table caption {
 	font-family:Times, serif;
-	font-weight:bold; font-size:140%;
-	background-color:rgb(0, 154, 213);
+	font-weight:bold; font-size:130%;
+	background-color:rgba(212, 247, 247, 0.7)/*rgb(209, 250, 250)/*rgb(41, 124, 163)*/; color: whit;
 	border: 5px solid black; border-bottom:2px solid black;
 	border-radius:30px 30px 0 0;
 }
@@ -767,10 +805,11 @@ td, th {
 	/*max-width:150px;*/
 }
 tr:nth-of-type(odd) {
-	background-color:rgb(89, 199, 240);
+	background-color:rgba(173, 215, 235, 0.7)/*rgb(89, 199, 240)*/;
 }
 tr:nth-of-type(even) {
-	background-color:rgb(163, 255, 153)/*rgb(253, 251, 172)*/;
+	background-color:rgba(222, 235, 247, .7)
+/*rgb(244, 246, 251)/*rgb(163, 255, 153)/*rgb(253, 251, 172)*/;
 }
 .boldData{
 	font-weight:bold;
@@ -845,13 +884,14 @@ table.spell {
 	margin-bottom: 30px;
 	border: 5px solid black;
 	border-spacing:0; border-radius:30px;
+    width:800px
 }
 table.spell td{
-	text-align:center;
+	/*text-align:center;
 	padding-left:8px; padding-right:8px;
 	padding-top:4px; padding-bottom:4px;
     margin:2px;
-	width:700px;
+	width:700px;*/
 }
 table.spell th {
     text-align:center;
@@ -859,48 +899,79 @@ table.spell th {
     border: 1px solid black; 
     border-top: none; border-left:none; 
     border-radius: 25px 0 0 0;
+    width:60%;
+    background-color: rgba(212, 247, 247, .8);
 }
 table.spell .MagicCircles {
     border: 1px solid black;
-    border-top: none; border-right:none;
-    border-radius: 0 25px 0 0;
     text-align:left;
-}
-table.spell .DC {
-    font-size:23px;
-    border: 1px solid black; border-left:none;
-}
-table.spell .Type {
-    border: 1px solid black;
-}
-table.spell .Action {
-    border: 1px solid black;
+    border-left:none; border-right:none;
+    background-color: rgba(173, 215, 235, .7);
 }
 table.spell .Range {
-    border: 1px solid black;
-    border-right:none;
+    border: 1px solid black; border-top: none;
+    background-color: rgba(212, 247, 247, .8);
+    width: 140px;
+}
+table.spell .Type {
+    border: 1px solid black; border-top: none;
+    background-color: rgba(212, 247, 247, .8);
+    width: 100px;
+    font-size: 18px;
+    /*font-size: 18px;*/
+}
+table.spell .DC {
+    border: 1px solid black; border-top: none;
+    background-color: rgba(212, 247, 247, .8);
+    border-radius: 0 25px 0 0;
+    width: 60px;
+    font-size:20px;
 }
 table.spell .Content {
     border: 1px solid black;
     border-right:none; border-left:none;
+    text-align:left; padding-left: 15px;
+    background-color: rgb(222, 235, 247);
+}
+table.spell .ContentEnd {
+    border: 1px solid black;
+    border-right:none; border-left:none;
     border-radius: 0 0 25px 25px;
     text-align:left; padding-left: 15px;
-    background-color: rgb(163, 255, 153);
+    background-color: rgb(222, 235, 247);
 }
-.spellCircle td{
+table.spell .FlavorText {
+    
+}
+
+/*Schools, Methods, and Elements*/
+.spellCircle th{
     padding: 6px;
     text-align: center;
     border-left: solid black 1px;
     border-right: solid black 1px;
+    font-weight: normal;
 }
-
-.spellCircle tr td:first-of-type{
+.spellCircle td{
+    padding: 4px;
+    text-align: center;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    font-size:80%;
+}
+.spellCircle tr:last-of-type td:first-of-type{
     border-radius:0 0 0 25px;
     padding-left:15px;
 }
-.spellCircle tr td:last-of-type{
+.spellCircle tr:last-of-type td:last-of-type{
     border-radius:0 0 25px 0;
     padding-right:12px;
+}
+
+/*Feats*/
+.featPage {
+    float: left;
+	margin-left:30px;
 }
 .feat {
 	margin-bottom: 30px;
@@ -908,13 +979,10 @@ table.spell .Content {
 	border-radius:30px;
 }
 .feat th {
-    font-weight:bold; padding-left:12px;
-    font-size:24px; padding-right:10px;
+    font-weight:bold; padding-left:20px;
+    font-size:24px; padding-right:15px;
     border-radius: 25px 0 0 0; border-right: solid black 2px;
     border-bottom: solid black 2px;
-}
-.featName {
-    width:67%;
 }
 .requirements {
     border-right: solid black 2px;
@@ -926,6 +994,30 @@ table.spell .Content {
 .featContent {
     border-radius: 0 0 25px 25px;
     text-align:left; padding-left:15px;
+}
+.nonCombat:before {
+    content:"NC";
+    font-size:50%;
+}
+.featDescription {
+    font-style: italic;
+    white-space:pre-wrap;
+}
+.featDescription:after {
+    content: '\A';
+}
+.featRequirment {
+    
+    white-space:pre-wrap;
+}
+.featRequirment:before {
+    content: '';
+}
+.featRequirment:after {
+    content: '\A';
+}
+.featList {
+    margin-left:20px;
 }
 
 
@@ -941,6 +1033,18 @@ ul.theme {
 }
 .propBig {
     width: 700px;
+}
+
+img.magicCircles {
+    max-height: 800px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+img.magicCircles:hover {
+    transform: rotate(3600deg);
+    transition: 15s cubic-bezier(.7,.01,.59,.9);
 }
 
 
@@ -962,6 +1066,9 @@ footer a:visited {
 }	
 footer a:hover {
 	color: #00aa00;
+}
+footer div.color {
+	color: #ffff00;
 }
 
 
@@ -999,6 +1106,30 @@ textarea {
 input[type="submit"] {
 	margin-left:20px;
 }
+
+/*VIEWPORT STUFF*/
+@media only screen and (min-width: 1600px) {
+    .featPage {
+        width: 31%;
+    }
+    .featPage:nth-child(3n + 1) {
+    clear: both;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .featPage {
+        width: 45%;
+    }
+    .featPage:nth-child(odd) {
+    clear: both;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .featPage {
+        width: 100%;
+    }
+}
+
 
 /*add :focus specifications?*/
 
@@ -1114,4 +1245,8 @@ input[type="submit"] {
 </ul>
 </h1>
 -->
+*/
+
+/*
+Up-Arrows: &#8679; &#8593; &#10548; &#11014; &#11025; &#10548;
 */
