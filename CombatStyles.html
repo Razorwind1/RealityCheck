@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--
+<link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
+-->
+<link rel='stylesheet' href='rpgCSS.css'>
+<title>CombatStyles</title>
+<meta charset="UTF-8">
+
+</head>
+
+    
+<body>
+<!---->
+<nav>
+<div id="logo">
+	<a href="Index.html">Reality Check</a>
+</div>
+
+<ul class="topNav1">
+	<li><a href="General.html">General</a></li>
+	<li><a href="Skills.html">Skills</a></li>
+	<li><a href="Combat.html">Combat</a></li>
+	<li><a href="Items.html">Items</a></li>
+	<li><a href="Spellcasting.html">Spellcasting</a></li>
+	<li><a href="CharacterCreation.html">Character Creation</a></li>
+	<li><a href="Races.html">Races</a></li>
+	<li><a href="Spells.html">Spells</a></li>
+</ul>
+
+</nav>
+
+
+
+<!-- NAV 2 -->
+<div class="nav2">
+
+<ul>
+
+	<li class="nav2main general">
+		<span class="arrow2">&#9660; </span>
+		<a href="General.html">General</a>
+		<ul class="dropDown2">
+			<li><a href="General.html#RolePlaying">Role-Playing</a></li>
+			<li><a href="General.html#Rules">Rules</a></li>
+			<li><a href="General.html#Terminology">Terminology</a></li>
+		</ul>
+	</li>
+	
+	<li class="nav2main skills twoRows">
+		<span class="arrow2">&#9660; </span>
+		<a href="Skills.html">Skills</a>
+		<ul class="dropDown2">
+                <!--<li><a href="Skills.html#SkillRanks">Skill Ranks</a></li>-->
+				<li><a href="Skills.html#UBS">Upper Body Strength</a></li>
+				<li><a href="Skills.html#LBS">Lower Body Strength</a></li>
+				<li><a href="Skills.html#Swim">Swim</a></li>
+				<li><a href="Skills.html#Acrobatics">Acrobatics</a></li>
+				<li><a href="Skills.html#SleightOfHand">Sleight of Hand</a></li>
+				<li><a href="Skills.html#DisableDevice">Disable Device</a></li>
+				<li><a href="Skills.html#Stealth">Stealth</a></li>
+				<li><a href="Skills.html#Investigation">Investigation</a></li>
+				<li><a href="Skills.html#Awareness">Awareness</a></li>
+                <li><a href="Skills.html#Insight">Insight</a></li>
+			<li><ul>
+				<li><a href="Skills.html#Heal">Heal</a></li>
+                <li><a href="Skills.html#Initiative">Initiative</a></li>
+				<li><a href="Skills.html#Reason">Reason</a></li>
+				<li><a href="Skills.html#Inspire">Inspire</a></li>
+				<li><a href="Skills.html#Discourage">Discourage</a></li>
+                <li><a href="Skills.html#Intimidate">Intimidate</a></li>
+				<li><a href="Skills.html#Deceive">Deceive</a></li>
+				<li><a href="Skills.html#SocialSense">Social Sense</a></li>
+				<li><a href="Skills.html#HandleAnimal">Handle Animal</a></li>
+				<li><a href="Skills.html#Knowledge">Knowledges</a></li>
+				<!--<li><a href="Skills.html#Languages">Languages</a></li>-->
+			</ul></li>
+		</ul>
+	</li>
+		
+	<li class="nav2main combat twoRows">
+		<span class="arrow2">&#9660; </span>
+		<a href="Combat.html">Combat</a>
+		<ul class="dropDown2">
+			<li><a href="Combat.html#Actions">Actions</a></li>
+			<li><a href="Combat.html#Stamina">Stamina</a></li>
+            <li><a href="Combat.html#Agility">Agility</a></li>
+            <li><a href="Combat.html#Rounds">Rounds</a></li>
+            <li><a href="Combat.html#ActionOrder">Initiative</a></li>
+			<li><a href="Combat.html#MeleeAttacks">Melee Attacks</a></li>
+			<li><a href="Combat.html#RangedAttacks">Ranged Attacks</a></li>
+			<li><a href="Combat.html#Aura">Aura</a></li>
+            <li><a href="Combat.html#Defenses">Defenses</a></li>
+            <li><a href="Combat.html#WeaknessesAndResistances">Resistances</a></li>
+            <li><a href="Combat.html#CriticalHits">Critical Hits</a></li>
+            <li><a href="Combat.html#Facing">Facing</a></li>
+            
+            <li><ul>
+				<li><a href="Combat.html#Size">Size</a></li>
+                <li><a href="Combat.html#Exposed">Exposed</a></li>
+                <li><a href="Combat.html#Unguarded">Unguarded</a></li>
+                <li><a href="Combat.html#Surprise">Surprise</a></li>
+                <li><a href="Combat.html#NonLethalDamage">Non-Lethal Damage</a></li>
+                <li><a href="Combat.html#MPL">MPL</a></li>
+                <li><a href="Combat.html#ImprovisedWeapons">Improvised Weapons</a></li>
+                <li><a href="Combat.html#UnarmedAttacks">Unarmed Attacks</a></li>
+                <li><a href="Combat.html#CombatManeuvers">Combat Maneuvers</a></li>
+                <li><a href="Combat.html#Resting">Resting</a></li>
+                <li><a href="Combat.html#Death">Death</a></li>
+                <li><a href="Combat.html#Conditions">Conditions</a></li>
+			</ul></li>
+		</ul>
+	</li>
+	<li class="nav2main items">
+		<span class="arrow2">&#9660; </span>
+		<a href="Items.html">Items</a>
+		<ul class="dropDown2">
+			<li><a href="Items.html#Reach">Reach</a></li>
+			<li><a href="Items.html#WeaponProperties">Weapon Properties</a></li>
+			<li><a href="Items.html#MeleeWeapons">Melee Weapons</a></li>
+            <li><a href="Items.html#RangedWeapons">Ranged Weapons</a></li>
+			<li><a href="Items.html#Shields">Shields</a></li>
+			<li><a href="Items.html#ArmorSets">Armor Sets</a></li>
+            <li><a href="Items.html#BrokenArmor&Shields">Broken Armor &amp; Shields</a></li>
+		</ul>
+	</li>
+	<li class="nav2main spellcasting">
+		<span class="arrow2">&#9660; </span>
+		<a href="Spellcasting.html">Spellcasting</a>
+		<ul class="dropDown2">
+			<li><a href="Spellcasting.html#SchoolsofMagic">Schools of Magic</a></li>
+			<li><a href="Spellcasting.html#MethodsofMagic">Methods of Magic</a></li>
+			<li><a href="Spellcasting.html#ElementsofMagic">Elements of Magic</a></li>
+			<li><a href="Spellcasting.html#CastingSpells">Casting Spells</a></li>
+			<li><a href="Spellcasting.html#SpellcastingAbilities">Spellcasting Abilities</a></li>
+		</ul>
+	</li>
+		
+</ul>
+
+</div>
+
+
+
+<!-- NAV 3 -->
+<div class="nav3">
+
+<ul>
+	<li class="nav3main characterCreation">
+		<a href="CharacterCreation.html">Character Creation</a>
+	</li>
+    
+    <li class="nav3small feats">
+		<a href="Feats.html">Feats</a>
+	</li>
+	
+	<li class="nav3small themes">
+		<a href="themes.html">themes</a>
+	</li>
+    
+    <li class= "nav3small combatStyles">
+		<a href="CombatStyles.html">Combat Styles</a>
+	</li>
+
+	<li class="nav3main races">
+		<a href="Races.html">Races</a>
+	</li>
+	
+	<li class="nav3main spells">
+		<a href="Spells.html">Spells</a>
+	</li>
+		
+</ul>
+
+</div>
+
+<main>
+
+<p>Combat Styles represent particular and practiced skill with a certain way of fighting. they are a way for you to customize how you fight, focusing on offence, defense, speed or something else. Most Combat Styles only give bonuses when using certain types of weapons.
+</p><p>Combat Styles apply persistent, passive benefits (and maybe penalties). Any Combat Styles you are using apply even when you are not in combat. After a Long Rest, you may choose to add, change, or remove the Combat Styles you are using, but may not do so again until after another Long Rest.
+</p><p>You gain Combat Styles through spending Background Points, increasing your MPL (see <a href="Combat.html#MPL">MPL</a>), or acquiring a Feat or theme that grants you one.
+</p><p>In Tier 1, you can only make use of one Combat Style at a time. In Tier 2, you can make use of two Combat Styles at one time, in Tier 3, you can use three, and in Tier 4, you can use 4. (see <a href="CharacterCreation.html#CharacterAdvancement">Tier</a>)
+</p><p>You may voluntarily forget a Combat Style and gain a different one over the course of days of practice.
+</p>
+
+<h2>
+    <span>General Styles</span>
+</h2>
+<div class="styleWrapper">
+
+<div class="combatStyle">
+    <div class="styleName">Safety First</div>
+    <div class="styleText">You have +1 Evasion.
+        <br>When wielding a melee weapon, it has -1 AV. When wielding a ranged weapon, it has -1 Accuracy.</div>
+</div>
+<div class="combatStyle">
+    <div class="styleName">Speedy</div>
+    <div class="styleText">You gain +1 Agility.
+        <br>You have +2 Exposing and -1 Evasion.</div>
+</div>
+<div class="combatStyle">
+    <div class="styleName">Defensive Focus</div>
+    <div class="styleText">You have +1 Evasion.
+        <br>You have -1 Agility and +1 Exposing.</div>
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Ranged Weapon Styles</span>
+</h2>
+<div class="styleWrapper">
+<div class="combatStyle">
+    <div class="styleName">Overdraw</div>
+    <div class="styleText">You count your Draw Weight as 5 higher (even if it’s above what weapon’s limit would normally be).
+        <br>When wielding a Draw Weight weapon, it has -1 Accuracy.</div>
+</div>
+<div class="combatStyle">
+    <div class="styleName">Focused Shots</div>
+    <div class="styleText">When you wield a ranged weapon, it has +1 Precision.
+        <br>You have -1 Evasion.</div>
+</div>
+<div class="combatStyle">
+    <div class="styleName">Consistent Attack</div>
+    <div class="styleText">When wielding a Ranged weapon, it gains +1 Accuracy.
+        <br>When wielding a Ranged weapon, it gains +2 Exposing.</div>
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Melee Weapon Styles</span>
+</h2>
+    <div class="styleWrapper">
+<div class="combatStyle">
+    <div class="styleName">Slow and Steady</div>
+    <div class="styleText">When wielding a melee weapon, it has +1 AV and -1 Exposing. 
+        <br>You have -2 Agility.</div>
+</div>
+<div class="combatStyle">
+    <div class="styleName">Reckless</div>
+    <div class="styleText">Your MASAB is increased by 1.
+        <br>You have -1 Evasion and -1 AR.</div>
+</div>
+<div class="combatStyle">
+    <div class="styleName">Forceful</div>
+    <div class="styleText">Your MASDB is increased by 1.
+        <br>Your MASAB is decreased by 1.</div>
+</div>
+<div class="combatStyle">
+    <div class="styleName">Opportunistic</div>
+    <div class="styleText">When making a melee attack against an Exposed creature, you deal an additional 1d4 damage.
+        <br>Your MASDB is reduced by 1.</div>
+</div>
+    </div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Reach0 Styles</span>
+</h2>
+<div class="styleWrapper">
+    <div class="combatStyle">
+    <div class="styleName">Reflexive Defense</div>
+    <div class="styleText">When wielding a Reach0 weapon, it gains +1 Evasion.
+        <br>You have -1 Ranged Evasion.</div>
+</div>
+<div class="combatStyle">
+    <div class="styleName">Savage Punishing</div>
+    <div class="styleText">When making a melee attack with a Reach0 weapon against an Exposed creature, the weapon gains +3 Precision.
+        <br>When wielding a Reach0 weapon, it has -1 AV.</div>
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Dagger Styles</span>
+</h2>
+<div class="styleWrapper">
+<div class="combatStyle">
+        <div class="styleName">Powerful Stabs</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a dagger-like weapon which without this Combat Style would have Precision, it deals an additional 1d4 damage.
+        <br>When wielding a dagger-like weapon, it has -2 Precision and +1 Exposing.</div>
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Precise Dagger</div>
+        <div class="styleText"><span class=styleDescription></span>When you score a Critical hit with a dagger-like weapon, you deal an additional 1d10 damage.
+        <br>When wielding a dagger-like weapon, it has -1 AV.</div>
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Reach 1 Styles</span>
+</h2>
+<div class="styleWrapper">
+<div class="combatStyle">
+    
+        <div class="styleName">Adapth Technique</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Reach1 weapon, you may treat it as having the Versatile property.
+        <br>When wielding a Reach1 weapon, it has -1 AV.</div>
+</div>
+<div class="combatStyle">
+        <div class="styleName">the Perfect Distance</div>
+        <div class="styleText"><span class=styleDescription></span>When making a melee attack with a Reach 1 Weapon against a creature at your maximum Reach, you have +2 AV.
+        <br>When you are hit by an attack from a creature closer than your maximum Reach, you take an additional 1d6 damage. You have -2 Ranged Evasion.</div>
+</div>
+</div>
+<div class="clearBoth"></div>
+<h2>
+    <span>Two-Handed Styles</span>
+</h2>
+<div class="styleWrapper">
+<div class="combatStyle">
+        <div class="styleName">Spinning Momentum</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Two-Handed weapon, it gains +2 AV.
+        <br>When wielding a Two-Handed weapon, it has -2 Evasion and +1 Exposing.</div>
+</div>
+<div class="combatStyle">
+        <div class="styleName">Unbalancing Power</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Two-Handed weapon, it deals an additional 2 damage.
+        <br>When wielding a Two-Handed weapon, it has -1 Evasion. Your max Stamina is reduced by 2.</div>
+</div>
+</div>
+<div class="clearBoth"></div>
+<h2>
+    <span>Reach 2 or More Styles</span>
+</h2>
+<div class="styleWrapper">
+<div class="combatStyle">
+        <div class="styleName">Stand your Ground</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a polearm (at least Reach2), it has +1 AV and +1 Evasion.
+        <br>You have -2 Agility and +1 Exposing.</div>
+</div>
+<div class="combatStyle">
+        <div class="styleName">Swift Jabs</div>
+        <div class="styleText"><span class=styleDescription></span>When you are wielding a polearm (at least Reach 2) which is not Heavy, it has +1 Evasion and -2 Exposing.
+        <br>When you are wielding a polearm (at least Reach 2) which is not Heavy, it has -1 AV.</div>
+</div>
+<div class="combatStyle">
+        <div class="styleName">Accurate Jabs</div>
+        <div class="styleText"><span class=styleDescription></span>When you are wielding a polearm (at least Reach2), it has +1 AV.
+        <br>You have -1 Agility.</div>
+</div>
+<div class="combatStyle">
+        <div class="styleName">Defensive Polearm</div>
+        <div class="styleText"><span class=styleDescription></span>When you are wielding a polearm (at least Reach 2), it has +2 Evasion.
+        <br>When making an attack with a polearm-like weapon, it deals 1 less damage. Your max Stamina is reduced by 1.</div>
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Dual-Wielding Styles</span>
+</h2>
+<div class="styleWrapper">
+<div class="combatStyle">
+        <div class="styleName">Rain of Attacks</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding two Light, Reach0 weapons, one in each hand, you may make melee attacks with those weapons using only 2 Energy.
+        <br>You have -3 AV and -2 AR and -1 Evasion.</div>
+</div>
+<div class="combatStyle">
+        <div class="styleName">Quick Footwork</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding two Light, Reach0 weapons, one in each hand, you gain +1 Agility and +1 Evasion.
+        <br>When wielding two Light, Reach0 weapons, they have -1 AV.</div>
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Savage Dual-Wielding</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Light, Reach0 weapon in both hands, they have +1 AV and +1 Precision.
+        <br>When wielding a Light, Reach0 weapon, it has -1 Evasion.</div>
+</div>
+<div class="combatStyle">
+        <div class="styleName">Feign Past the Guard</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding two Light weapons, you have +5 Evasion when defending against Swift attacks.
+        <br>You have -1 Evasion or -1 AV.</div>
+    
+</div>
+<div class="combatStyle">
+        <div class="styleName">Dual Attacks</div>
+        <div class="styleText"><span class=styleDescription></span>When you are wielding two weapons, one in each hand, you gain +1 AV and -1 Exposing.
+        <br>You have -1 Evasion and -1 AR.</div>
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Light Weapon Styles</span>
+</h2>
+<div class="styleWrapper">
+
+<div class="combatStyle">
+    
+        <div class="styleName">Swift Reflexes</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Light weapon, it has +1 Evasion.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Fineness Attacks</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Light weapon, it has +2 AV.
+        <br>Your MASDB is reduced by 1.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Light Steps</div>
+        <div class="styleText"><span class=styleDescription></span>When the only weapons or shields you are wielding are Light, you gain +2 Stamina.</div>
+    
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Heavy Weapon Styles</span>
+</h2>
+<div class="styleWrapper">
+    
+<div class="combatStyle">
+    
+        <div class="styleName">Brute Strength</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Heavy weapon, it deals an additional 2 damage.
+        <br>You have -4 max Stamina.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Controlled Swing</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Heavy weapon, it has +2 Evasion.
+        <br>When wielding a Heavy weapon, it has -1 AV.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Over-Swing</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Heavy weapon, it has +2 AV.
+        <br>When wielding a Heavy weapon, it has -1 Evasion and +2 Exposing.</div>
+    
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Brutal Weapon Styles</span>
+</h2>
+<div class="styleWrapper">
+
+<div class="combatStyle">
+    
+        <div class="styleName">Brutal Swings</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a weapon with Brutal, you gain an additional +2 Brutal.
+        <br>You have -1 Evasion and -1 Ranged Evasion (for a total of -2 to your Ranged Evasion).</div>
+    
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Versatile Weapon Styles</span>
+</h2>
+<div class="styleWrapper">
+    
+<div class="combatStyle">
+    
+        <div class="styleName">Versatile Style</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Versatile weapon which can be wielded both one-handed and two-handed, with one hand, it has +1 AV.
+        <br>When wielding a Versatile weapon which can be wielded both one-handed and two-handed, with both hands, it has +2 Evasion.
+        <br>Your Stamina is reduced by 1.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Versatile Disarming</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Versatile weapon, it has the Disarm property.
+        <br>When wielding a Versatile weapon, it has +1 Exposing.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Versatility</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Versatile weapon, it has +1 Precision and +1 Brutal.
+        <br>When wielding a Versatile weapon, it has -1 AV.</div>
+    
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Axe Styles</span>
+</h2>
+<div class="styleWrapper">
+    
+<div class="combatStyle">
+    
+        <div class="styleName">Accurate Axe</div>
+        <div class="styleText"><span class=styleDescription></span>WWhen wielding an axe-like weapon which would have Brutal without this Combat Style, it has +2 AV.
+        <br>When wielding an axe-like weapon, it has -1 Brutal. You have -1 Stamina.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Savage Axe</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding an axe-like weapon, it deals an additional 2 damage.
+        <br>When wielding an axe-like weapon, it has -1 AV and -1 Evasion.</div>
+    
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Blunt Weapon Styles</span>
+</h2>
+<div class="styleWrapper">
+    
+<div class="combatStyle">
+    
+        <div class="styleName">Taskmaster</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a blunt weapon, it has +1 AV and when it deals damage, you may make it Non-Lethal damage.
+        <br>When wielding a blunt weapon, it has +2 Exposing.</div>
+    
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Club Styles</span>
+</h2>
+<div class="styleWrapper">
+    
+<div class="combatStyle">
+    
+        <div class="styleName">Seal Clubbing</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a club-like weapon, it has +1 Brutal.
+        <br>When wielding a club-like weapon, it has +2 Exposing.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Quick Clubbing</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a one-handed, club-like weapon, you have +1 Agility and when it deals damage, you may make it Non-Lethal damage.
+        <br>Your MASDB is reduced by 1.</div>
+    
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Sword Styles</span>
+</h2>
+<div class="styleWrapper">
+   
+<div class="combatStyle">
+    
+        <div class="styleName">Half-Swording</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a two-handed, Reach1, sword-like weapon, you do not have Disadvantage on attacks because the target is closer than your maximum Reach.</div>
+    
+</div>
+</div>
+<div class="clearBoth"></div>
+    
+<h2>
+    <span>Flail Styles</span>
+</h2>
+<div class="styleWrapper">
+    
+<div class="combatStyle">
+    
+        <div class="styleName">Angled Swings</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a flail-like weapon, it has +2 AV.
+        <br>Your MASDB is reduced by 1. You have -2 Ranged Evasion.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Punishing Rage</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Flail-like weapon that without this Combat Style would have Trip and Disarm, it deals an additional 1d4 damage against Exposed creatures.
+        <br>When wielding a Flail-like weapon, it loses the Trip and Disarm properties.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Devastating Flailing</div>
+        <div class="styleText"><span class=styleDescription></span>When making a melee attack with a Flail-like weapon with Devastate, when you roll a natural 19 or 20 on a Combat roll, you may Break the creature’s armor.
+        <br>You have -2 Ranged Evasion.</div>
+    
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Whip Styles</span>
+</h2>
+<div class="styleWrapper">
+    
+<div class="combatStyle">
+    
+        <div class="styleName">Savage Barbs</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a whip-like weapon, it deals an additional 1d4 damage.
+        <br>When wielding a whip-like weapon, it has -1 AV and +2 Exposing.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Recoiling Strike</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a whip-like weapon, it has +1 AV and you have +1 Agility.
+        <br>When wielding a whip-like weapon, you have -2 AR and -1 Evasion.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Incredible Accuracy</div>
+        <div class="styleText"><span class=styleDescription></span>When you make an attack with a whip-like weapon against an Exposed creature, it has +5 AV.
+        <br>You have -2 AR and your Stamina is reduced by 1.</div>
+    
+</div>
+</div>
+<div class="clearBoth"></div>
+    
+<h2>
+    <span>Quarterstaff Styles</span>
+</h2>
+<div class="styleWrapper">
+    
+<div class="combatStyle">
+    
+        <div class="styleName">Easy Grip Shifting</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a quarterstaff, it has +1 AV and +1 Evasion.
+        <br>You deal 1 less damage.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Spinning Defense</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a quarterstaff, you can use its Evasion bonus to help defend against attacks coming from behind you (where you are not facing).
+        <br>You have -3 AR.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Exploit Vulnerabilities</div>
+        <div class="styleText"><span class=styleDescription></span>When you attack an Unguarded creature with a quarterstaff, you have Advantage on your Combat roll.
+        <br>When wielding a quarterstaff, it has -1 AV.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Exacting Strikes</div>
+        <div class="styleText"><span class=styleDescription></span>When you attack an Exposed creature with a quarterstaff, you deal an additional 1d6 damage.
+        <br>You have -1 Evasion and -1 AR.</div>
+    
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Rope Dart Styles</span>
+</h2>
+<div class="styleWrapper">
+    
+<div class="combatStyle">
+    
+        <div class="styleName">Accurate Stance</div>
+        <div class="styleText"><span class=styleDescription></span>When you are wielding a rope dart, it has +2 AV.
+        <br>When you are wielding a rope dart, it has -1 Evasion and -2 AR.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Precise Stance</div>
+        <div class="styleText"><span class=styleDescription></span>When you are wielding a rope dart, it has +2 Precision.
+        <br>When you are wielding a rope dart, it has -1 AV and -2 AR.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Quick Dart</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Rope Dart, you may make melee attacks with it using only 2 Energy. However, when you do this, you have Disadvantage on your Combat roll.
+        <br>When wielding a Rope Dart, you have -1 Evasion and -5 AR.</div>
+    
+</div>
+</div>
+<div class="clearBoth"></div>
+
+<h2>
+    <span>Shield Styles</span>
+</h2>
+<div class="styleWrapper">
+    
+<div class="combatStyle">
+    
+        <div class="styleName">Shield Reliance</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a shield in one hand and a weapon in the other, the shield gains +2 Evasion. When wielding a shield, it gains +2 Hardness.
+        <br>All weapons you wield have -1 Evasion and -1 AV.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Battle Awareness</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a shield, it has +1 Evasion. You have +3 Awareness.
+        <br>You have -1 AR and -1 Stamina.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Tactful Defense</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a shield, you have +2 Evasion when you are not Exposed.
+        <br>You have -1 Agility.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Uncanny Awareness</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a shield, you may apply its Evasion bonus to attacks from behind (where you are not facing).
+        <br>Your MASAB is reduced by 1.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Look Ahead</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a shield, it has +2 Ranged Evasion.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Perfect Cover</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Heavy shield, it has +1 Evasion and +1 Hardness.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Light Defense</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a Light shield, you gain +1 Agility.
+        <br>You have -1 AR.</div>
+    
+</div>
+<div class="combatStyle">
+    
+        <div class="styleName">Damage Resistance</div>
+        <div class="styleText"><span class=styleDescription></span>When wielding a shield which isn’t Light, you have +1 AR.
+        <br>You have -1 AV or -1 Evasion. You have -1 Stamina.</div>
+    
+</div>
+</div>
+<div class="clearBoth"></div>
+    <!--
+<h2>
+    <span>Weapon</span>
+</h2>
+<div class="styleWrapper">
+<div class="combatStyle">
+    <div class="styleName">First</div>
+    <div class="styleText">You</div>
+</div>
+<div class="combatStyle">
+    <div class="styleName">First</div>
+    <div class="styleText">You</div>
+</div>
+<div class="combatStyle">
+    <div class="styleName">First</div>
+    <div class="styleText">You</div>
+</div>
+<div class="combatStyle">
+    <div class="styleName">First</div>
+    <div class="styleText">You</div>
+</div>
+</div>
+<div class="clearBoth"></div>
+-->
+<p>
+</p><p>
+</p><p>
+</p><p>
+</p>
+
+
+
+
+
+
+
+</main>
+
+<!---->
+
+<footer>
+<small>
+<br>
+-this website is a work in progress-
+<br>
+<div class="color">Created by Daniel Hickman</div>
+</small>
+</footer>
+
+</body>
+
+</html>

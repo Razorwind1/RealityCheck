@@ -45,7 +45,6 @@
 		<ul class="dropDown2">
 			<li><a href="General.html#RolePlaying">Role-Playing</a></li>
 			<li><a href="General.html#Rules">Rules</a></li>
-			<li><a href="General.html#AbilityScores">Ability Scores</a></li>
 			<li><a href="General.html#Terminology">Terminology</a></li>
 		</ul>
 	</li>
@@ -54,29 +53,29 @@
 		<span class="arrow2">&#9660; </span>
 		<a href="Skills.html">Skills</a>
 		<ul class="dropDown2">
+                <!--<li><a href="Skills.html#SkillRanks">Skill Ranks</a></li>-->
 				<li><a href="Skills.html#UBS">Upper Body Strength</a></li>
 				<li><a href="Skills.html#LBS">Lower Body Strength</a></li>
 				<li><a href="Skills.html#Swim">Swim</a></li>
 				<li><a href="Skills.html#Acrobatics">Acrobatics</a></li>
-				<li><a href="Skills.html#Stealth">Stealth</a></li>
 				<li><a href="Skills.html#SleightOfHand">Sleight of Hand</a></li>
 				<li><a href="Skills.html#DisableDevice">Disable Device</a></li>
-				<li><a href="Skills.html#Craft">Craft</a></li>
+				<li><a href="Skills.html#Stealth">Stealth</a></li>
 				<li><a href="Skills.html#Investigation">Investigation</a></li>
 				<li><a href="Skills.html#Awareness">Awareness</a></li>
                 <li><a href="Skills.html#Insight">Insight</a></li>
 			<li><ul>
 				<li><a href="Skills.html#Heal">Heal</a></li>
-				<li><a href="Skills.html#Initiative">Initiative</a></li>
+                <li><a href="Skills.html#Initiative">Initiative</a></li>
 				<li><a href="Skills.html#Reason">Reason</a></li>
 				<li><a href="Skills.html#Inspire">Inspire</a></li>
 				<li><a href="Skills.html#Discourage">Discourage</a></li>
+                <li><a href="Skills.html#Intimidate">Intimidate</a></li>
 				<li><a href="Skills.html#Deceive">Deceive</a></li>
-				<li><a href="Skills.html#Intimidate">Intimidate</a></li>
 				<li><a href="Skills.html#SocialSense">Social Sense</a></li>
 				<li><a href="Skills.html#HandleAnimal">Handle Animal</a></li>
-				<li><a href="Skills.html#Knowledge">Knowledge</a></li>
-				<li><a href="Skills.html#Talents">Talents</a></li>
+				<li><a href="Skills.html#Knowledge">Knowledges</a></li>
+				<!--<li><a href="Skills.html#Languages">Languages</a></li>-->
 			</ul></li>
 		</ul>
 	</li>
@@ -357,15 +356,15 @@
 <h2 id="CastingSpells">
 <span>Casting Spells</span>
 </h2>
-<p>All spells require a Cast Roll to determine if they are successfully executed unless the spell’s Successful Cast Number is 1 or less (in which case you automatically succeed at casting the spell). If the Cast Roll is less than the Successful Cast Number (SCN), you fail at casting the spell.
-</p><p>If the Cast Roll is a natural 1, 2, 3, 4, or 5 you are Exposed. If it is a natural 1, you are Unguarded.
-</p><p>If the Cast Roll is a natural 20, you crit. This does not necessarily mean you successfully cast the spell (you still must meet or exceed the SCN) but if the spell does succeed, then you automatically hit your target (you need not make a Hit Roll) and ignore their armor.
+<p>All spells require a Cast roll to determine if they are successfully executed unless the spell’s Successful Cast Number is 1 or less (in which case you automatically succeed at casting the spell). If the Cast roll is less than the Successful Cast Number (SCN), you fail at casting the spell.
+</p><p>If the Cast roll is a natural 1, 2, 3, 4, or 5 you are Exposed. If it is a natural 1, you are Unguarded.
+</p><p>If the Cast roll is a natural 20, you crit. This does not necessarily mean you successfully cast the spell (you still must meet or exceed the SCN) but if the spell does succeed, then you automatically hit your target (you need not make a Hit roll) and ignore their armor.
 </p><p class="pIndent"><strong>Cast Roll</strong> = 1d20
 </p><p class="pIndent"><strong>Successful Cast Number (SCN)</strong> = Spell Level &#8211; Spell Bonus
 </p><p class="pIndent"><strong>Spell Bonus</strong> = relevant Halved Ability Modifier + Keyword Bonuses + 1/3 Level
-</p><p>After you successfully cast a spell, if the spell is also a Ranged Attack, you still need to determine if it hits the target with an additional Hit Roll (which is a 1d20 with nothing added) that must greater than or equal to the Miss Chance to hit. Ranged Spell Attacks use a Miss Chance like other Ranged Attacks, but the Miss Chance Modifier for spells is different. (<a href="Combat.html#RangedAttacks">see Ranged Attacks</a>)
+</p><p>After you successfully cast a spell, if the spell is also a Ranged Attack, you still need to determine if it hits the target with an additional Hit roll (which is a 1d20 with nothing added) that must greater than or equal to the Miss Chance to hit. Ranged Spell Attacks use a Miss Chance like other Ranged Attacks, but the Miss Chance Modifier for spells is different. (<a href="Combat.html#RangedAttacks">see Ranged Attacks</a>)
 </p><p class="pIndent"><strong>Spell Miss Chance</strong>
-</p><p>If you hit the target, you then determine whether you hit their armor. If your Hit Roll is less than the target's Ranged AC, then you hit their armor and must subtract its AR from the damage you deal.
+</p><p>If you hit the target, you then determine whether you hit their armor. If your Hit roll is less than the target's Ranged AC, then you hit their armor and must subtract its AR from the damage you deal.
 </p><p>Some spells have the target make a Will or Fortitude save, in which case the DC for these saves is your Spell DC.
 </p><p class="pIndent"><strong>Spell DC</strong> = 5 + 1/3 Level + relevant Halved Ability Modifier + keyword bonuses
 </p><p><b>Note:</b> You may always terminate an ongoing spell you cast whenever you like.
@@ -399,13 +398,13 @@
 <dt>Intelligence:</dt>
     <dd>&#9671; If your Intelligence is 11 or higher, your crit range is increased by 1.</dd>
     <dd>&#9671; If your Intelligence is 13 or higher, the maximum bonus you can get from keywords is +7, instead of +5.</dd>
-    <dd>&#9671; If your Intelligence is 15 or higher, when you roll a natural 1 on a Cast Roll, you may re-roll it, but still become Unguarded.</dd>
+    <dd>&#9671; If your Intelligence is 15 or higher, when you roll a natural 1 on a Cast roll, you may re-roll it, but still become Unguarded.</dd>
 </dl>
 <dl class="smallList">
 <dt>Wisdom:</dt>
-    <dd>&#9671; If your Wisdom is 11 or higher, you are exposed on a Cast Roll 4 numbers lower than you normally would be.</dd>
+    <dd>&#9671; If your Wisdom is 11 or higher, you are exposed on a Cast roll 4 numbers lower than you normally would be.</dd>
     <dd>&#9671; If your Wisdom is 13 or higher, you gain a -1 bonus to your SCN.</dd>
-    <dd>&#9671; If your Wisdom is 15 or higher, you do not become Unguarded on a Cast Roll of a natural 1, but do become Exposed.</dd>
+    <dd>&#9671; If your Wisdom is 15 or higher, you do not become Unguarded on a Cast roll of a natural 1, but do become Exposed.</dd>
 </dl>
 <dl class="smallList">
 <dt>Charisma:</dt>
@@ -422,9 +421,9 @@
 </p><p><b>#x Short Rest:</b> The spell can only be cast # times per Short Rest.
 </p><p><b>#x Long Rest:</b> The spell can only be cast # times per Long Rest.
 </p><p><b>Spell Level:</b> This determines how difficult the spell is to cast. It is the number at the top of the spell.
-</p><p><b>Range #/#/#m:</b> Some spells have Range Values (<a href="Combat.html#ReadingRangeValues">See Range Values</a>). These only apply to the Hit Roll, NOT the Cast Roll.
+</p><p><b>Range #/#/#m:</b> Some spells have Range Values (<a href="Combat.html#ReadingRangeValues">See Range Values</a>). These only apply to the Hit roll, NOT the Cast roll.
 </p><p><b>Range #:</b> Some spells have just one range value, which means the spell can take affect within this range (the description may give more detail).
-</p><p><b>Hit:</b> This is found in the spell’s description and the following effects only happen if the target is hit. This implies that the spell requires a Hit Roll.
+</p><p><b>Hit:</b> This is found in the spell’s description and the following effects only happen if the target is hit. This implies that the spell requires a Hit roll.
 </p>
 </div>
 <p><b>Note:</b> If you fail the casting of a spell, it does not count against your number of uses of the spell per Rest.

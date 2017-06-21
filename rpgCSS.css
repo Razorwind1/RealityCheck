@@ -35,7 +35,12 @@ Headers:
 }
 */
 
-/*
+/*background-image: linear-gradient( to top,
+        rgba(9, 9, 98, .9) 60px,
+        rgba(9, 9, 98, .2),
+        rgba(9, 9, 98, .0))
+
+
 html {
 	background:#222244;
 }
@@ -44,10 +49,12 @@ body {
 	background-color:rgb(239, 239, 250); /*background rgb(243, 243, 252)*/
 	background-image: linear-gradient( to top,
 		rgb(9, 9, 98) 60px,
-		rgb(97, 132, 235) 100px,
-        rgb(122, 152, 239) 300px,
-		rgb(187, 206, 247) 900px,
-		rgb(223, 224, 251) 2000px,
+        rgb(19, 63, 160) 110px,
+        rgb(66, 113, 215) 200px,
+        rgb(108, 137, 224) 360px,
+		rgb(187, 206, 247) 1400px,
+		rgb(223, 224, 251) 2400px,
+        rgb(233, 234, 251) 3000px,
 		rgb(245, 245, 250));
 	color: #000000;
 	font-family: "Georgia", "Arial", "sans-serif";
@@ -70,6 +77,9 @@ main {
 }
 a:visited {
 	color: blue; /*rgb(0, 0, 128)*/
+}
+a:active {
+	color: deepskyblue; /*rgb(0, 0, 128)*/
 }
 #logo{
 	text-align: center; z-index: 20;
@@ -297,7 +307,7 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 	position: fixed;
 	left: -333px;
 	/*background-color: #bbbb00;*/
-	padding-top: 30px; padding-right:20px; padding-bottom: 80px;
+	padding-top: 30px; padding-right:10px; padding-bottom: 80px;
 	height: 282px;
 	/*centers*/
 	top:50%;
@@ -446,7 +456,7 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 .nav3 > ul{
 	list-style-type: none;
 	position: fixed; /*absolute*/
-	padding-top: 30px; padding-bottom:80px;
+	padding-top: 30px; padding-bottom:80px; padding-left: 10px;
 	right: -236px; /*background-color: #bbbb00;*/
 	height: 282px;
 	/*centers*/
@@ -622,7 +632,7 @@ p ul li {
 	margin-left: 30px;
 }
 
-main > p {
+main p {
 	padding: 0 25px 3px 20px;
 	text-align: justify;
 }
@@ -731,6 +741,16 @@ h4 span { /*small headers - no background*/
 	padding-bottom:0;
 }
 
+h5 span { /*smallest header*/
+	font-family: "Book Antiqua", "Palatino Linotype", serif;
+    font-weight: 800;
+	font-size: 100%;
+	text-decoration: underline;
+	margin:0;
+	padding-bottom:0;
+}
+
+
 strong.big {
 	font-weight: 800;
 }
@@ -796,13 +816,22 @@ table caption {
 	background-color:rgba(212, 247, 247, 0.7)/*rgb(209, 250, 250)/*rgb(41, 124, 163)*/; color: whit;
 	border: 5px solid black; border-bottom:2px solid black;
 	border-radius:30px 30px 0 0;
-}
+    padding-left:1px; padding-right:1px;
+}/*table caption:before {
+    content:"\00a0";
+}table caption:after {
+    content:"\00a0";
+}*/
 td, th {
 	text-align:center;
 	padding-left:8px; padding-right:8px;
 	padding-top:4px; padding-bottom:4px;
 	border: 0; margin:0;
 	/*max-width:150px;*/
+}
+th {
+	text-align:center;
+	padding-left:10px; padding-right: 10px;
 }
 tr:nth-of-type(odd) {
 	background-color:rgba(173, 215, 235, 0.7)/*rgb(89, 199, 240)*/;
@@ -969,9 +998,18 @@ table.spell .FlavorText {
 }
 
 /*Feats*/
-.featPage {
+.featWrapper {
+    /*display: inline-block; margin: 0 auto;
+    float: left; position: relative;
+    left: 50%;*/
+}
+/*.centerWrapper {
+    display: inline-block; float: left; position: relative;
+    left: -50%;
+}*/
+.featWrapper .feat {
     float: left;
-	margin-left:30px;
+	margin-left:15px; margin-right:5px;
 }
 .feat {
 	margin-bottom: 30px;
@@ -1020,6 +1058,45 @@ table.spell .FlavorText {
     margin-left:20px;
 }
 
+/*Combat Styles*/
+.styleWrapper .combatStyle {
+    float: left;
+    margin-left:10px; margin-right:5px;
+}
+.combatStyle{
+    background-color:rgba(173, 215, 235, .7);
+    margin-bottom: 30px;
+	border: 4px solid black; border-radius:30px;
+    float: left;
+    display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+}
+.styleName {
+    font-weight:bold; font-size:21px; text-align: center;
+    padding-left:20px; padding-right:15px;
+    flex-shrink: 3;
+    -webkit-flex-shrink: 3;
+    -webkit-align-self: center;
+    
+}
+.styleText {
+    padding-left:20px; padding-right:15px; padding-top: 2px; padding-bottom: 2px;
+    border-left: solid black 2px;
+    text-align: left;
+    flex-grow: 3;
+    -webkit-flex-grow: 3;
+}
+
+.optionWrapper{
+    
+}
+/*.styleCenteringWrapper {
+    display: inline-block;
+}*/
 
 .reallySmall {
     font-size:50%;
@@ -1046,17 +1123,29 @@ img.magicCircles:hover {
     transform: rotate(3600deg);
     transition: 15s cubic-bezier(.7,.01,.59,.9);
 }
+img.HexGridSize {
+    max-height: 400px;
+    max-width: 100%;
+    display: block;
+    margin-left: 20px;
+    border-radius: 10%;
+}
 
 
 
 
 footer {
-	background-color: rgb(9, 9, 98); color:#fff;
-	font-size: .7em;
+	color:#fff; 
+    font-size: 11px;
 	font-style: italic;
 	text-align: center;
-	padding-bottom: 10px;
+	padding-bottom: 10px; padding-top: 90px;
 	height: 40px;
+    /*background-image: linear-gradient( to top,
+        rgba(9, 9, 98, .9) 60px,
+        rgba(9, 9, 98, .2),
+        rgba(9, 9, 98, .0))
+    */
 	}
 footer a:link {
 	color: #ffff00;
@@ -1108,27 +1197,42 @@ input[type="submit"] {
 }
 
 /*VIEWPORT STUFF*/
-@media only screen and (min-width: 1600px) {
-    .featPage {
-        width: 31%;
+@media only screen and (max-width: 2000px) {
+    footer{
+        background-image: linear-gradient( to top,
+        rgba(9, 9, 98, .9) 60px,
+        rgba(9, 9, 98, .2),
+        rgba(9, 9, 98, .0))
     }
-    .featPage:nth-child(3n + 1) {
+}
+@media only screen and (min-width: 1600px) {
+    .featWrapper .feat, .styleWrapper .combatStyle, .styleWrapper .divCombatStyle {
+        width: 31.5%;
+    }
+    .featWrapper .feat:nth-child(3n + 1), .styleWrapper .combatStyle:nth-child(3n + 1), .styleWrapper .divCombatStyle:nth-child(3n + 1)  {
     clear: both;
     }
 }
 @media only screen and (max-width: 1600px) {
-    .featPage {
-        width: 45%;
+    .featWrapper .feat, .styleWrapper .combatStyle, .styleWrapper .divCombatStyle {
+        width: 47%;
     }
-    .featPage:nth-child(odd) {
+    .featWrapper .feat:nth-child(odd), .styleWrapper .combatStyle:nth-child(odd), .styleWrapper .divCombatStyle:nth-child(odd) {
     clear: both;
     }
 }
 @media only screen and (max-width: 1000px) {
-    .featPage {
-        width: 100%;
+    .featWrapper .feat, .styleWrapper .combatStyle, .styleWrapper .divCombatStyle {
+        width: 96%;
     }
 }
+
+/*@media only screen and (max-width: 1200px) {
+
+   .combatStyle th.styleName { font-size: 16px; }
+
+}*/
+
 
 
 /*add :focus specifications?*/
