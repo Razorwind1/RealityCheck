@@ -240,7 +240,7 @@
 </p><p><strong>Healing:</strong> Gives aid to those who are injured, restoring their aura and energy.
 </p><p><strong>Necromantic:</strong> Focuses on the manipulation of life and death, sometimes draining the life of others, and sometimes giving life to the dead.
 </p><p><strong>Combat:</strong> Is intended for damaging other creatures or causing destruction. It is the most aggressive of the schools.
-</p><p><strong>Conjuration:</strong> Involves the creation and invoking of objects: tools, weapons, armor, and even water and food.
+</p><p><strong>Conjuration:</strong> Involves the creation and invoking of many things: tools, armor, food, elements, and more. Unless otherwise specified, conjurations occur within the reach of your body and you can’t conjure items through an obstruction or inside solid objects—such conjurations fail.
 </p><p><strong>Alteration:</strong> Alters things that already exist, such as telekinetically moving objects or re-shaping the earth. It also encompasses temporal and translocation magic, though these realms usually require special study to master.
 </p><p><strong>Enhancement:</strong> Boosts the natural abilities of creatures and grants new powers such as invisibility and flight.
 </p><p><strong>Influence:</strong> Is all about a being’s mind and how to affect it. This school specializes in social manipulation as well as illusion magic.
@@ -268,8 +268,8 @@
     </tr>
     <tr>
         <td></td>
+        <td><br></td>
         <td></td>
-        <td>Form</td>
         <td></td>
         <td></td>
         <td></td>
@@ -361,12 +361,12 @@
 </p><p>If the Cast roll is a natural 20, you crit. This does not necessarily mean you successfully cast the spell (you still must meet or exceed the SCN) but if the spell does succeed, then you automatically hit your target (you need not make a Hit roll) and ignore their armor.
 </p><p class="pIndent"><strong>Cast Roll</strong> = 1d20
 </p><p class="pIndent"><strong>Successful Cast Number (SCN)</strong> = Spell Level &#8211; Spell Bonus
-</p><p class="pIndent"><strong>Spell Bonus</strong> = relevant Halved Ability Modifier + Keyword Bonuses + 1/3 Level
+</p><p class="pIndent"><strong>Spell Bonus</strong> = Halved Ability Modifier + Keyword Bonuses + 1/3 Level
 </p><p>After you successfully cast a spell, if the spell is also a Ranged Attack, you still need to determine if it hits the target with an additional Hit roll (which is a 1d20 with nothing added) that must greater than or equal to the Miss Chance to hit. Ranged Spell Attacks use a Miss Chance like other Ranged Attacks, but the Miss Chance Modifier for spells is different. (<a href="Combat.html#RangedAttacks">see Ranged Attacks</a>)
 </p><p class="pIndent"><strong>Spell Miss Chance</strong>
 </p><p>If you hit the target, you then determine whether you hit their armor. If your Hit roll is less than the target's Ranged AC, then you hit their armor and must subtract its AR from the damage you deal.
 </p><p>Some spells have the target make a Will or Fortitude save, in which case the DC for these saves is your Spell DC.
-</p><p class="pIndent"><strong>Spell DC</strong> = 5 + 1/3 Level + relevant Halved Ability Modifier + keyword bonuses
+</p><p class="pIndent"><strong>Spell DC</strong> = 5 + Spell Bonus
 </p><p><b>Note:</b> You may always terminate an ongoing spell you cast whenever you like.
 </p>
 
@@ -376,14 +376,14 @@
 <p>You may only learn spells that match at least one of your school or elemental Proficiencies.
 </p><p>You may only cast spells using a method you are Proficient in.
 </p><p>If you ever gain a second Proficiency in the same school/method/element you may choose a different spellcasting proficiency within the same circle.
-</p><p>Some elements, methods, and schools are subgroups which represent more specific areas of study. Spells with these subgroups will display the parent keyword in parenthesis (eg: Ice(Water) and Disease(Toxicity)). If you are Proficient in Water (and not Ice) you can cast Ice spells, but do not gain the +2 keyword bonus when casting Ice spells. If you are Proficient in Ice (and not Water) you cannot cast Water spells and gain a +2 keyword bonus to Ice spells. 
-</p><p>When determining keyword adjacency (for the purpose of feats and the like), all subgroups are only adjacent to their parent group and the parent group is adjacent to all its subgroups as well as the adjacent keywords on the relevant magic circle.
+</p><p>Some elements, methods, and schools are subgroups which represent more specific areas of study. Spells with these subgroups will display the parent Keyword in parenthesis (eg: Ice(Water) and Disease(Toxicity)). If you are Proficient in Water (and not Ice) you can cast Ice spells, but do not gain the +2 Keyword bonus when casting Ice spells. If you are Proficient in Ice (and not Water) you cannot cast Water spells and gain a +2 Keyword bonus to Ice spells. 
+</p><p>When determining keyword adjacency (for the purpose of feats and the like), all subgroups are only adjacent to their parent group and the parent group is adjacent to all its subgroups as well as the adjacent Keywords on the relevant magic circle
 </p>
 
 <h2 id="KeywordBonuses">
 <span>Keyword Bonuses</span>
 </h2>
-<p>A school or elemental Proficiency gives you a +2 keyword bonus to spells with that keyword. So if you are Proficient in Combat magic, you gain a +2 keyword bonus when casting any Combat spell.
+<p>A school or elemental Proficiency gives you a +2 Keyword bonus to spells with that Keyword. So if you are Proficient in Combat magic, you gain a +2 Keyword bonus when casting any Combat spell.
 </p><p>Keyword bonuses max out at +5 meaning you cannot get more than a +5 bonus from keywords.
 </p><p>If a spell has multiple schools of magic keywords it counts as all those schools. The same is true for spells with multiple elements (unless it is cast making use of only one element). However, spells with multiple methods of magic always only count as one of the methods at a time, depending on which one you choose to use.
 </p>
@@ -391,26 +391,26 @@
 <h2 id="SpellcastingAbilities">
 <span>Spellcasting Abilities</span>
 </h2>
-<p>When you cast a spell, you must decide which Ability you are tapping into to cast it. This ability may be Intelligence, Wisdom, or Charisma. This Ability is referred to as the relevant Ability for the spell you cast. You may only cast a spell using an Ability if the Ability Score is 10 or above (so if your Int, Wis, and Cha are all lower than 10, you can’t cast any spells).
+<p>When you cast a spell, you must decide which Ability you are tapping into to cast it, before you make the Cast Roll. This Ability may be Intelligence, Wisdom, or Charisma. When referring to an Ability (for instance, the Halved Ability Modifier in the Spell Bonus equation) in the context of spells, you always use the Ability you are casting the spell with. You may only cast a spell using an Ability if the Ability Score is 10 or above (so if your Int, Wis, and Cha are all lower than 10, you can’t cast any spells).
 </p><p>You gain different benefits depending on which Ability you use:
 </p>
 <dl class="smallList">
 <dt>Intelligence:</dt>
-    <dd>&#9671; If your Intelligence is 11 or higher, your crit range is increased by 1.</dd>
-    <dd>&#9671; If your Intelligence is 13 or higher, the maximum bonus you can get from keywords is +7, instead of +5.</dd>
-    <dd>&#9671; If your Intelligence is 15 or higher, when you roll a natural 1 on a Cast roll, you may re-roll it, but still become Unguarded.</dd>
+    <dd>&#9671; If your Intelligence is 11 or higher, your crit range is increased by 1. </dd>
+    <dd>&#9671; If your Intelligence is 13 or higher, the maximum bonus you can get from Keywords is +7, instead of +5.</dd>
+    <dd>&#9671; If your Intelligence is 15 or higher, when you roll a natural 1 on a Cast Roll, you may re-roll it, but still become Unguarded.</dd>
 </dl>
 <dl class="smallList">
 <dt>Wisdom:</dt>
-    <dd>&#9671; If your Wisdom is 11 or higher, you are exposed on a Cast roll 4 numbers lower than you normally would be.</dd>
+    <dd>&#9671; IIf your Wisdom is 11 or higher, you are Exposed on a Cast Roll 4 numbers lower than you normally would be.</dd>
     <dd>&#9671; If your Wisdom is 13 or higher, you gain a -1 bonus to your SCN.</dd>
-    <dd>&#9671; If your Wisdom is 15 or higher, you do not become Unguarded on a Cast roll of a natural 1, but do become Exposed.</dd>
+    <dd>&#9671; If your Wisdom is 15 or higher, you do not become Unguarded on a Cast Roll of a natural 1, but do become Exposed.</dd>
 </dl>
 <dl class="smallList">
 <dt>Charisma:</dt>
     <dd>&#9671; If your Charisma is 11 or higher, you gain +2 to your Spell DC.</dd>
     <dd>&#9671; If your Charisma is 13 or higher, you gain -4 SCN on spells with a Spell Level of 12 or less.</dd>
-    <dd>&#9671; If your Charisma is 15 or higher, if you have a +5 or greater keyword bonus, you gain a -2 bonus to your SCN.</dd>
+    <dd>&#9671; If your Charisma is 15 or higher, if you have at least a +5 Keyword bonus, you also have a -2 bonus to your SCN.</dd>
 </dl>
 
 <h2 id="SpellProperties">

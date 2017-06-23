@@ -908,71 +908,6 @@ table.invisible tr {
 }
 
 
-table.spell {
-	margin-right: 20px;
-	margin-bottom: 30px;
-	border: 5px solid black;
-	border-spacing:0; border-radius:30px;
-    width:800px
-}
-table.spell td{
-	/*text-align:center;
-	padding-left:8px; padding-right:8px;
-	padding-top:4px; padding-bottom:4px;
-    margin:2px;
-	width:700px;*/
-}
-table.spell th {
-    text-align:center;
-    font-size:25px;
-    border: 1px solid black; 
-    border-top: none; border-left:none; 
-    border-radius: 25px 0 0 0;
-    width:60%;
-    background-color: rgba(212, 247, 247, .8);
-}
-table.spell .MagicCircles {
-    border: 1px solid black;
-    text-align:left;
-    border-left:none; border-right:none;
-    background-color: rgba(173, 215, 235, .7);
-}
-table.spell .Range {
-    border: 1px solid black; border-top: none;
-    background-color: rgba(212, 247, 247, .8);
-    width: 140px;
-}
-table.spell .Type {
-    border: 1px solid black; border-top: none;
-    background-color: rgba(212, 247, 247, .8);
-    width: 100px;
-    font-size: 18px;
-    /*font-size: 18px;*/
-}
-table.spell .DC {
-    border: 1px solid black; border-top: none;
-    background-color: rgba(212, 247, 247, .8);
-    border-radius: 0 25px 0 0;
-    width: 60px;
-    font-size:20px;
-}
-table.spell .Content {
-    border: 1px solid black;
-    border-right:none; border-left:none;
-    text-align:left; padding-left: 15px;
-    background-color: rgb(222, 235, 247);
-}
-table.spell .ContentEnd {
-    border: 1px solid black;
-    border-right:none; border-left:none;
-    border-radius: 0 0 25px 25px;
-    text-align:left; padding-left: 15px;
-    background-color: rgb(222, 235, 247);
-}
-table.spell .FlavorText {
-    
-}
-
 /*Schools, Methods, and Elements*/
 .spellCircle th{
     padding: 6px;
@@ -1078,8 +1013,8 @@ table.spell .FlavorText {
 .styleName {
     font-weight:bold; font-size:21px; text-align: center;
     padding-left:20px; padding-right:15px;
-    flex-shrink: 3;
-    -webkit-flex-shrink: 3;
+    flex: 0 1;
+    -webkit-flex: 0 1;
     -webkit-align-self: center;
     
 }
@@ -1087,8 +1022,132 @@ table.spell .FlavorText {
     padding-left:20px; padding-right:15px; padding-top: 2px; padding-bottom: 2px;
     border-left: solid black 2px;
     text-align: left;
-    flex-grow: 3;
-    -webkit-flex-grow: 3;
+}
+
+/*SPELLS*/
+.spellWrapper .spellFlexBox{
+    float: left;
+    margin-left:10px; margin-right:5px;
+}
+.spellFlexBox {
+    margin-bottom: 30px;
+	border: 4px solid black; border-radius:30px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.spellRow1 {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+}
+.spellName {
+    background-color: rgba(212, 247, 247, .8);
+    font-weight:bold; font-size:24px; text-align: center;
+    padding-left:20px; padding-right:15px;
+    border-radius: 24px 0 0 0;
+    flex: 1;
+}
+.spellFreq {
+    background-color: rgba(212, 247, 247, .8);
+    font-size: 18px;
+    padding-left: 20px; padding-right: 20px; padding-top: 4px;
+    border-left: 2px solid black; border-right: 2px solid black;
+}
+.spellDC {
+    background-color: rgba(212, 247, 247, .8);
+    font-size: 23px;
+    padding-left: 20px; padding-right: 25px;
+    border-radius: 0 24px 0 0;
+}
+.spellCircles {
+    background-color:rgba(173, 215, 235, .7);
+    padding: 2px 5px 2px 15px;
+    border-bottom: 2px solid black;
+}
+.spellDescription{
+    padding: 2px 5px 0 15px;
+    background-color: rgb(222, 235, 247);
+    border-radius: 0 0 24px 24px;
+}
+.spellFlavorText {
+    font-style: italic;
+}
+.spellMethod {
+    padding: 3px 0 3px 0;
+    margin-right: 10px;
+    border-top: 2px ridge darkslategrey;
+}
+.spellMethodTitle {
+    /*text-shadow: -1px 1px 1px darkslategrey;*/
+}.spellMethodTitle:before {
+    content: "\25C7 \00A0";
+}
+
+/*-------------------*/
+table.spell {
+	margin-right: 20px;
+	margin-bottom: 30px;
+	border: 5px solid black;
+	border-spacing:0; border-radius:30px;
+    width:800px
+}
+table.spell td{
+	/*text-align:center;
+	padding-left:8px; padding-right:8px;
+	padding-top:4px; padding-bottom:4px;
+    margin:2px;
+	width:700px;*/
+}
+table.spell th {
+    text-align:center;
+    font-size:25px;
+    border: 1px solid black; 
+    border-top: none; border-left:none; 
+    border-radius: 25px 0 0 0;
+    width:60%;
+    background-color: rgba(212, 247, 247, .8);
+}
+table.spell .MagicCircles {
+    border: 1px solid black;
+    text-align:left;
+    border-left:none; border-right:none;
+    background-color: rgba(173, 215, 235, .7);
+}
+table.spell .Range {
+    border: 1px solid black; border-top: none;
+    background-color: rgba(212, 247, 247, .8);
+    width: 140px;
+}
+table.spell .Type {
+    border: 1px solid black; border-top: none;
+    background-color: rgba(212, 247, 247, .8);
+    width: 100px;
+    font-size: 18px;
+    /*font-size: 18px;*/
+}
+table.spell .DC {
+    border: 1px solid black; border-top: none;
+    background-color: rgba(212, 247, 247, .8);
+    border-radius: 0 25px 0 0;
+    width: 60px;
+    font-size:20px;
+}
+table.spell .Content {
+    border: 1px solid black;
+    border-right:none; border-left:none;
+    text-align:left; padding-left: 15px;
+    background-color: rgb(222, 235, 247);
+}
+table.spell .ContentEnd {
+    border: 1px solid black;
+    border-right:none; border-left:none;
+    border-radius: 0 0 25px 25px;
+    text-align:left; padding-left: 15px;
+    background-color: rgb(222, 235, 247);
+}
+table.spell .FlavorText {
+    
 }
 
 .optionWrapper{
@@ -1206,23 +1265,23 @@ input[type="submit"] {
     }
 }
 @media only screen and (min-width: 1600px) {
-    .featWrapper .feat, .styleWrapper .combatStyle, .styleWrapper .divCombatStyle {
+    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox {
         width: 31.5%;
     }
-    .featWrapper .feat:nth-child(3n + 1), .styleWrapper .combatStyle:nth-child(3n + 1), .styleWrapper .divCombatStyle:nth-child(3n + 1)  {
+    .featWrapper .feat:nth-child(3n + 1), .styleWrapper .combatStyle:nth-child(3n + 1), .spellWrapper .spellFlexBox:nth-child(3n + 1)  {
     clear: both;
     }
 }
 @media only screen and (max-width: 1600px) {
-    .featWrapper .feat, .styleWrapper .combatStyle, .styleWrapper .divCombatStyle {
+    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox {
         width: 47%;
     }
-    .featWrapper .feat:nth-child(odd), .styleWrapper .combatStyle:nth-child(odd), .styleWrapper .divCombatStyle:nth-child(odd) {
+    .featWrapper .feat:nth-child(odd), .styleWrapper .combatStyle:nth-child(odd), .spellWrapper .spellFlexBox:nth-child(odd) {
     clear: both;
     }
 }
 @media only screen and (max-width: 1000px) {
-    .featWrapper .feat, .styleWrapper .combatStyle, .styleWrapper .divCombatStyle {
+    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox {
         width: 96%;
     }
 }
