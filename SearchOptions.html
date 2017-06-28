@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<link rel="icon" href="pictures/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="pictures/favicon.ico"/>
+<link rel="shortcut" href="pictures/favicon.ico" type="image/x-icon"/>
+<link rel='stylesheet' href='rpgCSS.css'/>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="SearchDatabase.js"></script>
+<title id="pageName">Search Options</title>
+<meta charset="UTF-8"/>
+</head>
+
+
+<!---->
+<body onload="getNav(), getOptions()"> <!--TODO: If Edge, change background to be solid color-->
+<div id="navigationPlaceholder"></div>
+
+<div class="optionsFlexBox">
+    <div></div>
+    <div><a href="Themes.html">Themes</a></div>
+    <div><a href="Feats.html">Feats</a></div>
+    <div><a href="CombatStyles.html">Combat Styles</a></div>
+    <div><a href="Spells.html">Spells</a></div>
+    <div></div>
+</div>
+
+<main>
+<!---->
+
+<h2>
+<span>Basic Search Here</span>
+</h2>
+<form id="databaseSearchBlock">
+    <div class="databaseSearchDiv">
+<label for="searchForThemes">Show Themes:</label>
+<input type="checkbox" id="searchForThemes" name="searchForThemes" onchange="mySearch()">
+    </div>
+    <!--<div class="databaseSearchDiv">
+<label for="CombatThemeOrNo">Combat?
+<select id="CombatThemeOrNo" name="CombatThemeOrNo" onchange="mySearch()">
+    <option value=""></option>
+    <option value="C">Combat</option>
+    <option value="NC">Non-Combat</option>
+</select></label>
+    </div>-->
+    <div class="databaseSearchDiv">
+<label for="CombatThemeOrNo">Combat?
+<select id="CombatThemeOrNo" name="CombatThemeOrNo" onchange="mySearch()">
+    <option value=""></option>
+    <option value="C">Combat</option>
+    <option value="NC">Non-Combat</option>
+</select></label>
+    </div>
+
+<div class="clearBoth"></div>
+    
+    <div class="databaseSearchDiv">
+<label for="searchForFeats">Show Feats:</label>
+<input type="checkbox" id="searchForFeats" name="searchForFeats" onchange="mySearch()">
+    </div>
+    
+    <div class="databaseSearchDiv">
+<label for="CombatFeatOrNo">Combat?
+<select id="CombatFeatOrNo" name="CombatFeatOrNo" onchange="mySearch()">
+    <option value=""></option>
+    <option value="C">Combat</option>
+    <option value="NC">Non-Combat</option>
+</select></label>
+    </div>
+<div class="databaseSearchDiv">
+<label for="searchTier">Tier:</label>
+<select id="searchTier" name="searchTier" onchange="mySearch()">
+    <option value=""></option>
+    <option value="0">Background</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+</select>
+    </div>
+<div class="clearBoth"></div>
+    
+    <div class="databaseSearchDiv">
+<label for="searchForStyles">Show Styles:</label>
+<input type="checkbox" id="searchForStyles" name="searchForStyles" onchange="mySearch()">
+    </div>
+
+<div class="clearBoth"></div>
+    
+    <div class="databaseSearchDiv">
+<label for="searchForSpells">Show Spells:</label>
+<input type="checkbox" id="searchForSpells" name="searchForSpells" onchange="mySearch()">
+    </div>
+    <div class="databaseSearchDiv">
+<label for="searchSchool">School:</label>
+<select id="searchSchool" name="searchSchool" onchange="mySearch()">
+    <option value=""></option>
+    <option value="Protection">Protection</option>
+    <option value="Healing">Healing</option>
+    <option value="Necromantic">Necromantic</option>
+    <option value="Combat">Combat</option>
+    <option value="Conjuration">Conjuration</option>
+    <option value="Alteration">Alteration</option>
+    <option value="Enhancement">Enhancement</option>
+    <option value="Influence">Influence</option>
+    <option value="Negation">Negation</option>
+</select>
+    </div>
+    <div class="databaseSearchDiv">
+<label for="searchMethod">Method:</label>
+<select id="searchMethod" name="searchMethod" onchange="mySearch()">
+    <option value=""></option>
+    <option value="Ritual">Ritual</option>
+    <option value="Potion">Potion</option>
+    <option value="Gesture">Gesture</option>
+    <option value="Rune">Rune</option>
+    <option value="Summon">Summon</option>
+    <option value="Implement">Implement</option>
+    <option value="Music">Music</option>
+    <option value="Incantation">Incantation</option>
+    <option value="Reading">Reading</option>
+</select>
+    </div>
+    <div class="databaseSearchDiv">
+<label for="searchElement">Element:</label>
+<select id="searchElement" name="searchElement" onchange="mySearch()">
+    <option value=""></option>
+    <option value="Fire">Fire</option>
+    <option value="Electricity">Electricity</option>
+    <option value="Light">Light</option>
+    <option value="Air">Air</option>
+    <option value="Water">Water</option>
+    <option value="Flora">Flora</option>
+    <option value="Earth">Earth</option>
+    <option value="Toxicity">Toxicity</option>
+    <option value="Dark">Dark</option>
+</select>
+    </div>
+    
+<div class="clearBoth"></div>
+    
+    <div class="databaseSearchDiv">
+<label for="myInput">Text:</label>
+<input type="" id="myInput" name="myInput" onkeyup="mySearch()" placeholder="Search for options..">
+    <label for="resetButton"></label>&nbsp;&nbsp;
+        <button name="resetButton" type="button" vaule="Reset" onclick="resetSearchForm()">Clear Fields</button>
+    </div>
+<div class="clearBoth"></div>
+<!--<button type="reset" value="Reset" id="searchReset" onclick="mySearch()">Clear Fields</button>-->
+</form>
+
+
+<div class="searchDatabaseWrapper">
+<!--Begin List-->
+<div class="themeWrapper"> <!--themeWrapper-->
+<div class="themesAnchor"></div>
+    </div>
+    
+<div class="featWrapper"> <!--featWrapper-->
+<span class="featsAnchor"></span>
+    </div>
+<div class="styleWrapper"> <!--styleWrapper-->
+<span class="stylesAnchor"></span>
+    </div>
+<div class="spellWrapper"> <!--spellWrapper-->
+<span class="spellsAnchor"></span>
+    </div>
+
+<!--IMORTANT DIVS-->
+</div>
+<!--</div>-->
+<div class="clearBoth"></div>
+
+<!--
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<ul id="myUL">
+  <li><a href="#" class="header">A</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#" class="header">B</a></li>
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#" class="header">C</a></li>
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+</ul>-->
+
+
+<p></p>
+
+</main>
+
+<!---->
+
+<footer>
+<small>
+<br>
+-This website is a work in progress-
+<br>
+<div class="color">Created by Daniel Hickman</div>
+</small>
+</footer>
+
+</body>
+
+</html>

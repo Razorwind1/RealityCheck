@@ -11,9 +11,9 @@ function colorNav() {
         for (i=0; i<listForTopNav.length; i++) {
             //alert(listForTopNav[i].innerHTML);
             //alert("pageName: "+pageNAME);
-            if (listForTopNav[i].innerHTML.indexOf(pageNAME) > -1 ||
+            if (listForTopNav[i].innerHTML.indexOf(pageNAME) > -1 || (
                listForTopNav[i].innerHTML.indexOf("Options") > -1 && 
-                (pageNAME==="Themes" || pageNAME==="Feats" || pageNAME==="Combat Styles" || pageNAME==="Spells" || pageNAME==="Search Options") ) {
+                (pageNAME==="Themes" || pageNAME==="Feats" || pageNAME==="Combat Styles" || pageNAME==="Spells" || pageNAME==="Search Options")) ) {
                 listForTopNav[i].style.color = "rgb(10, 210, 239)";
                 listForTopNav[i].style.fontSize = "200%";
             }
@@ -21,13 +21,13 @@ function colorNav() {
 }
 
 function getNav() {
+    //FIREFOX ISSUE RESOLVED---LOCAL FILES DO NOT EQUAL SERVER HOSTED FILES---FIREFOX ISSUE RESOLVED---LOCAL FILES DO NOT EQUAL SERVER HOSTED FILES---FIREFOX ISSUE RESOLVED---LOCAL FILES DO NOT EQUAL SERVER HOSTED FILES
     /*var requestNavigation = new XMLHttpRequest();
     requestNavigation.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) //Navigation is ready
             pasteNav(this);
         //console.log(this);
     }
-    
     requestNavigation.open("GET", "navigation.xml", true);
     requestNavigation.send;
     console.log(requestNavigation);
@@ -38,14 +38,9 @@ function pasteNav(xmlParm) {
     var navDiv = xmlNavPage.getElementById("navDiv");
     document.getElementById("navigationPlaceholder").innerHTML = navDiv;
 }*/
-    
     $.get('navigation.html', function(navigationPage){
-        //var navigationPageSTATIC = navigationPage;
-        //console.log(navigationPage);
-    
-    $(document.body).find("#navigationPlaceholder").append(navigationPage);
-        //replaceWith, html, append //$(navigationPage).appendTo("#navigationPlaceholder");
-        //console.log(document);
+        
+    $(document.body).find("#navigationPlaceholder").append(navigationPage); //replaceWith, html, append
     
     $( document ).ready( colorNav );
     //$( window ).on( "load", colorNav );
@@ -54,7 +49,11 @@ function pasteNav(xmlParm) {
     
 }
 
-function getOptions() {
+function resetSearchForm() {
+    document.getElementById("databaseSearchBlock").reset();
+    $( document ).ready( mySearch );
+}
+function getOptions() { //Request the Themes, Feats, Combat Styles, and Spells. Paste them on the Search Database page.
     var themeWrapperElementsArray, themeWrapperHTML, featWrapperElementsArray, featWrapperHTML, styleWrapperElementsArray, styleWrapperHTML, spellWrapperElementsArray, spellWrapperHTML;
     $.get('Themes.html', function(themePage){ //GET THEMES
         themeWrapperElementsArray = $(themePage).find('div.themeWrapper');
@@ -88,28 +87,7 @@ function getOptions() {
             //alert("spellWrapperElementsArray: "+spellWrapperElementsArray[i].innerHTML);
         }
     })
-    $.get('Themes.html').then(function(themePage) {
-    //themePage is the contents of the other page. Do whatever you want with it.
-    //$(themePage).find('div.themeWrapper');
-    //alert("themePage: "+ themePage);
-        //jQuery("div.themeWrapper").append(themePage);
-        //alert("themePage: "+ themePage);
-    //wrapperData = themePage.innerHTML;
-    //alert("wrapperData: "+ wrapperData);
-    
-    }
-                             );
-    /*$.get('Themes.html', null, function(getWrappers){
-    var wrapperList;
-    
-    //wrapperList = document.querySelectorAll("div.themeWrapper");
-    //lert("wrapperList: " + wrapperList[0].innerHTML);
-    //alert("getWrappers: " + getWrappers);
-    }); */
-    // wrapperData = themePage[0].innerHTML;
-    //alert("wrapperData: "+ wrapperData);
 }
-
 //----SEARCH DATABASE, SEARCH DATABASE, SEARCH DATABASE, SEARCH DATABASE, SEARCH DATABASE, SEARCH DATABASE----//
 function mySearch() {
     "use strict";
