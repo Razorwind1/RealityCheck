@@ -47,13 +47,13 @@ function pasteNav(xmlParm) {
         //replaceWith, html, append //$(navigationPage).appendTo("#navigationPlaceholder");
         //console.log(document);
     
-    //$( document ).ready( colorNav );
+    $( document ).ready( colorNav );
     //$( window ).on( "load", colorNav );
     }
         );
     
 }
-/*-------------------
+
 function getOptions() {
     var themeWrapperElementsArray, themeWrapperHTML, featWrapperElementsArray, featWrapperHTML, styleWrapperElementsArray, styleWrapperHTML, spellWrapperElementsArray, spellWrapperHTML;
     $.get('Themes.html', function(themePage){ //GET THEMES
@@ -88,7 +88,7 @@ function getOptions() {
             //alert("spellWrapperElementsArray: "+spellWrapperElementsArray[i].innerHTML);
         }
     })
-    /*$.get('Themes.html').then(function(themePage) {
+    $.get('Themes.html').then(function(themePage) {
     //themePage is the contents of the other page. Do whatever you want with it.
     //$(themePage).find('div.themeWrapper');
     //alert("themePage: "+ themePage);
@@ -98,7 +98,7 @@ function getOptions() {
     //alert("wrapperData: "+ wrapperData);
     
     }
-                             );*/
+                             );
     /*$.get('Themes.html', null, function(getWrappers){
     var wrapperList;
     
@@ -108,11 +108,9 @@ function getOptions() {
     }); */
     // wrapperData = themePage[0].innerHTML;
     //alert("wrapperData: "+ wrapperData);
-/*-----------
 }
 
 //----SEARCH DATABASE, SEARCH DATABASE, SEARCH DATABASE, SEARCH DATABASE, SEARCH DATABASE, SEARCH DATABASE----//
-/*-----------
 function mySearch() {
     "use strict";
     // Declare variables
@@ -271,5 +269,4 @@ function mySearch() {
 
     }
 }
-    --------*/
 
