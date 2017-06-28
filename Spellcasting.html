@@ -3,180 +3,27 @@
 
 
 <head>
-<!--
-<link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
--->
-<link rel='stylesheet' href='rpgCSS.css'>
-<title>Spellcasting</title>
-<meta charset="UTF-8">
-
+<link rel="icon" href="pictures/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="pictures/favicon.ico"/>
+<link rel="shortcut" href="pictures/favicon.ico" type="image/x-icon"/>
+<link rel='stylesheet' href='rpgCSS.css'/>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="SearchDatabase.js"></script>
+<title id="pageName">Spellcasting</title>
+<meta charset="UTF-8"/>
 </head>
 
 
-<body>
 <!---->
-<nav>
-<div id="logo">
-	<a href="Index.html">Reality Check</a>
-</div>
-
-<ul class="topNav1">
-	<li><a href="General.html">General</a></li>
-	<li><a href="Skills.html">Skills</a></li>
-	<li><a href="Combat.html">Combat</a></li>
-	<li><a href="Items.html">Items</a></li>
-	<li style="color:rgb(10, 210, 239);font-size:200%;"><a href="Spellcasting.html">Spellcasting</a></li>
-	<li><a href="CharacterCreation.html">Character Creation</a></li>
-	<li><a href="Races.html">Races</a></li>
-	<li><a href="Spells.html">Spells</a></li>
-</ul>
-
-</nav>
-
-
-<!-- NAV 2 -->
-<div class="nav2">
-
-<ul>
-
-	<li class="nav2main general">
-		<span class="arrow2">&#9660; </span>
-		<a href="General.html">General</a>
-		<ul class="dropDown2">
-			<li><a href="General.html#RolePlaying">Role-Playing</a></li>
-			<li><a href="General.html#Rules">Rules</a></li>
-			<li><a href="General.html#Terminology">Terminology</a></li>
-		</ul>
-	</li>
-	
-	<li class="nav2main skills twoRows">
-		<span class="arrow2">&#9660; </span>
-		<a href="Skills.html">Skills</a>
-		<ul class="dropDown2">
-                <!--<li><a href="Skills.html#SkillRanks">Skill Ranks</a></li>-->
-				<li><a href="Skills.html#UBS">Upper Body Strength</a></li>
-				<li><a href="Skills.html#LBS">Lower Body Strength</a></li>
-				<li><a href="Skills.html#Swim">Swim</a></li>
-				<li><a href="Skills.html#Acrobatics">Acrobatics</a></li>
-				<li><a href="Skills.html#SleightOfHand">Sleight of Hand</a></li>
-				<li><a href="Skills.html#DisableDevice">Disable Device</a></li>
-				<li><a href="Skills.html#Stealth">Stealth</a></li>
-				<li><a href="Skills.html#Investigation">Investigation</a></li>
-				<li><a href="Skills.html#Awareness">Awareness</a></li>
-                <li><a href="Skills.html#Insight">Insight</a></li>
-			<li><ul>
-				<li><a href="Skills.html#Heal">Heal</a></li>
-                <li><a href="Skills.html#Initiative">Initiative</a></li>
-				<li><a href="Skills.html#Reason">Reason</a></li>
-				<li><a href="Skills.html#Inspire">Inspire</a></li>
-				<li><a href="Skills.html#Discourage">Discourage</a></li>
-                <li><a href="Skills.html#Intimidate">Intimidate</a></li>
-				<li><a href="Skills.html#Deceive">Deceive</a></li>
-				<li><a href="Skills.html#SocialSense">Social Sense</a></li>
-				<li><a href="Skills.html#HandleAnimal">Handle Animal</a></li>
-				<li><a href="Skills.html#Knowledge">Knowledges</a></li>
-				<!--<li><a href="Skills.html#Languages">Languages</a></li>-->
-			</ul></li>
-		</ul>
-	</li>
-		
-	<li class="nav2main combat twoRows">
-		<span class="arrow2">&#9660; </span>
-		<a href="Combat.html">Combat</a>
-		<ul class="dropDown2">
-			<li><a href="Combat.html#Actions">Actions</a></li>
-			<li><a href="Combat.html#Stamina">Stamina</a></li>
-            <li><a href="Combat.html#Agility">Agility</a></li>
-            <li><a href="Combat.html#Rounds">Rounds</a></li>
-            <li><a href="Combat.html#ActionOrder">Initiative</a></li>
-			<li><a href="Combat.html#MeleeAttacks">Melee Attacks</a></li>
-			<li><a href="Combat.html#RangedAttacks">Ranged Attacks</a></li>
-			<li><a href="Combat.html#Aura">Aura</a></li>
-            <li><a href="Combat.html#Defenses">Defenses</a></li>
-            <li><a href="Combat.html#WeaknessesAndResistances">Resistances</a></li>
-            <li><a href="Combat.html#CriticalHits">Critical Hits</a></li>
-            <li><a href="Combat.html#Facing">Facing</a></li>
-            
-            <li><ul>
-				<li><a href="Combat.html#Size">Size</a></li>
-                <li><a href="Combat.html#Exposed">Exposed</a></li>
-                <li><a href="Combat.html#Unguarded">Unguarded</a></li>
-                <li><a href="Combat.html#Surprise">Surprise</a></li>
-                <li><a href="Combat.html#NonLethalDamage">Non-Lethal Damage</a></li>
-                <li><a href="Combat.html#MPL">MPL</a></li>
-                <li><a href="Combat.html#ImprovisedWeapons">Improvised Weapons</a></li>
-                <li><a href="Combat.html#UnarmedAttacks">Unarmed Attacks</a></li>
-                <li><a href="Combat.html#CombatManeuvers">Combat Maneuvers</a></li>
-                <li><a href="Combat.html#Resting">Resting</a></li>
-                <li><a href="Combat.html#Death">Death</a></li>
-                <li><a href="Combat.html#Conditions">Conditions</a></li>
-			</ul></li>
-		</ul>
-	</li>
-	<li class="nav2main items">
-		<span class="arrow2">&#9660; </span>
-		<a href="Items.html">Items</a>
-		<ul class="dropDown2">
-			<li><a href="Items.html#Reach">Reach</a></li>
-			<li><a href="Items.html#WeaponProperties">Weapon Properties</a></li>
-			<li><a href="Items.html#MeleeWeapons">Melee Weapons</a></li>
-            <li><a href="Items.html#RangedWeapons">Ranged Weapons</a></li>
-			<li><a href="Items.html#Shields">Shields</a></li>
-			<li><a href="Items.html#ArmorSets">Armor Sets</a></li>
-            <li><a href="Items.html#BrokenArmor&Shields">Broken Armor &amp; Shields</a></li>
-		</ul>
-	</li>
-	<li class="nav2main spellcasting">
-		<span class="arrow2">&#9660; </span>
-		<a href="Spellcasting.html">Spellcasting</a>
-		<ul class="dropDown2">
-			<li><a href="Spellcasting.html#SchoolsofMagic">Schools of Magic</a></li>
-			<li><a href="Spellcasting.html#MethodsofMagic">Methods of Magic</a></li>
-			<li><a href="Spellcasting.html#ElementsofMagic">Elements of Magic</a></li>
-			<li><a href="Spellcasting.html#CastingSpells">Casting Spells</a></li>
-			<li><a href="Spellcasting.html#SpellcastingAbilities">Spellcasting Abilities</a></li>
-		</ul>
-	</li>
-		
-</ul>
-
-</div>
-
-
-<!-- NAV 3 -->
-<div class="nav3">
-
-<ul>
-	<li class="nav3main characterCreation">
-		<a href="CharacterCreation.html">Character Creation</a>
-	</li>
-    
-    <li class="nav3small feats">
-		<a href="Feats.html">Feats</a>
-	</li>
-	
-	<li class="nav3small themes">
-		<a href="Themes.html">Themes</a>
-	</li>
-    
-    <li class= "nav3small combatStyles">
-		<a href="CombatStyles.html">Combat Styles</a>
-	</li>
-
-	<li class="nav3main races">
-		<a href="Races.html">Races</a>
-	</li>
-	
-	<li class="nav3main spells">
-		<a href="Spells.html">Spells</a>
-	</li>
-		
-</ul>
-
-</div>
-
+<body onload="getNav()">
+<div id="navigationPlaceholder"></div>
 <main>
+<!---->
 
+<p><b>At first, playtesting will focus entirely on marital (non-magical) combat. There are currently very few options for spellcasting, but the following are the rules I have mapped out so far.</b></p>
 <h2>
 <span>Spells</span>
 </h2>
@@ -418,49 +265,37 @@
 </h2>
 <div class="hangingIndent">
 <p><b>At-Will:</b> The spell has no limit to how many times it can be cast.
-</p><p><b>#x Short Rest:</b> The spell can only be cast # times per Short Rest.
-</p><p><b>#x Long Rest:</b> The spell can only be cast # times per Long Rest.
-</p><p><b>Spell Level:</b> This determines how difficult the spell is to cast. It is the number at the top of the spell.
+</p><p><b>#x Short Rest:</b> The spell can only be cast # times per Short Rest. If you fail at casting the spell, it does not count against your number of uses of the spell per Rest.
+</p><p><b>#x Long Rest:</b> The spell can only be cast # times per Long Rest. If you fail at casting the spell, it does not count against your number of uses of the spell per Rest.
+</p><p><b>Spell Level:</b> This determines how difficult the spell is to cast. It is the number at the top right of the spell.
 </p><p><b>Range #/#/#m:</b> Some spells have Range Values (<a href="Combat.html#ReadingRangeValues">See Range Values</a>). These only apply to the Hit roll, NOT the Cast roll.
 </p><p><b>Range #:</b> Some spells have just one range value, which means the spell can take affect within this range (the description may give more detail).
-</p><p><b>Hit:</b> This is found in the spell’s description and the following effects only happen if the target is hit. This implies that the spell requires a Hit roll.
+</p><p><b>Hit:</b> This is found in the spell’s description and the following effects only happen if the target is hit.
+</p><p><b>Effect:</b> This is found in the spell’s description and the following effects happen regardless of whether or not the target is hit (though the spell must be successfully cast).
 </p>
 </div>
-<p><b>Note:</b> If you fail the casting of a spell, it does not count against your number of uses of the spell per Rest.
+<p>If you fail the casting of a spell, it does not count against your number of uses of the spell per Rest.
 </p><p>Here is an example Spell:
 </p>
 
-<table class="spell table1">
-    <tr>
-        <th>Frost Lance</th>
-        <td class="Type">At-Will</td>
-        <td class="DC">12</td>
-    </tr>
-    <tr>
-        <td colspan="3" class="MagicCircles">Combat &#9679; Incantation, Magic Implement &#9679; Ice</td>
-    </tr>
-    <tr>
-        <td colspan="3" class="Content"><em>You magically create a large, frosty spike of ice and hurl it at your target.</em>
-            <br><strong>Range:</strong> 4/12/48m
-            <br><strong>Hit:</strong> 1d4 + Halved Ability Modifier Cold damage and the target must succeed on a Fortitude Save or lose 1 Stamina.</td>
-    </tr>
-    <tr>
-        <td colspan="3" class="Content"><i>Implement, Incantation:</i> 3 Energy.</td>
-    </tr>
-    <tr>
-        <td colspan="3" class="ContentEnd"><i>Gesture:</i> 2 Energy.</td>
-    </tr>
-</table>
-    
-<p>
-</p><p>
-</p><p>
-</p><p>
-</p><p>
-</p><p>
-</p>
-
-
+<div class="spellFlexBox">
+<div class="spellRow1">
+    <div class="spellName">Frost Lance</div>
+    <div class="spellFreq">At-Will</div>
+    <div class="spellDC">12</div>
+</div>
+    <div class="spellCircles">Combat &#9679; Gesture, Implement, Incantation &#9679; Ice(Water)</div>
+    <div class="spellDescription"><div class="spellFlavorText">You shape ice into a frosty spike and hurl it at your target.</div>
+        This spell does not create ice, so you must have an adequate amount of ice nearby, within 3m, that you can launch at your target. You require at least the amount of ice created by the Conjure Ice spell (a 10cm diameter sphere). The ice need not be loose, and you can break off bits of ice from a larger mass of ice with this spell.
+        <br><strong>Hit:</strong> 1d4 + Halved Ability Modifier Cold damage and the target must succeed on a Fortitude roll or lose 1 Stamina. This damage ignores half the AR of the target (rounding ignored AR up).
+        <div class="spellMethod">
+            <span class="spellMethodTitle">Implement, Incantation:</span> 3 Energy, Range: 4/12/48m.
+        </div>
+        <div class="spellMethod">
+            <span class="spellMethodTitle">Gesture:</span> 2 Energy, Range: 1/4/12m. When cast with two free hands, Range: 4/12/48m.</div>
+        </div>
+</div>
+<div class="clearBoth"></div>
 
 </main>
 

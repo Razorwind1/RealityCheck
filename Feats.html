@@ -5,183 +5,33 @@
 
 
 <head>
-<!--
-<link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
--->
-<link rel='stylesheet' href='rpgCSS.css'>
-<title>Feats</title>
-<meta charset="UTF-8">
-
+<link rel="icon" href="pictures/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="pictures/favicon.ico"/>
+<link rel="shortcut" href="pictures/favicon.ico" type="image/x-icon"/>
+<link rel='stylesheet' href='rpgCSS.css'/>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="SearchDatabase.js"></script>
+<title id="pageName">Feats</title>
+<meta charset="UTF-8"/>
 </head>
 
-    
-<body>
+
 <!---->
-<nav>
-<div id="logo">
-	<a href="Index.html">Reality Check</a>
+<body onload="getNav()">
+<div id="navigationPlaceholder"></div>
+<div class="optionsFlexBox">
+    <div></div>
+    <div><a href="Themes.html">Themes</a></div>
+    <div><a href="Feats.html" class="selectedOption">Feats</a></div>
+    <div><a href="CombatStyles.html">Combat Styles</a></div>
+    <div><a href="Spells.html">Spells</a></div>
+    <div></div>
 </div>
-
-<ul class="topNav1">
-	<li><a href="General.html">General</a></li>
-	<li><a href="Skills.html">Skills</a></li>
-	<li><a href="Combat.html">Combat</a></li>
-	<li><a href="Items.html">Items</a></li>
-	<li><a href="Spellcasting.html">Spellcasting</a></li>
-	<li><a href="CharacterCreation.html">Character Creation</a></li>
-	<li><a href="Races.html">Races</a></li>
-	<li><a href="Spells.html">Spells</a></li>
-</ul>
-
-</nav>
-
-
-
-<!-- NAV 2 -->
-<div class="nav2">
-
-<ul>
-
-	<li class="nav2main general">
-		<span class="arrow2">&#9660; </span>
-		<a href="General.html">General</a>
-		<ul class="dropDown2">
-			<li><a href="General.html#RolePlaying">Role-Playing</a></li>
-			<li><a href="General.html#Rules">Rules</a></li>
-			<li><a href="General.html#Terminology">Terminology</a></li>
-		</ul>
-	</li>
-	
-	<li class="nav2main skills twoRows">
-		<span class="arrow2">&#9660; </span>
-		<a href="Skills.html">Skills</a>
-		<ul class="dropDown2">
-                <!--<li><a href="Skills.html#SkillRanks">Skill Ranks</a></li>-->
-				<li><a href="Skills.html#UBS">Upper Body Strength</a></li>
-				<li><a href="Skills.html#LBS">Lower Body Strength</a></li>
-				<li><a href="Skills.html#Swim">Swim</a></li>
-				<li><a href="Skills.html#Acrobatics">Acrobatics</a></li>
-				<li><a href="Skills.html#SleightOfHand">Sleight of Hand</a></li>
-				<li><a href="Skills.html#DisableDevice">Disable Device</a></li>
-				<li><a href="Skills.html#Stealth">Stealth</a></li>
-				<li><a href="Skills.html#Investigation">Investigation</a></li>
-				<li><a href="Skills.html#Awareness">Awareness</a></li>
-                <li><a href="Skills.html#Insight">Insight</a></li>
-			<li><ul>
-				<li><a href="Skills.html#Heal">Heal</a></li>
-                <li><a href="Skills.html#Initiative">Initiative</a></li>
-				<li><a href="Skills.html#Reason">Reason</a></li>
-				<li><a href="Skills.html#Inspire">Inspire</a></li>
-				<li><a href="Skills.html#Discourage">Discourage</a></li>
-                <li><a href="Skills.html#Intimidate">Intimidate</a></li>
-				<li><a href="Skills.html#Deceive">Deceive</a></li>
-				<li><a href="Skills.html#SocialSense">Social Sense</a></li>
-				<li><a href="Skills.html#HandleAnimal">Handle Animal</a></li>
-				<li><a href="Skills.html#Knowledge">Knowledges</a></li>
-				<!--<li><a href="Skills.html#Languages">Languages</a></li>-->
-			</ul></li>
-		</ul>
-	</li>
-		
-	<li class="nav2main combat twoRows">
-		<span class="arrow2">&#9660; </span>
-		<a href="Combat.html">Combat</a>
-		<ul class="dropDown2">
-			<li><a href="Combat.html#Actions">Actions</a></li>
-			<li><a href="Combat.html#Stamina">Stamina</a></li>
-            <li><a href="Combat.html#Agility">Agility</a></li>
-            <li><a href="Combat.html#Rounds">Rounds</a></li>
-            <li><a href="Combat.html#ActionOrder">Initiative</a></li>
-			<li><a href="Combat.html#MeleeAttacks">Melee Attacks</a></li>
-			<li><a href="Combat.html#RangedAttacks">Ranged Attacks</a></li>
-			<li><a href="Combat.html#Aura">Aura</a></li>
-            <li><a href="Combat.html#Defenses">Defenses</a></li>
-            <li><a href="Combat.html#WeaknessesAndResistances">Resistances</a></li>
-            <li><a href="Combat.html#CriticalHits">Critical Hits</a></li>
-            <li><a href="Combat.html#Facing">Facing</a></li>
-            
-            <li><ul>
-				<li><a href="Combat.html#Size">Size</a></li>
-                <li><a href="Combat.html#Exposed">Exposed</a></li>
-                <li><a href="Combat.html#Unguarded">Unguarded</a></li>
-                <li><a href="Combat.html#Surprise">Surprise</a></li>
-                <li><a href="Combat.html#NonLethalDamage">Non-Lethal Damage</a></li>
-                <li><a href="Combat.html#MPL">MPL</a></li>
-                <li><a href="Combat.html#ImprovisedWeapons">Improvised Weapons</a></li>
-                <li><a href="Combat.html#UnarmedAttacks">Unarmed Attacks</a></li>
-                <li><a href="Combat.html#CombatManeuvers">Combat Maneuvers</a></li>
-                <li><a href="Combat.html#Resting">Resting</a></li>
-                <li><a href="Combat.html#Death">Death</a></li>
-                <li><a href="Combat.html#Conditions">Conditions</a></li>
-			</ul></li>
-		</ul>
-	</li>
-	<li class="nav2main items">
-		<span class="arrow2">&#9660; </span>
-		<a href="Items.html">Items</a>
-		<ul class="dropDown2">
-			<li><a href="Items.html#Reach">Reach</a></li>
-			<li><a href="Items.html#WeaponProperties">Weapon Properties</a></li>
-			<li><a href="Items.html#MeleeWeapons">Melee Weapons</a></li>
-            <li><a href="Items.html#RangedWeapons">Ranged Weapons</a></li>
-			<li><a href="Items.html#Shields">Shields</a></li>
-			<li><a href="Items.html#ArmorSets">Armor Sets</a></li>
-            <li><a href="Items.html#BrokenArmor&Shields">Broken Armor &amp; Shields</a></li>
-		</ul>
-	</li>
-	<li class="nav2main spellcasting">
-		<span class="arrow2">&#9660; </span>
-		<a href="Spellcasting.html">Spellcasting</a>
-		<ul class="dropDown2">
-			<li><a href="Spellcasting.html#SchoolsofMagic">Schools of Magic</a></li>
-			<li><a href="Spellcasting.html#MethodsofMagic">Methods of Magic</a></li>
-			<li><a href="Spellcasting.html#ElementsofMagic">Elements of Magic</a></li>
-			<li><a href="Spellcasting.html#CastingSpells">Casting Spells</a></li>
-			<li><a href="Spellcasting.html#SpellcastingAbilities">Spellcasting Abilities</a></li>
-		</ul>
-	</li>
-		
-</ul>
-
-</div>
-
-
-
-
-<!-- NAV 3 -->
-<div class="nav3">
-
-<ul>
-	<li class="nav3main characterCreation">
-		<a href="CharacterCreation.html">Character Creation</a>
-	</li>
-    
-    <li class="nav3small feats">
-		<a href="Feats.html">Feats</a>
-	</li>
-	
-	<li class="nav3small themes">
-		<a href="Themes.html">Themes</a>
-	</li>
-    
-    <li class= "nav3small combatStyles">
-		<a href="CombatStyles.html">Combat Styles</a>
-	</li>
-
-	<li class="nav3main races">
-		<a href="Races.html">Races</a>
-	</li>
-	
-	<li class="nav3main spells">
-		<a href="Spells.html">Spells</a>
-	</li>
-		
-</ul>
-
-</div>
-
 <main>
-
+<!---->
 
 <p>Feats are divided into 5 different groups to show when you have access to them. Background Feats may be gained by spending Background Points during character creation. Tier 1 Feats are available for characters in Tier 1 or above (Levels 1 and up), Tier 2 Feats are available for characters in Tier 2 and above (Levels 5 and up), Tier 3 Feats are available for characters in Tier 3 and above (Levels 10 and up), and Tier 4 Feats are available for characters in Tier 4 and above (Levels 15 and up).
 </p><p>The Tier restrictions only limit Feats which are not expressly given, meaning you can have Tier 2 or even Tier 3 Feats at Level 1 because they were granted to you explicitly by a Theme, or some other option.
@@ -194,11 +44,10 @@
 <span>Non-Combat Feats</span>
 </h2>
 <div class="featWrapper">
-    <div class="centerWrapper">
 <table class="feat">
     <tr>
         <th class="featName">Practiced Craftsman</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain Proficiency in a Knowledge Skill. Choose a Knowledge Proficiency. When you roll that Knowledge to craft something, and the natural roll is less than 10, you may treat the natural roll as a 10.
         <br>&#9671; You may take this Feat multiple times.</td>
     </tr>
@@ -206,28 +55,28 @@
 <table class="feat">
     <tr>
         <th class="featName">Intelligent Healer</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain Proficiency in Heal. You may use you Halved Intelligence Modifier for Heal Checks instead of your Halved Wisdom Modifier.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Medical Assistant</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you make a Heal Check that takes a minute or more, if you make use of some medical supplies you have, you gain Advantage on the Check.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Disease Specialist</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain Proficiency in a Knowledge Skill. You have Advantage on any Checks to diagnose, cure, or care for the diseased.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Specialist</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain Proficiency in a Knowledge Skill. You gain +2 to that Knowledge.
         <br>&#9671; You may take this Feat multiple times.</td>
     </tr>
@@ -235,21 +84,21 @@
 <table class="feat">
     <tr>
         <th class="featName">Bardic Knowledge</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>For each Proficiency you have in a Knowledge Skill which focuses on performance of some kind (music, speech, juggling, etc.) and each Proficiency in a Knowledge Skill which focuses on writing, chronicling, or books (calligraphy, scribe, librarian, etc.) you may add your Halved Charisma Modifier to a Knowledge Skill. You may not use this ability to add your Halved Charisma Modifier to a Knowledge Skill more than once.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Jack of all Trades</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain +2 to every Skill you are not Proficient in.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Multi-Lingual</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain Proficiency in two Languages.
 </td>
     </tr>
@@ -257,167 +106,167 @@
 <table class="feat">
     <tr>
         <th class="featName">Linguist</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain Proficiency in a Language. You have Advantage on Checks made to decipher the meaning of writing.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Bookworm</th> <!---->
-        <td class="tier">Tier: 2<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">2<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>You reach into your extradimensional knapsack, pulling out a book which might help. </span>When you have access to your personal collection of books (around 25 at least), you may use these books to gain Advantage on any Knowledge Check you are Proficient in. It can take some time to find the right book and relevant information, so there isn’t time in to do so in the middle of combat. When you take this Feat, you don’t have to pay for all your books, it is assumed you already had them somewhere. However, it’s up to you to determine how you transport them.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Animal Trainer</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You can make Handle Animal Checks using 1 less Energy (min 1). You can also teach animals 3 more Tricks than you normally could.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Animal Empathy</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain Proficiency in Handle Animal and rolling a natural 1 on a Handle Animal check does not necessarily reduce the attitude of the creature by one.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Expert Animal Trainer</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You can train Friendly animals (treating them as Helpful for the purposes of training them). When teaching a Helpful animal Tricks, you have Advantage if you can entice it somehow.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Fearsome Reputation</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have an Intimidation Bonus of at least 8, you have acquired a fearsome reputation in the areas you’ve lived in. When in these places, you are likely to get away with suspicious activity and small crimes as most people are afraid to report you to the authorities.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Art of Intimidation</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You have Advantage on Intimidate Checks when not in combat.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Intimidating Persona</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain +4 to Intimidate and Discourage, and -4 to Reason and Inspire.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Innocent Face</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You have Advantage on Checks made to convince someone of your innocence or good intentions.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Alluring</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You have Advantage on Charisma based Checks which are coupled with some kind of flirting, but only if the person you are enticing would be interested in you.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Grey Man</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>Tailoring your attire and mannerisms to be as non-descript as possible, you can move unnoticed through a crowd, camouflaged in plain sight.</span>You may add your Charisma Modifier to Checks made to try to blend into a crowd or be inconspicuous in a social setting (often Stealth or Deceive Checks).</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Cosmopolitan Communicator</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain Proficiency in Social Sense. When you make a Knowledge Check about social or cultural topics, you may make a Social Sense Check and use the outcome as the outcome of you Knowledge Check.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Practiced Disguise</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may choose 1 particular disguise to be particularly proficient with. Anyone trying to see through your disguise has Disadvantage on their Insight Checks. You may spend 2 weeks practicing a new disguise to change the particular disguise you gain this benefit for.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Master of Disguise</th> <!---->
-        <td class="tier">Tier: 2<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">2<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You have Advantage on Checks made to disguise yourself and convince others you are someone else. </td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Always Deceitful</th> <!---->
-        <td class="tier">Tier: 2<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">2<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If your Deceive Bonus is 15 or higher, when you make a Deceive Check and the natural 1d20 is lower than 10, you may treat it as a 10.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Game Strategist</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You are very skilled at playing games that have an element of strategy such as chess, hearts, or liar’s dice. Whenever you make a Check to determine the outcome of this kind of game, you have Advantage.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Agile Runner</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you move, you suffer no movement penalty for changing direction by more than 45 degrees. You also always move an extra 1m when Sprinting.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Contortionist</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You are very flexible and can contort your body in ways that surprise others. You have Advantage on Dexterity based Checks made to escape constraints (manacles, strait jacket, etc) and can fit into spaces about twice as small as a normal person your size could, and can fit through any opening your head can fit through.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Master Contortionist</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Contortionist Feat and are a Small or smaller creature, you can twist and squeeze your body in such a way as to fit through any 10cm diameter (of a circle) opening. The smallest you can compact yourself is into a volume of 20cm<sup>3</sup>.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Practiced Lock-picker</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When picking a lock, you may spend 5 more Rounds working on the lock, gaining +1 to your Check for each additional Round.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Intelligent Disabler</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may use your Halved Intelligence Modifier instead of Halved Dexterity Modifier with your Disable Device Skill. You may extend the number of Rounds you spend picking a lock or disabling any device by 1/3 your Intelligence Modifier, gaining +1 to your Check for each additional Round.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Appraiser</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain Advantage on Checks to determine the value of an object.</td>
     </tr>
 </table><table class="feat">
     <tr>
         <th class="featName">Master Appraiser</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Appraiser Feat, you gain Advantage on Checks to determine the function of an object or to learn of its origin. Additionally, when you make an Investigation Check to determine the value, function, or origin of an item, and the natural roll of the 1d20 is less than 10, you may treat it as if it were a 10.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Intuition</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span><div>Twice per Long Rest, you can spend 15 seconds to focus on your inner self, consulting your intuition. You may ask the DM one question which is answered in one of the following ways:</div>
 <div class="featList">
     &#9671; You have a good feeling.
@@ -432,7 +281,7 @@
 <table class="feat">
     <tr>
         <th class="featName">Improved Intuition</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Intuition Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
     <br>&#9671; When the DM makes their secret roll for your Intuition ability, the roll only has a 20% chance of failure, instead of a 50% chance.
     <br>&#9671; You may use your Intuition ability an additional 2 times per Long Rest.
@@ -442,126 +291,126 @@
 <table class="feat">
     <tr>
         <th class="featName">Quick Equip</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You equip items spending one less Energy than you otherwise would (minimum of 1 Energy).</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Skilled Climber</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You have Advantage on all of your Checks made to climb.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Expert Climber</th> <!---->
-        <td class="tier">Tier: 2<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">2<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Skilled Climber Feat, when you automatically succeed at climbing anything with the Guided or Medium difficulty ratings (includes anything meant for climbing and most trees) and need not spend Stamina for climbing these things. If you also have at least 11 Strength, you may spend 1 less Stamina on all your Climb Checks (meaning you pay 0 Stamina for Difficult climbs and 1 for Treacherous climbs). (see <a href="Skills.html#Climb">Climbing</a>)</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Skilled Swimmer</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain Proficiency in Swim and you can hold your breath for 1 minute longer than normal.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Gymnast</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You have Advantage on all of your Checks made to do backflips, summersaults, cartwheels, and other similar stunts.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Tight-Rope Walker</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You have Advantage on all of your Checks to walk across a thin surface or to keep your balance.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Deft Entertainer</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You choose two types of entertainment that you are Proficient in (such as Juggling and Singing). You have Advantage on any Checks made to entertain or distract using these skills.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Fast</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain +1m Movement Speed, but lose 1 Agility.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Mimic</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You can expertly mimic any normal voices that you hear. When you do this, anyone who hears the voice may make an Awareness Check with a DC of 25 + your Level to notice the voice is not who it sounds like.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Artistic</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You have Advantage on any rolls to create ascetically pleasing art. This ability does not help you make something more functional. For instance, if you were trying to create beautiful armor with Craft(armor) you would roll as normal to make the armor, but could make an additional Check with Advantage to make it look particularly lovely. This ability can’t help you attack or defend either. </td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Nobility</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You are often welcomed in the higher echelons of society and peasants are often honored by your presence, even if you are of lesser nobility. Because of your noble status, your actions are less likely to be questioned by those lower ranking than you and these people are inclined to believe what you say unless they have good reason to believe otherwise. </td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Haggler</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When buying items, you have Advantage on any Checks to lower the price.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Seller</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When selling items, you have Advantage on any Checks to get someone to buy the items. </td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Always Silent</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If the only armor you are wearing is Light, you may sprint, climb, jump, and swim as silently as if you were moving normally.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Luck</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when you make a Chance roll, you may choose to re-roll it and use either result.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Skilled Luck</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when you make a Skill Check, you may choose to re-roll it and use either result. </td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Defensive Luck</th> <!---->
-        <td class="tier">Tier: 2<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">2<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when you make a Defense roll, Death roll, or Death Save, you may choose to re-roll it and use either result.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Supreme Luck</th> <!---->
-        <td class="tier">Tier: 3<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">3<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, you may re-roll any roll you make and use either result. You may re-roll any natural 1s that you roll on a Skill Check or Chance roll (but if the re-roll is a 1, you may not re-roll it using this ability).
         <br>Also, if you have the Luck, Skilled Luck, and Defensive Luck Feats, you may re-roll any natural 1s that you roll on any roll you make with a 1d4 or larger die (but if the re-roll is a 1, you may not re-roll it using this ability).
 </td>
@@ -570,39 +419,38 @@
 <table class="feat">
     <tr>
         <th class="featName">Long Jump</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have a running start, you gain +2m to your Jump Distance and +1m to your Jump Reach.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Enhanced Jump</th> <!---->
-        <td class="tier">Tier: 1<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">1<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain +1m to your Jump Reach. You gain +1m to your Jump Distance. You ignore +5m when calculating Fall Damage.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Cat-fall</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You ignore +5m of fall damage as long as you are in control of your fall (your limbs are unbound and your body is free to twist about).</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Free Fall</th> <!---->
-        <td class="tier">Tier: 3<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">3<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>You know the perfect way to land, unafraid as you plummet towards the ground.</span>If you have a Feat which reduces the amount of fall damage you take, you halve any Fall Damage you take and if you are in control of your fall (your limbs are unbound and your body is free to twist about), you ignore any Fall Damage.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Small</th> <!---->
-        <td class="tier">Tier: 0<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">0<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription> Whether because of a biological disorder, or simply the variation of height differences within your race, you are much smaller than the average of your race.</span> If you would normally be a Medium sized creature, and are shorter than 140cm, you are now considered a Small sized creature, and thus, your Evasion is increased by 1, your Miss Chance Modifier increased by 2, and your Speed, Jump Distance, and Jump Reach are all reduced by 1.</td>
     </tr>
 </table>
-    </div>
 </div>
 <div class="clearBoth"></div>
 
@@ -614,21 +462,21 @@
 <table class="feat">
     <tr>
         <th class="featName">Combat Versatility</th> <!---->
-        <td class="tier">Tier: 0</td></tr><tr>
+        <td class="tier">0</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Gain 1 Combat Style.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">More Combat Versatility</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Gain 2 Combat Styles.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Combat Training</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain +1 Martial Proficiency Level. You also gain +1 Combat Style or +1 Stamina. 
         <br>[This Feat may be taken multiple times.]
 </td>
@@ -637,56 +485,56 @@
 <table class="feat">
     <tr>
         <th class="featName">Merciful Fighter</th> <!---->
-        <td class="tier">Tier: 0</td></tr><tr>
+        <td class="tier">0</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain +5 to your Non-Lethal damage range and only sacrifice 1 AV (instead of 3) to gain any additional +5 to your Non-Lethal damage range.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Dexterous Agility</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain +1 Agility for every 3 Dexterity Modifier points you have.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Quick-Draw</th> <!---->
-        <td class="tier">Tier: 0</td></tr><tr>
+        <td class="tier">0</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may draw a sidearm as an Immediate Interrupt for 1 Agility or 1 Energy.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Unfailing Strength</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>When things get tough, you can trust in your body’s ability.</span>When making any Strength based Check, you if the natural roll of the 1d20 is less than 10, you may treat it as if it were a 10.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Damage is Intimidating</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you deal damage to a creature which is at least half of its current Aura, and successfully Intimidate it during the action, it becomes Dazed until the end of the next Round.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Startling Intimidation</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>Your frightening aggression causes the orc to stumble and move more cautiously.</span>When you successfully Intimidate a creature, you may spend 1 Stamina to make it lose 3 Agility.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Strong Intimidator</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when you successfully Intimidate a creature, they are Shaken until the end of the next Round, instead of until the end of the Round.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Strong Intimidator</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; <b>Lasting Intimidation:</b> You may use your Strong Intimidator ability once per Short Rest, instead of once per Long Rest.
         <br>&#9671; <b>Fear is Distracting:</b> When you use your Strong Intimidator ability, you may make a Swift Attack against the target.
@@ -696,154 +544,154 @@
 <table class="feat">
     <tr>
         <th class="featName">Incredibly Intimidating Display</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If a creature you are trying to Intimidate is already Shaken, you may spend +1 Energy and +1 Stamina and if you succeed, they must either try to flee until the end of the Round or become Dazed until the end of the next Round.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Quick Steps</th> <!---->
-        <td class="tier">Tier: 4</td></tr><tr>
+        <td class="tier">4</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may Shift by spending only 1 Agility. You also may spend Agility when Slowed.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Ground Fighter</th> <!---->
-        <td class="tier">Tier: 0</td></tr><tr>
+        <td class="tier">0</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You are not Exposed when Prone.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Bounce Back Up</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you fall Prone, you may spend 2 Agility or 1 Energy to Stand Up From Prone as an Immediate Interrupt and not be Unguarded or Exposed.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Careful Stand</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When Standing Up From Prone, you may spend +1 Energy to not become Unguarded or Exposed.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Sure-Footed Jumping</th> <!---->
-        <td class="tier">Tier: 2<span class="nonCombat"></span></td></tr><tr>
+        <td class="tier">2<span class="nonCombat"></span></td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Your Jumps do not Unguard you, but they do Expose you. You may spend the Stamina to Jump even if you are Shaken, Exhausted, or for some other reason are unable to spend your Stamina.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Swift and Brutal Attacks</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you make a Swift Attack with a weapon that has Brutal, you deal an additional 1d8 damage.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Keen Initiative</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You add 1d4 to your Initiative rolls when you have no negative conditions (such as Exposed, Shaken, or Slowed).</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Charismatic Initiative</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may add your Halved Charisma Modifier to your Initiative.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Intelligent Initiative</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may add your Halved Intelligence Modifier to your Initiative.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Finale Strike</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when a creature has already been hit with an attack this Round, and you make a single target attack against it, you may spend +1 Stamina to treat your Combat roll or Hit roll like it was a natural 20.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Finale Strike</th> <!---->
-        <td class="tier">Tier: 4</td></tr><tr>
+        <td class="tier">4</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you use your Finale Strike ability, you deal double damage.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Compromising Critical</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Your Critical hits deny the target a chance to react. When you score a Critical hit, the target cannot execute any ability as reaction to your attack and if they are in the middle of an action, the action ends immediately.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Practiced Precision</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you attack, before you make the Combat roll or Hit roll, you may spend +1 Stamina to give your attack +2 Precision.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Precise</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain +1 Precision on all your attacks.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Opportunistic Fighter</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you make a Swift Attack, you may spend 1 Stamina to gain Advantage on the Combat roll.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Exposing Attacks</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You Expose targets on a Combat roll or Hit roll of one lower than normal.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Vindictive Duelist</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If a creature deals damage to you, the next attack you make against that creature before the end of the next Round has Advantage on the Combat roll or Hit roll.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Bloodthirsty Warrior</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when your attack hits a single creature, you may choose to spend +1 Stamina to deal an additional 1d8 damage. If you deal damage to a creature with 0 aura, you regain use of this ability.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Pull Out of Danger</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You must have a Strength of 13 or more, or an UBS of 20 or more to make use of this ability. Once per Short Rest, when an ally adjacent to you would be hit by an attack, you can spend 1 Stamina to pull them out of harm’s way (which only works if you can pull them out of the affect range of the attack). You pull them 1m, to a different space adjacent to you, and they are not hit by the attack.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Intention to Kill</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you make an attack, you may spend +1 Stamina to make it more likely the target will die from your attack. If the target takes damage with 0 aura and makes a Death roll, they have Disadvantage on it.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Intention to Kill</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; When you use Intention to Kill, you need not spend +1 Stamina, you simply declare you have intention to kill.
         <br>&#9671; When you use Intention to Kill, if the target takes damage with 0 aura and makes a Death roll, the target has Disadvantage on any subsequent Death Saves due to the attack.
@@ -853,28 +701,28 @@
 <table class="feat">
     <tr>
         <th class="featName">Deadly Intention to Kill</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you use Intention to Kill, not only does the target roll their Death roll with Disadvantage, but they have -5 on their Death roll.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Keep Down the Fallen</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you hit someone with a Swift attack as they are trying to Stand Up From Prone, they fail to stand and they lose the 1 Energy they tried to spend to Stand Up.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Tactical Retreat</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you are attacked with a melee attack, you may choose to retreat as an Immediate Interrupt by spending 1 Energy and 1 Agility to move 1 meter away from the attacker. Per the normal rules, the attacker may still continue the attack if you are in Reach, or make an Agile Move (spending 1 Agility) to move closer to you and continue the attack.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Tactical Retreat</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You may use your Tactical Retreat ability once per Round instead of once per Short Rest.
         <br>&#9671; You may use Tactical Retreat at-will, not just once per Short Rest, and may use it multiple times on the same attack. This means that when an attacker continues the attack against you, you can spend an additional 1 Energy and 1 Agility to move 1 meter away again. However, you are Exposed when you use Tactical Retreat.
@@ -892,14 +740,14 @@
 <table class="feat">
     <tr>
         <th class="featName">Reckless Charger</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you are Sprinting, you may choose to charge recklessly. This means you become Unguarded for the duration of the reckless charge, and you cannot stop being Unguarded as long as you are continuing the reckless charge. If you Sprinted at least 3m towards a creature in this way, you may make a melee attack against the creature you charged at immediately following your Sprint as an Immediate Interrupt and deal an additional 1d6 damage.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Reckless Charger</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; <b>Frequent Charge:</b> You may Charge Recklessly at-will, not just once per Short Rest.
         <br>&#9671; <b>Forceful Charge:</b> When you Charge Recklessly, your movement cannot be stopped because you were hit with a Brace weapon and you have Advantage on your Evasion rolls to avoid Combat Maneuvers.
@@ -911,35 +759,35 @@
 <table class="feat">
     <tr>
         <th class="featName">Further Improved Reckless Charger</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Improved Reckless Charger Feat, you may gain another benefit from it.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Translocational Jump Attack</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>You jump into the air faster than the eye can follow and blink down onto your target.</span>If you are Proficient in Translocation Magic, once per Short Rest, when you Jump, you are not Unguarded by it and do not provoke Swift Attacks for crossing the Reach of an opponent. If you jump at least 2m to an Exposed creature, you may spend 1 Energy and 1 Stamina to make a Reach0 attack against them as an Immediate Interrupt. After the attack, you usually land adjacent to the target (your choice where). If your Reach0 Attack is a Combat Maneuver, you do not have -5 AV. If the Reach0 Attack is not a Combat Maneuver, you may deal an additional 1d6 damage per Tier.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">More Jump Attacks</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may use the Translocational Jump Attack ability an additional 2 times per Short Rest.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Exhausting Strike</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, before you make a melee attack against an Exposed creature, you may spend 1 Stamina to attempt to Exhaust it. If the creature is hit, it makes a Fortitude Save with a DC of your AV, and if it fails, it is Exhausted until the end of the next Round.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Exhausting Strike</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; <b>Assured Strike:</b> You also may choose to use Exhausting Strike after you hit a creature instead of before an attack.
         <br>&#9671; <b>Deadly Strike:</b> If you hit a creature with Exhausting Strike, you deal an additional 1d8 damage. If they fail their Fortitude save, you deal an additional 1d8 damage.
@@ -949,21 +797,21 @@
 <table class="feat">
     <tr>
         <th class="featName">Blinding Strike</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when you score a Critical Hit with a melee attack on an Exposed creature, you may attempt to Blind it. The creature makes a Fortitude Save with a DC of your AV, and if it fails, it is Blinded until the end of the next Round.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Heavy Blows</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you make a melee attack with a Heavy weapon, you may spend +1 Energy and +1 Stamina to wind it up. If you hit, you deal additional damage equal to your Halved Strength Modifier, but if you miss, you become Exposed.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Heavy Blows</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You do not need to spend +1 Stamina to use your Heavy Blows ability.
         <br>&#9671; You deal an additional 1d8 damage to Exposed creatures when you use your Heavy Blows ability.
@@ -972,14 +820,14 @@
 <table class="feat">
     <tr>
         <th class="featName">Powerful Swing</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when making a melee attack with a Heavy, 2-handed weapon, you may spend +1 Stamina to gain Advantage on your Combat roll and deal an additional 1d4 damage per Tier.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Powerful Swing</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; When you use your Powerful Swing ability, you deal additional damage equal to your UBS Bonus divided by 5. Also, if your Powerful Swing doesn’t hit, it doesn’t count as a use of the ability.
         <br>&#9671; You can use your Powerful Swing ability once per Short Rest instead of once per Long Rest.
@@ -989,14 +837,14 @@
 <table class="feat">
     <tr>
         <th class="featName">Forceful Swing</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you make a melee attack against a creature which is your Size or smaller with a Heavy weapon, you may spend +1 Stamina to make it an especially forceful attack. If you hit with this attack, the creature can then either accept being pushed 2m or takes an additional 1d8 damage.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Forceful Swing</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You may use your Forceful Swing ability at-will, not only once per Short Rest.
         <br>&#9671; When you use your Forceful Swing ability, you deal an additional 1d8 damage if they choose to take damage and may push the creature an additional 2m if they choose to be pushed.
@@ -1006,21 +854,21 @@
 <table class="feat">
     <tr>
         <th class="featName">Flurry of Blades</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when wielding two one-handed Reach1 weapons, you may spend 5 Energy to attack any number of the creatures you choose within 2m, making a single Combat roll for your attack. Any creatures which are hit by this attack are Shaken.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Shield Render</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you deal damage to a shield with a melee weapon, you deal an additional 1d12 damage. You also deal an additional 1d6 damage when attacking an inanimate object.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Shield Render</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You ignore up to 10 hardness when attacking any items including shields with a melee attack.
         <br>&#9671; You ignore up to 5 hardness when attacking shields and when you break a shield, you Exhaust the creature wielding it until the end of the next Round.
@@ -1030,63 +878,63 @@
 <table class="feat">
     <tr>
         <th class="featName">Quick Critical Hits</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>Your keen eye spots your opponent’s week point and with a shout you drive home your attack.</span>When you make a melee attack and roll a natural 20 on a Combat roll, your attack costs up to 2 Energy less. If you spent 3 or more Energy on the attack, you are refunded 2 Energy and if you spent 2 Energy, you are refunded 1 Energy. You are not refunded any Energy if the attack took 1 Energy or less.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Charismatic Attacker</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may add your Charisma Modifier to your MASAB equation, but you deal 1 less damage on melee attacks.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Wise Attacker</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may add your Wisdom Modifier to your MASAB equation, but you deal 1 less damage on melee attacks.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Intelligent Attacker</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may add your Intelligence Modifier to your MASAB equation, but you deal 1 less damage on melee attacks.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Charismatic Damager</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may add your Charisma Modifier to your MASDB equation, but lose Stamina equal to your Halved Charisma Modifier.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Wise Damager</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may add your Wisdom Modifier to your MASDB equation, but lose Aura equal to your Halved Wisdom Modifier.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Intelligent Damager</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may add your Intelligence Modifier to your MASDB equation.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Pressing Attack</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>You unleash an aggressive string of attacks that may force your opponent to give up ground.</span>Once per Long Rest, when you make a melee attack with a non-Light weapon against a creature which is not in a larger Size category than you, you may choose to use Pressing Attack, which gives you +5 AV and Advantage on you Combat roll. However, the target of your attack can Shift 1 meter away from you as an Immediate Interrupt (spending the usual 1 Energy or 2 Agility to do so) to avoid being hit. If they choose to do this, you can, per the normal rules, spend 1 Agility to follow them and continue your attack, but you lose Advantage on your Combat roll. If you choose to follow them and press the attack, the target can again Shift out of the way, and again, per the normal rules, you can follow them, but after this second retreat, you also lose the -5 AV to your attack. If the attack requires more Energy, the target can continue to retreat if they desire (for every Energy you invest in the attack).</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Weapon Throw</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; Once per Long Rest, you may throw a weapon (regardless of whether or not it has the Thrown property) and may treat it as a melee attack (making a Combat roll and spending 3 Energy). You have Advantage on this Combat roll. Additionally, when the attack completes, they weapon returns to you.
         <br>&#9671; Once per Short Rest, you may throw a weapon with the Thrown property and may treat it as a melee attack (making a Combat roll and spending 3 Energy). Additionally, when the attack completes, the weapon returns to you.</td>
@@ -1102,21 +950,21 @@
 <table class="feat">
     <tr>
         <th class="featName">Mounted Lancer</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When mounted, you may use a lance 2-handed and it gains +1 Brutal per Tier.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Armor Devastator</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when making a melee attack with a weapon with the Devastate property, you may choose to specifically target the opponent’s armor (declared before you make the Combat roll). If you do, and the attack hits, you do not deal damage, but Break the target’s armor.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Armor Devastator</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Armor Devastator Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You may use Armor Devastator once per Short Rest, instead of once per Long Rest.
         <br>&#9671; When you use your Armor Devastator ability, and miss, or the armor doesn’t actually Break, it does not count as a use of the ability.
@@ -1126,43 +974,43 @@
 <table class="feat">
     <tr>
         <th class="featName">Impromptu Brace</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when you hit a Swift Attack against a creature as it tries to get past your maximum Reach, you may spend 1 Stamina to stop its movement so they don’t get past your maximum Reach and the creature loses 1 Energy.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Freighting Dagger Attack</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when you score a Critical Hit with a dagger, you may spend 1 Stamina to make the target Shaken until the end of the next Round.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Back-Stab</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you hit a target from behind (where they are not facing), with a melee attack with a Light, Reach0 weapon, you may deal an additional 1d8 damage per Tier.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Deadly Back-Stab</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you use your Back-Stab ability, and deal damage to a creature with 0 Aura, you may choose to improve the chances that you kill the creature. You may make a Chance roll, and if successful, you kill the creature.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Lunging Back-Stab</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
-        <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, you may spend 2 Energy and 2 Agility to lunge forward up to 4m. During this movement, you may move through the space of other creatures and any creature which is Exposed cannot make Swift attacks against you. If you end your movement adjacent to and behind an Exposed enemy, you may spend 1 Energy to make a melee attack against them as an Immediate Interrupt using a Light, Reach 0 weapon.</td>
+        <td class="tier">1</td></tr><tr>
+        <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, you may spend 2 Energy and 2 Agility to lunge forward up to 4m. During this movement, you may move through the space of other creatures and any creature which is Exposed cannot make Swift attacks against you. If you end your movement adjacent to and behind an Exposed enemy, you may spend 1 Energy to make a melee attack against them as an Immediate Interrupt using a Light, Reach0 weapon.</td>
     </tr>
 </table>
 
 <table class="feat">
     <tr>
         <th class="featName">Improved Lunging Back-Stab</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Lunging Back-Stab Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You may use Lunging Back-Stab once per Short Rest, instead of once per Long Rest. However, only Unguarded creatures cannot make Swift attacks against you during your movement, and you can only make the attack granted by the ability if the target is Unguarded.
         <br>&#9671; When you use Lunging Back-Stab, you may move up to 8m (instead of 4m) and deal an additional 1d8 damage if you hit your attack.
@@ -1173,7 +1021,7 @@
 <table class="feat">
     <tr>
         <th class="featName">Further Improved Lunging Back-Stab</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Improved Lunging Back-Stab Feat, you may gain one additional benefit from it.</td>
     </tr>
 </table>
@@ -1188,7 +1036,7 @@
 <table class="feat">
     <tr>
         <th class="featName">Rage</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; <b>Burst of Rage:</b> Once per Short Rest, you may spend 2 Energy to go into a Rage until the end of the next Round. When you Rage, you gain +2 Speed, and deal an additional 1d4 damage on melee attacks. You may end your Rage prematurely if you wish.
         <br>&#9671; <b>Frequent Rage:</b> Three times per Short Rest, you may spend 3 Energy to go into a Rage until the end of the next Round. When you Rage, you gain +1 Speed, and deal an additional 1 damage on melee attacks. You may end your Rage prematurely if you wish.
@@ -1199,7 +1047,7 @@
 <table class="feat">
     <tr>
         <th class="featName">Improved Rage</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Rage Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; <b>Vigilant Rage:</b> When you Rage, you remove the Exposed condition if you have it and during the Rage, whenever you would be Exposed, you can lose 3 Aura to not be Exposed. You are Exhausted for one additional Round after your Rage ends.
         <br>&#9671; <b>Expeditious Rage:</b> You gain an additional +3 Speed when you Rage. It takes 1 more Agility to Rage.
@@ -1214,14 +1062,14 @@
 <table class="feat">
     <tr>
         <th class="featName">Further Improved Rage</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Improved Rage Feat, you may gain one additional benefit from it.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Too Angry to Die</th> <!---->
-        <td class="tier">Tier: 0</td></tr><tr>
+        <td class="tier">0</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>While you are Raging (per the Rage Feat), you have Advantage on all your Death rolls and Death Saves.</td>
     </tr>
 </table>
@@ -1235,49 +1083,49 @@
 <table class="feat">
     <tr>
         <th class="featName">Armor Proficiency</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may treat your MPL as 2 higher for Armor.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Comfortable in Armor</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>The Evasion Cost from armor you wear is reduced by 1. This applies for both over-armor and under-armor that you wear.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Experienced Armor User</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When an attack hits your armor and has its damage reduced by your AR, you may spend 1 Stamina or 2 Agility to reduce the damage by 1 more.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Tactful Donning</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>You have learned how to wear your armor in more secure way which reduces the chance that it could be damaged.</span>When your armor would be Broken by a weapon attack, make a Chance roll with a DC of 15. If successful,  the armor is not Broken.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Friendly Shielding</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may defend the one Space adjacent to you on your shield arm side. Any creature in this space gains your shield’s Evasion bonus, as well as yourself.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Shield Basher</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may treat a shield which you are Proficient with as a weapon, and attack with it. Your shield has Reach0 and gains a +2 AV bonus and deals 1d4 damage or 1d6 damage if it is made for bashing (perhaps it has spikes).</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Shield Basher</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Shield Basher Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; <b>Staggering Bash:</b> If the target of an attack with your shield is Exposed, they must make a Fortitude Save with a DC of your AV to not become Unguarded.
         <br>&#9671; <b>Shield Slice:</b> When attacking with your shield, you may choose to spend 1 Stamina (before you make the Combat roll). If you do, and if you hit the target, you deal an additional 1d6 damage and Expose the target.
@@ -1288,7 +1136,7 @@
 <table class="feat">
     <tr>
         <th class="featName">Expert Shield Basher</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Shield Basher Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; If you have the Improved Shield Basher Feat, you may choose an additional benefit from it.
         <br>&#9671; It takes 1 less energy to make an attack with your Shield (min 1).
@@ -1297,14 +1145,14 @@
 <table class="feat">
     <tr>
         <th class="featName">Shield Guard</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>You overextend on an attack, but quickly bring your shield back into a protecting position.</span>Once per Long Rest, when wielding a shield, when you would be Exposed, you may spend 1 Stamina to not be Exposed.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Shield Guard</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Shield Guard Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You may use your Shield Guard ability once per Short Rest instead of once per Long Rest.
         <br>&#9671; You may also use your Shield Guard ability when you would become Unguarded, and by spending the 1 Stamina, not become Unguarded.
@@ -1321,49 +1169,49 @@
 <table class="feat">
     <tr>
         <th class="featName">Dangerous Hands</th> <!---->
-        <td class="tier">Tier: 0</td></tr><tr>
+        <td class="tier">0</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Your Unarmed Attacks deal an extra 1d4 damage as long as you are not wielding any weapons or shields.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Dexterous Unarmed Strike</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you make an Unarmed attack, you may spend 1 Stamina (before the Combat roll) to increase the AV of your Unarmed Strike by your Halved Dexterity Modifier.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Strong Unarmed Strike</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you make an Unarmed attack, you may spend 1 Stamina (before the Combat roll) to increase the AV of your Unarmed Strike by your Halved Strength Modifier.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Flurry of Blows</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, if you have both hands free, when you hit a creature with an Unarmed attack, you may perform additional Unarmed attacks against the target as Immediate Interrupts. For each 1 Energy, 1 Agility, and 1 Stamina you spend, you can perform another attack.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Monkish Boxing</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may add your Wisdom Modifier to the MASAB and MASDB equation for your Unarmed attacks but must remove either your Strength Modifier or Dexterity Modifier from them as well.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Defensive Meditation</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>You perform a quick routine with your hands to center your body and mind.</span>When you are unarmed, you may spend 2 Energy to focus within yourself. Once before the end of the next Round, when you make a Defense roll and dislike the result, you may re-roll it and choose either result. You must decide to re-roll before the DM declares the outcome of your roll.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Defensive Meditation</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Defensive Meditation Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; When you use your Defensive Meditation ability, you also remove the Exposed condition.
         <br>&#9671; When you use your Defensive Meditation ability, you may re-roll every Defense roll that you make before the end of the next Round and take the better result, but it takes an additional +1 Stamina to use the ability.
@@ -1374,21 +1222,21 @@
 <table class="feat">
     <tr>
         <th class="featName">Unhindered Responsiveness</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you are unarmed and not wearing armor, before you roll Evasion, you may spend 1 Stamina to gain Advantage on the roll.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Exposing Strike</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you deal damage to a target with an Unarmed attack, you may spend 1 Energy to Expose the target.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Exposing Strike</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Exposing Strike Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You may use Exposing Strike at-will.
         <br>&#9671; When you use Exposing Strike, you also Unguard the target and deal an additional 1d8 damage.
@@ -1398,14 +1246,14 @@
 <table class="feat">
     <tr>
         <th class="featName">Draining Strikes</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you attack a creature with an Unarmed attack, you may spend +1 Energy. If you do so, if you hit the creature, they lose 1 Stamina and you regain 1 Stamina. If you hit a creature 3 times with your Draining Strikes ability before they take a Short Rest, they lose an additional 3 Stamina.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Draining Strikes</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Draining Strikes Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You may choose to use Draining Strikes after you hit an attack instead of before you attack.
         <br>&#9671; When you use Draining Strikes, you deal an additional 1d6 damage.
@@ -1417,7 +1265,7 @@
 <table class="feat">
     <tr>
         <th class="featName">Improvised Expertise</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you attack with an Improvised weapon, you may use the AV of your Unarmed attacks, but it does not count as an Unarmed attack.</td>
     </tr>
 </table>
@@ -1433,21 +1281,21 @@
 <table class="feat">
     <tr>
         <th class="featName">Strong Bowman</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>Your abundant practice with the bow has given you the technique and focused strength for drawing a heavy weight.</span>For the purposes of calculating Draw Weight, your Upper Body Strength is your Martial Proficiency Level higher.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Precise Shot</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>When given the time to carefully aim, you know your arrow can find the gap in the enemy’s armor.</span>Once per Long Rest, when you make a ranged attack, you may spend an additional +1 Energy to gain Advantage on your Hit roll.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Precise Shot</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Precise Shot Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You may use Precise Shot once per Short Rest, instead of once per Long Rest, but it requires an additional +1 Stamina to use it.
         <br>&#9671; When you use Precise Shot and the attack misses, it does not count as a use of the ability.
@@ -1458,35 +1306,35 @@
 <table class="feat">
     <tr>
         <th class="featName">Longshot</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you may spend an additional +1 Energy before making a ranged attack and double the range at which you may attack without Disadvantage.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Instinctive Shot</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When making a ranged attack, you don’t add to your Miss Chance modifier because of a target’s movement, though you can still subtract from it due to the target’s lack of movement.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Unguarding Shot</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you make a ranged attack against an Exposed creature, you may spend 1 Stamina. If you do and the creature is hit, it makes a Fortitude Save with a DC of 20 - your Miss Chance Modifier, and if it fails, it is Unguarded and loses all its Agility. If the creature succeeds on the Fortitude Save, it only loses all its Agility.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Ranged Striker</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when you make a ranged attack, you may spend +2 Stamina. If you do and the attack hits, you deal an additional 1d8 damage.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Ranged Striker</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Ranged Striker Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You may use your Ranged Striker ability at-will, instead of once per Long Rest, but it requires an additional +1 Energy.
         <br>&#9671; When you use your Ranged Striker ability, you deal an additional 1d8 damage per Tier beyond first.
@@ -1497,14 +1345,14 @@
 <table class="feat">
     <tr>
         <th class="featName">Stealth Shot</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you make a ranged attack against a target that doesn’t know where you are (as in, they don’t realize you are around or they think you’re somewhere you’re not) and you are within the shortest Range value on your weapon (in which you get Advantage on your Hit roll), you may spend +1 Energy on your attack. If you do, and if you hit, you deal an additional 2d6 damage.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Stealth Shot</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Stealth Shot Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You may use your Stealth Shot ability at-will instead of once per Short Rest, and it does not cost an additional +1 Energy.
         <br>&#9671; When you deal damage with your Stealth Shot ability, you deal an additional 1d6 damage per Tier beyond first.
@@ -1517,35 +1365,35 @@
 <table class="feat">
     <tr>
         <th class="featName">Further Improved Stealth Shot</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Improved Stealth Shot Feat, you may gain one additional benefit from it.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Devastating Aim</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when you make a ranged attack, you may spend +1 Energy and +1 Stamina to gain Devastate for the attack. If you hit, you also ignore half the target’s AR.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Careful Loading</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you Load a weapon which requires 3 or more Energy to load, you may choose to not become Unguarded during the Loading, but are Exposed during the Loading instead.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Nimble Loader</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may Load any weapon you are Proficient in while holding a Light item in the other hand.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Move and Draw</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Round, when Loading a Draw Weight weapon and you Agile Move, you may move +1m.</td>
     </tr>
 </table>
@@ -1559,21 +1407,21 @@
 <table class="feat">
     <tr>
         <th class="featName">Natural Thrower</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Short Rest, when you throw something, you may spend +1 Energy to gain Advantage on the Hit roll.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Double Throw</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, you may spend 2 Energy to throw 2 weapons with the Thrown property, one from each hand. You may then, immediately afterwards, draw a weapon with each hand, as long as they are easily accessible.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Double Throw</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Double Throw Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You may use the Double Throw ability once per Short Rest, instead of once per Long Rest, but also must spend +1 Stamina to use it.
         <br>&#9671; You may use the Double Throw ability at-will, instead of once per Long Rest, but it takes 4 Energy and 1 Stamina instead of just 2 Energy. If you target two different creatures with the ability, it only takes 3 Energy and 1 Stamina.
@@ -1584,14 +1432,14 @@
 <table class="feat">
     <tr>
         <th class="featName">Further Improved Double Throw</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Improved Double Throw Feat, you may gain one additional benefit from it.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Expert Weapon Thrower</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Choose one weapon without the Thrown property (this is a specific weapon so if you choose your longsword, this Feat will not apply to any other longsword). You can now treat this weapon as if it has the Thrown property. If it is a one handed weapon, the weapon gains Thrown(5/10/15) for you. If it is a two handed weapon, it gains Thrown(3/5/10) for you. You may transfer this ability to another weapon you are familiar with, but it takes a week of time in which you train with the new weapon and the ability cannot be used. 
         <br>&#9671; You may take this feet multiple times.</td>
     </tr>
@@ -1606,14 +1454,14 @@
 <table class="feat">
     <tr>
         <th class="featName">Practiced Maneuver</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when you perform the Trip or Disarm Combat Maneuver against a creature which is not Exposed, you do not become Unguarded.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Practiced Maneuver</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Practiced Maneuver Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; You may make use of the Practiced Maneuvers ability once per Short Rest instead of once per Long Rest. You must spend +1 Stamina to make use of the ability.
         <br>&#9671; When you use the Practiced Maneuvers ability, you gain Advantage on the Combat roll of the Combat Maneuver. You must spend +1 Agility to make use of the ability.
@@ -1623,28 +1471,28 @@
 <table class="feat">
     <tr>
         <th class="featName">Angry Shove</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, after missing a melee attack against a creature which is adjacent to you, you may spend 1 Energy and 1 Stamina to make a Push Combat Maneuver against them as if they were not Exposed.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Surprising Combat Maneuver</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If a creature is Surprised when you make a Combat Maneuver against them, they have Disadvantage on any Defense rolls to avoid the Combat Maneuver and if you hit, you may deal 1d10 damage to them.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Tenacious Grappler</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when holding a target, you may spend 1 Energy to prepare for their attempted escape and gain Advantage on your next Check to keep them from escaping. If the target does escape by the end of the next Round, they are Exhausted until the end of the next Round.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Improved Tenacious Grappler</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you have the Tenacious Grappler Feat, choose one of the following benefits when you gain this Feat. You gain that one, but not any others:
         <br>&#9671; <b>Bond of Holding:</b> Your Tenacious Grappler ability costs +2 Stamina. If the target of your Tenacious Grappler ability escapes your hold before the end of the next Round (by forcing their way out—not by you releasing them), they are Exhausted until the end of the next Round. The target is aware of this.
         <br>&#9671; <b>Practiced Hold:</b> Your Tenacious Grappler ability costs +1 Stamina. You may make use of the Tenacious Grappler ability once per Short Rest instead of once per Long Rest.
@@ -1654,70 +1502,70 @@
 <table class="feat">
     <tr>
         <th class="featName">Dexterous Grappler</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may add your Halved Dexterity Modifier to any UBS Checks you make to hold or manipulate a held creature.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Hold and Subdue</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>After you have Held a creature for one two full Rounds (beginning to end), you may push the creature to the ground, both of you become Prone, and you lock the creature in a stronger hold from which they cannot roll to escape. This lasts as long as you continue to press the hold. You may also inflict pain on the creature by tightening your hold on them. (You must still use both hands to hold the target)</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Catch Disarmed Weapon</th> <!---->
-        <td class="tier">Tier: 0</td></tr><tr>
+        <td class="tier">0</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you Disarm a non-Heavy weapon from a creature within Reach0, you may spend 1 Agility to fling their disarmed weapon to you and grab it. Normally, you will only be able to grab the weapon with a free hand.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Chain Sweeping</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when you use a flail and you perform the Trip Combat Maneuver, you may attempt to trip additional targets which you are facing within your Reach by spending 1 Energy per target.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Halberd Sweeping</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, when using a halberd-like weapon (long pole with at least Reach2) and you perform the Trip Combat Maneuver, you may attempt to trip additional targets which you are facing within your Reach by spending 1 Energy per target.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Size Doesn’t Mean Anything</th> <!---->
-        <td class="tier">Tier: 0</td></tr><tr>
+        <td class="tier">0</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may perform the Push Combat Maneuver against creatures who are one Size Category Larger than you. If you are Size Small or smaller, you may also perform the Hold Combat Maneuver against creatures who are one Size Category Larger than you.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Push and Follow Up</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you successfully Push a creature, you may, as an Immediate Interrupt, move towards them by spending 1 Agility for each meter you move. Then, as another Immediate Interrupt, you may perform a different Combat Maneuver on the target.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Chaining Combat Maneuvers</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>If you perform a successful Combat Maneuver against a creature, the next different Combat Maneuver against them until the end of the next Round has Advantage on the Combat roll.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Draining Push</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you successfully Push a creature, you may choose to have them lose 1 Stamina.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Draining Hold</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you successfully Hold a creature, you may choose to have them lose 1 Stamina.</td>
     </tr>
 </table>
@@ -1731,77 +1579,77 @@
 <table class="feat">
     <tr>
         <th class="featName">Light-Weapon Defender</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>You know how to perfectly position your blades to deflect even the heaviest of blows.</span>If you are wielding two Light weapons, you may use half of their combined Evasion bonus when defending against Heavy weapons.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Brawler’s Defending</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>While Defending, you have Advantage on all of your Fortitude rolls to resist Combat Maneuvers.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Stand your Ground</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>While Defending, you have Advantage on all of your Evasion rolls as long as you don’t move from the space where you started defending.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Focused Defender</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>While Defending, you may choose to focus on a single creature. You gain Advantage on all your Defense rolls against attacks from the creature, but you gain no benefits from the Defense action to defend against anything else. If you are hit by a different creature than the one you chose to focus on in a Round in which you were focusing on a different creature, you become Unguarded.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Ready to Defend</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You roll an additional 1d6 on any Initiative rolls you make to take the Defend action.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Mental Defender</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When taking the Defend action, instead of winning ties, you gain a bonus to your Defenses equal to your Halved Intelligence Modifier, Halved Wisdom Modifier, or Halved Charisma Modifier.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Quick Defender</th> <!---->
-        <td class="tier">Tier: 4</td></tr><tr>
+        <td class="tier">4</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may take the Defend action as an Immediate Interrupt.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Pacifist Evasion</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You may spend 2 Energy to challenge a single target. A long as you are focused on the target, not hit by anything else, and you do not make any attacks, you have +5 to your Evasion rolls to avoid their attacks.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Mind over Matter</th> <!---->
-        <td class="tier">Tier: 0</td></tr><tr>
+        <td class="tier">0</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>The strength of your will allows you to endure punishment that would overcome a typical being.</span>Once per Long Rest, after you fail a Fortitude Save, you may make a Will Save with the same DC. If the Will Save succeeds, you treat the Fortitude Save as if it had succeeded.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Instinctive Fighting</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>In the heat of battle, your senses hone in on the most important details which you can use to predict an opponent’s moves.</span>You may add your Halved Wisdom Modifier to Evasion when not wearing armor.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Stable Body</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you are Shaken, you may still use 1 Stamina per Round.</td>
     </tr>
 </table>
@@ -1815,42 +1663,42 @@
 <table class="feat">
     <tr>
         <th class="featName">Charismatic Recovery</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Your Recovery Value is increased by 1/3 your Charisma Modifier.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Aura Understanding</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You add your Wisdom Modifier to your Aura Strength.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Resilient Aura</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Round, when your Aura Strength is reduced to 0, you may spend 1 Energy to regain Aura equal to your Halved Constitution Modifier. You apply this Aura boost as soon as your Aura reaches 0 and then continue to apply any damage from the attack.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Quick Recuperation</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>When you Catch Your Breath, you regain 2 Stamina instead of 1.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Second Wind</th> <!---->
-        <td class="tier">Tier: 1</td></tr><tr>
+        <td class="tier">1</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Once per Long Rest, you may spend 3 Energy to use a Recovery Surge to regain Aura and Catch Your Breath.</td>
     </tr>
 </table>
     <table class="feat">
     <tr>
         <th class="featName">Avoid Death</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription>Your extensive experience on the battlefield and honed instincts make it difficult for your enemies to finish you off.</span>You have Advantage on Death rolls.</td>
     </tr>
 </table>
@@ -1863,7 +1711,7 @@
 <!--<table class="feat">
     <tr>
         <th class="featName">Social</th> <!----><!--
-        <td class="tier">Tier: 0</td></tr><tr>
+        <td class="tier">0</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>Art</td>
     </tr>
 </table>-->
@@ -1876,21 +1724,21 @@
 <table class="feat">
     <tr>
         <th class="featName">Feat Exchange: Tier 2</th> <!---->
-        <td class="tier">Tier: 2</td></tr><tr>
+        <td class="tier">2</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain two Background Feats.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Feat Exchange: Tier 3</th> <!---->
-        <td class="tier">Tier: 3</td></tr><tr>
+        <td class="tier">3</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain one Background Feat and one Tier 1 Feat.</td>
     </tr>
 </table>
 <table class="feat">
     <tr>
         <th class="featName">Feat Exchange: Tier 4</th> <!---->
-        <td class="tier">Tier: 4</td></tr><tr>
+        <td class="tier">4</td></tr><tr>
         <td colspan="2" class="featContent"><span class=featDescription></span>You gain one Background Feat, one Tier 1 Feat and one Tier 2 Feat.</td>
     </tr>
 </table>

@@ -3,181 +3,35 @@
 
 
 <head>
-<!--
-<link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
--->
-<link rel='stylesheet' href='rpgCSS.css'>
-<title>Themes</title>
-<meta charset="UTF-8">
-
+<link rel="icon" href="pictures/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="pictures/favicon.ico"/>
+<link rel="shortcut" href="pictures/favicon.ico" type="image/x-icon"/>
+<link rel='stylesheet' href='rpgCSS.css'/>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="SearchDatabase.js"></script>
+<title id="pageName">Themes</title>
+<meta charset="UTF-8"/>
 </head>
 
 
-<body>
 <!---->
-<nav>
-<div id="logo">
-	<a href="Index.html">Reality Check</a>
-</div>
+<body onload="getNav()">
+<div id="navigationPlaceholder"></div>
 
-<ul class="topNav1">
-	<li><a href="General.html">General</a></li>
-	<li><a href="Skills.html">Skills</a></li>
-	<li><a href="Combat.html">Combat</a></li>
-	<li><a href="Items.html">Items</a></li>
-	<li><a href="Spellcasting.html">Spellcasting</a></li>
-	<li><a href="CharacterCreation.html">Character Creation</a></li>
-	<li><a href="Races.html">Races</a></li>
-	<li><a href="Spells.html">Spells</a></li>
-</ul>
-
-</nav>
-
-
-<!-- NAV 2 -->
-<div class="nav2">
-
-<ul>
-
-	<li class="nav2main general">
-		<span class="arrow2">&#9660; </span>
-		<a href="General.html">General</a>
-		<ul class="dropDown2">
-			<li><a href="General.html#RolePlaying">Role-Playing</a></li>
-			<li><a href="General.html#Rules">Rules</a></li>
-			<li><a href="General.html#Terminology">Terminology</a></li>
-		</ul>
-	</li>
-	
-	<li class="nav2main skills twoRows">
-		<span class="arrow2">&#9660; </span>
-		<a href="Skills.html">Skills</a>
-		<ul class="dropDown2">
-                <!--<li><a href="Skills.html#SkillRanks">Skill Ranks</a></li>-->
-				<li><a href="Skills.html#UBS">Upper Body Strength</a></li>
-				<li><a href="Skills.html#LBS">Lower Body Strength</a></li>
-				<li><a href="Skills.html#Swim">Swim</a></li>
-				<li><a href="Skills.html#Acrobatics">Acrobatics</a></li>
-				<li><a href="Skills.html#SleightOfHand">Sleight of Hand</a></li>
-				<li><a href="Skills.html#DisableDevice">Disable Device</a></li>
-				<li><a href="Skills.html#Stealth">Stealth</a></li>
-				<li><a href="Skills.html#Investigation">Investigation</a></li>
-				<li><a href="Skills.html#Awareness">Awareness</a></li>
-                <li><a href="Skills.html#Insight">Insight</a></li>
-			<li><ul>
-				<li><a href="Skills.html#Heal">Heal</a></li>
-                <li><a href="Skills.html#Initiative">Initiative</a></li>
-				<li><a href="Skills.html#Reason">Reason</a></li>
-				<li><a href="Skills.html#Inspire">Inspire</a></li>
-				<li><a href="Skills.html#Discourage">Discourage</a></li>
-                <li><a href="Skills.html#Intimidate">Intimidate</a></li>
-				<li><a href="Skills.html#Deceive">Deceive</a></li>
-				<li><a href="Skills.html#SocialSense">Social Sense</a></li>
-				<li><a href="Skills.html#HandleAnimal">Handle Animal</a></li>
-				<li><a href="Skills.html#Knowledge">Knowledges</a></li>
-				<!--<li><a href="Skills.html#Languages">Languages</a></li>-->
-			</ul></li>
-		</ul>
-	</li>
-		
-	<li class="nav2main combat twoRows">
-		<span class="arrow2">&#9660; </span>
-		<a href="Combat.html">Combat</a>
-		<ul class="dropDown2">
-			<li><a href="Combat.html#Actions">Actions</a></li>
-			<li><a href="Combat.html#Stamina">Stamina</a></li>
-            <li><a href="Combat.html#Agility">Agility</a></li>
-            <li><a href="Combat.html#Rounds">Rounds</a></li>
-            <li><a href="Combat.html#ActionOrder">Initiative</a></li>
-			<li><a href="Combat.html#MeleeAttacks">Melee Attacks</a></li>
-			<li><a href="Combat.html#RangedAttacks">Ranged Attacks</a></li>
-			<li><a href="Combat.html#Aura">Aura</a></li>
-            <li><a href="Combat.html#Defenses">Defenses</a></li>
-            <li><a href="Combat.html#WeaknessesAndResistances">Resistances</a></li>
-            <li><a href="Combat.html#CriticalHits">Critical Hits</a></li>
-            <li><a href="Combat.html#Facing">Facing</a></li>
-            
-            <li><ul>
-				<li><a href="Combat.html#Size">Size</a></li>
-                <li><a href="Combat.html#Exposed">Exposed</a></li>
-                <li><a href="Combat.html#Unguarded">Unguarded</a></li>
-                <li><a href="Combat.html#Surprise">Surprise</a></li>
-                <li><a href="Combat.html#NonLethalDamage">Non-Lethal Damage</a></li>
-                <li><a href="Combat.html#MPL">MPL</a></li>
-                <li><a href="Combat.html#ImprovisedWeapons">Improvised Weapons</a></li>
-                <li><a href="Combat.html#UnarmedAttacks">Unarmed Attacks</a></li>
-                <li><a href="Combat.html#CombatManeuvers">Combat Maneuvers</a></li>
-                <li><a href="Combat.html#Resting">Resting</a></li>
-                <li><a href="Combat.html#Death">Death</a></li>
-                <li><a href="Combat.html#Conditions">Conditions</a></li>
-			</ul></li>
-		</ul>
-	</li>
-	<li class="nav2main items">
-		<span class="arrow2">&#9660; </span>
-		<a href="Items.html">Items</a>
-		<ul class="dropDown2">
-			<li><a href="Items.html#Reach">Reach</a></li>
-			<li><a href="Items.html#WeaponProperties">Weapon Properties</a></li>
-			<li><a href="Items.html#MeleeWeapons">Melee Weapons</a></li>
-            <li><a href="Items.html#RangedWeapons">Ranged Weapons</a></li>
-			<li><a href="Items.html#Shields">Shields</a></li>
-			<li><a href="Items.html#ArmorSets">Armor Sets</a></li>
-            <li><a href="Items.html#BrokenArmor&Shields">Broken Armor &amp; Shields</a></li>
-		</ul>
-	</li>
-	<li class="nav2main spellcasting">
-		<span class="arrow2">&#9660; </span>
-		<a href="Spellcasting.html">Spellcasting</a>
-		<ul class="dropDown2">
-			<li><a href="Spellcasting.html#SchoolsofMagic">Schools of Magic</a></li>
-			<li><a href="Spellcasting.html#MethodsofMagic">Methods of Magic</a></li>
-			<li><a href="Spellcasting.html#ElementsofMagic">Elements of Magic</a></li>
-			<li><a href="Spellcasting.html#CastingSpells">Casting Spells</a></li>
-			<li><a href="Spellcasting.html#SpellcastingAbilities">Spellcasting Abilities</a></li>
-		</ul>
-	</li>
-		
-</ul>
-
-</div>
-
-
-
-<!-- NAV 3 -->
-<div class="nav3">
-
-<ul>
-	<li class="nav3main characterCreation">
-		<a href="CharacterCreation.html">Character Creation</a>
-	</li>
-    
-    <li class="nav3small feats">
-		<a href="Feats.html">Feats</a>
-	</li>
-	
-	<li class="nav3small themes">
-		<a href="Themes.html">Themes</a>
-	</li>
-    
-    <li class= "nav3small combatStyles">
-		<a href="CombatStyles.html">Combat Styles</a>
-	</li>
-
-	<li class="nav3main races">
-		<a href="Races.html">Races</a>
-	</li>
-	
-	<li class="nav3main spells">
-		<a href="Spells.html">Spells</a>
-	</li>
-		
-</ul>
-
+<div class="optionsFlexBox">
+    <div></div>
+    <div><a href="Themes.html" class="selectedOption">Themes</a></div>
+    <div><a href="Feats.html">Feats</a></div>
+    <div><a href="CombatStyles.html">Combat Styles</a></div>
+    <div><a href="Spells.html">Spells</a></div>
+    <div></div>
 </div>
 
 <main>
-
+<!---->
 
 <p>Much of your defining knowledge and expertise come from Themes—you can think of them like mega-feats. After gaining 2 Themes at Level 1, of which one must not be a Combat Theme, you gain 1 Theme every 5 Levels.
 </p><p>If a Theme grants you a Feat, you gain it regardless of its Tier. You still cannot gain the same feat twice. If a Theme grants you a feat which you already have, or cannot acquire for some other reason, then you may gain one Feat of your choice of a lower Tier instead.
@@ -193,9 +47,12 @@
 </h2>
 <p>When you gain a Martial Theme, you may choose to gain +1 MPL, +2 Stamina, or +1 Combat Style.
 </p>
-
-    <h4>Unarmored and Unarmed</h4>
-<ul class="theme">
+<div class="themeWrapper">
+<table class="theme">
+    <tr>
+        <th class="themeName">Unarmored and Unarmed</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>+6 Stamina</li>
     <li><strong>Instinctive Fighting [feat]:</strong> You may add your Halved Wisdom Modifier to Evasion when not wearing armor.</li>
     <li><strong>Ensured Hit:</strong><i class="flavorText"> You focus your attention to react with celerity to your opponent’s evasive maneuvers.</i> When you make an Unarmed attack, you may spend 1 Stamina to give the attack +2 AV (before the Defense roll is made). You may spend up to 3 Stamina on one attack (which would give your attack +6 AV).</li>
@@ -205,10 +62,14 @@
     <br>&#9671; When you use Exposing Strike, you Unguard the target and deal an additional 1d8 damage.</li>
     <li><strong>Unarmored Celerity:</strong> If not wearing armor, you may spend one additional Stamina each Round in place of Energy.</li>
     <li>You fall unconscious when your Stamina falls to 3 or below.</li>
-</ul>
-    
-    <h4>Meditative Monk</h4>
-<ul class="theme">
+</ul></td>
+    </tr>
+</table>
+<table class="theme">
+    <tr>
+        <th class="themeName">Meditative Monk</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +4 Stamina</li>
     <li>+3 Awareness</li>
     <li><strong>Instinctive Fighting [feat]:</strong><i class="flavorText"></i> You may add your Halved Wisdom Modifier to Evasion when not wearing armor.</li>
@@ -218,9 +79,14 @@
     <li><strong>Always Ready:</strong><i class="flavorText"></i> Once per Long Rest, when you are Surprised, you may spend all your Agility to not be Surprised.</li>
     <li><strong></strong><i class="flavorText"></i>When you Sprint, you move 2m less than you normally would (but not less than your Speed).</li>
 </ul>
-    
-    <h4>Silent Monk</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Silent Monk</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +3 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>You may add your Halved Wisdom Modifier to Stealth.</li>
     <li><strong>Instinctive Fighting [feat]:</strong><i class="flavorText"></i> You may add your Halved Wisdom Modifier to Evasion when not wearing armor.</li>
@@ -230,9 +96,14 @@
     <li><strong>Unladen Celerity:</strong><i class="flavorText"></i> If the only armor you are wearing is Light, you may spend one additional Stamina each Round in place of Energy.</li>
     <li><strong></strong><i class="flavorText"></i>When a creature scores a Critical hit on you, you take an additional 1d4 damage.</li>
 </ul>
-    
-    <h4>Rapid Unarmed Striker</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Rapid Unarmed Striker</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +2 Stamina</li>
     <li><strong>Follow-Up Attack:</strong><i class="flavorText"></i> When you are not wearing armor and hit a target with an Unarmed attack that is not an Immediate Interrupt, you may spend +1 Stamina to attack them again as an Immediate Interrupt with another Unarmed attack, but it must be using a different method of attack (eg: punch, kick, jab, head-butt).</li>
     <li><strong></strong><i class="flavorText"></i>Once per Round, you may make an Unarmed attack with your foot which requires the target to make a Fortitude Save with a DC of the attack’s AV, or be pushed back up to 2m.</li>
@@ -243,18 +114,28 @@
     <li><strong>Flurry of Blows [feat]:</strong><i class="flavorText"></i>Once per Long Rest, if you have both hands free, when you hit a creature with an Unarmed attack, you may perform additional Unarmed attacks against the target as Immediate Interrupts. For each 1 Energy, 1 Agility, and 1 Stamina you spend, you can perform another attack.</li>
     <li><strong></strong><i class="flavorText"></i>When you lose your last Agility, you become Unguarded.</li>
 </ul>
-    
-<h4>Precise Ki Strikes</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Precise Ki Strikes</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>+3 Stamina</li>
     <li><strong>Concentrated Ki:</strong><i class="flavorText"></i> You may spend 2 Energy to focus on a target. Any Unarmed attacks you make against the target has additional Precision equal to your Halved Wisdom Modifier against the target. You can only focus on one target at a time.</li>
     <li><strong>Ki Disruption:</strong><i class="flavorText"> With a perfectly timed hit, you can temporarily disrupt the flow of energy and brain signals from a creature’s mind to their limbs.</i> When you score a Critical hit with an Unarmed attack against a humanoid creature (you must have some understanding of the creature’s biology for the purposes of blocking their ki flow), you may spend 1 Stamina to force the creature to make a Fortitude Save with a DC of the attack’s AV. If the target fails, one of the target’s limbs go limp and unusable until the end of next Round. If you incapacitate an arm, the creature drops whatever they are holding with the arm. If you incapacitate a leg, the creature is Slowed. If you incapacitate both legs, the creature falls Prone.</li>
     <li><strong>Stunning Jab:</strong><i class="flavorText"></i> Once per creature per Short Rest, when you hit a creature with an Unarmed jab, you may spend 2 Stamina to Daze them. If your attack was a Critical hit, you do not need to spend the Stamina.</li>
     <li><strong></strong><i class="flavorText"></i>When a creature scores a Critical hit against you, you lose all your Agility.</li>
 </ul>
-    
-    <h4>Fists of Furry</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Fists of Furry</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +2 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>+3 Upper Body Strength</li>
     <li><strong>Forceful Punches:</strong><i class="flavorText"> Your punches are laden with inordinate force.</i> When you make an Unarmed punch against a target, you may add 1d4 to the damage you deal.</li>
@@ -263,9 +144,14 @@
     <li><strong>Strong Maneuvers:</strong><i class="flavorText"></i> If you are unarmed, when you make a Combat Maneuver, you may spend 1 Energy to impose Disadvantage on one Fortitude Save the target makes to defend against the maneuver.</li>
     <li><strong></strong><i class="flavorText"></i>You have -2 Will.</li>
 </ul>
-
-<h4>Graceful Acrobatics</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Graceful Acrobatics</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +3 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>Gain +3 Acrobatics.</li>
     <li><strong></strong><i class="flavorText"></i>Gain +1 Agility.</li>
@@ -277,9 +163,14 @@
     <li><strong>Unarmored Celerity:</strong><i class="flavorText"></i> If not wearing armor, you may spend one additional Stamina each Round in place of Energy.</li>
     <li><strong></strong><i class="flavorText"></i>When you are hit by a Swift Attack, you lose all your Agility.</li>
 </ul>
-
-    <h4>Unarmored Specialist</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Unarmored Specialist</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +4 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>You gain +2 Evasion when wearing no armor.</li>
     <li><strong></strong><i class="flavorText"></i>If you are wearing no armor, you may spend 2 Stamina to gain Advantage on an UBS, LBS, Swim, or Acrobatics Check.</li>
@@ -288,9 +179,14 @@
     <li><strong>Unarmored Celerity:</strong><i class="flavorText"></i> If not wearing armor, you may spend one additional Stamina each Round in place of Energy.</li>
     <li><strong></strong><i class="flavorText"></i>If you are Exhausted or Dazed, you have Disadvantage on your Fortitude Saves.</li>
 </ul>
-    
-    <h4>Backstabbing Rogue</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Backstabbing Rogue</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +3 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>You may treat your MPL as 2 higher for Light weapons.</li>
     <li><strong></strong><i class="flavorText"></i>When you attack an Exposed target with a dagger, you may deal an additional 1d6 damage.</li>
@@ -300,9 +196,14 @@
     <li><strong>Circumventing Strike: </strong><i class="flavorText"> You duck behind your opponent or swing over their shoulders, stabbing them in a weak spot.</i> Once per Short Rest, when you hit a target which takes up only 1 space with a dagger, you may spend 1 Energy to quickly swing around the target, treating the attack as if the target wasn’t facing you. You may also choose to move behind the target, and cannot be targeted by Swift Attacks during this movement.</li>
     <li><strong></strong><i class="flavorText"></i>If you are Shaken, you have Disadvantage on your Hit rolls.</li>
 </ul>
-    
-    <h4>Dual Daggers</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Dual Daggers</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +3 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>You may treat your MPL as 2 higher for Light weapons.</li>
     <li><strong>Light-Weapon Defender [feat]:</strong><i class="flavorText"> You know how to perfectly position your blades to deflect even the heaviest of blows.</i> If you are wielding two Light weapons, you may use half of their combined Evasion bonus when defending against Heavy weapons.</li>
@@ -313,9 +214,14 @@
     <li><strong></strong><i class="flavorText">Whenever you are Exposed, you also have Disadvantage on your Combat rolls.</i></li>
 
 </ul>
-    
-    <h4>Knife Thrower</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Knife Thrower</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Stamina equal to your Halved Dexterity Modifier.</li>
     <li><strong></strong><i class="flavorText"></i>You may treat your MPL as +2 higher for throwing knives.</li>
     <li><strong></strong><i class="flavorText"></i>You know how to hold up to 3 knives in one hand comfortably and can Equip up to 3 knives in one hand by spending only 1 Energy, but only if the knives are in places on your person where you are used to retrieving them this way (perhaps along your belt or in your jacket). You still can only make use of the Evasion bonus of one of one knife per hand. When you have multiple knives in one hand, any melee attacks you make with the knives deal half damage.</li>
@@ -324,9 +230,14 @@
     <li><strong>Flurry of Knives:</strong><i class="flavorText"> The goblin commander watches in fear as a dozen of his troops are felled by the rouge’s conjured storm of knives.</i> Once per Short Rest, when you have 3 throwing knives in each hand, you may launch them in a circle around you, dealing damage to all creatures in a 5m radius circle around you equal to the damage you deal with your dagger on a ranged attack plus an additional 1d4 damage per Tier. This damage is reduced by targets’ AR.</li>
     <li><strong></strong><i class="flavorText"></i>When Exposed, you have Disadvantage on Fortitude Saves.</li>
 </ul>
-    
-    <h4>Dual Wielding Furry</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Dual Wielding Furry</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>+1 Stamina</li>
     <li>+1 MPL</li>
     <li><strong>Follow-up Strike:</strong><i class="flavorText"></i> When wielding two one-handed weapons, if you successfully hit a target with a melee attack with one of your weapons, when you make a melee attack with the other weapon during the same Round, it takes 2 Energy (instead of 3).</li>
@@ -335,9 +246,14 @@
     <li><strong>Feint:</strong><i class="flavorText"></i> When wielding two one-handed weapons, when you make a melee attack against a creature, you may spend 1 Energy and 1 Stamina to feint an attack with your other weapon (which must be able to Reach the target) and you gain Advantage on the Combat roll for the Attack.</li>
     <li><strong></strong><i class="flavorText"></i>When you are hit by a Critical strike, you are Dazed until the end of the Round.</li>
 </ul>
-    
-    <h4>Light and Quick Fighter</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Light and Quick Fighter</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +3 Stamina</li>
     <li>Gain +1 Agility</li>
     <li>Gain +3 Sleight of Hand or +3 Disable Device or +2 Initiative</li>
@@ -346,9 +262,14 @@
     <li><strong>Unladen Celerity:</strong><i class="flavorText"></i> If the only armor you are wearing is Light, you may spend one additional Stamina each Round in place of Energy.</li>
     <li><strong></strong><i class="flavorText"></i>If you are Slowed, you have Disadvantage on your Combat rolls.</li>
 </ul>
-    
-    <h4>Sword and Dagger</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Sword and Dagger</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +3 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>+1 Combat Style</li>
     <li><strong></strong><i class="flavorText"></i>You have +1 Evasion, but -2 Ranged Evasion (the +1 Evasion applies to all Evasion, including Ranged).</li>
@@ -357,9 +278,14 @@
     <li><strong>Partial Avoidance:</strong><i class="flavorText"></i> Once per Short Rest, when you are hit by a Swift Attack, you may halve the damage that you take.</li>
     <li><strong></strong><i class="flavorText"></i>If you are not wielding a Reach0 weapon and a weapon with a greater Reach than 0, you cannot have Advantage on your Evasion rolls or Advantage on your Combat rolls.</li>
 </ul>
-    
-    <h4>Rogue Assassin</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Rogue Assassin</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +3 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>+3 Stealth</li>
     <li><strong>Killing Strike:</strong><i class="flavorText"></i> When you attack an Exposed target, you may spend 1 Stamina to deal an additional 1d8 damage (decided before you hit).</li>
@@ -368,9 +294,14 @@
     <li><strong>Surprise Stabbing:</strong><i class="flavorText"></i> When you attack a Surprised creature with a melee attack and hit, you may spend an additional 2 Energy and 2 Stamina and deal double damage.</li>
     <li><strong></strong><i class="flavorText"></i>The third time you are hit by an attack in one Round, you become Shaken until the end of the next Round.</li>
 </ul>
-    
-    <h4>Ranged Assassin</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Ranged Assassin</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +2 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>Gain +3 UBS</li>
     <li><strong></strong><i class="flavorText"></i>You may treat your MPL as 1 higher for Ranged weapons.</li>
@@ -380,9 +311,14 @@
     <li><strong>Longshot [feat]:</strong><i class="flavorText"></i> You may spend an additional +1 Energy before making a ranged attack and double the range at which you may attack without Disadvantage.</li>
     <li><strong></strong><i class="flavorText"></i>The second time you are hit by a melee attack in one Round, you lose 1 Stamina.</li>
 </ul>
-    
-    <h4>Versatile Bowman</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Versatile Bowman</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +2 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>Gain Proficiency in a Knowledge that includes knowledge of Special Ammunition.</li>
     <li><strong></strong><i class="flavorText"></i>You may treat your MPL as 1 higher for Ranged weapons.</li>
@@ -395,9 +331,14 @@
     <br>&#9671; <i>Honing:</i> You have Advantage on your Hit roll and +2 Precision, but deal half damage, after AR damage reduction, unless you score a Critical hit.</li>
     <li><strong></strong><i class="flavorText"></i>When Exposed, you have Disadvantage on Evasion.</li>
 </ul>
-    
-    <h4>Vigorous Speed</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Vigorous Speed</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>You gain Stamina equal to your Halved Strength Modifier.</li>
     <li><strong></strong><i class="flavorText"></i>+2 Lower Body Strength and +2 Acrobatics</li>
     <li><strong></strong><i class="flavorText"></i>+1 Speed</li>
@@ -407,9 +348,14 @@
     <li><strong>Freedom of Movement:</strong><i class="flavorText"></i> Once per Short Rest, when you are Slowed, you may spend 2 Stamina to remove the Slowed condition and you cannot be slowed for the rest of the Round.</li>
     <li><strong></strong><i class="flavorText"></i>If you are Slowed, you are also Exposed.</li>
 </ul>
-    
-    <h4>Nimble Fighter</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Nimble Fighter</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +3 Stamina</li>
     <li>Gain +1 Agility</li>
     <li><strong></strong><i class="flavorText"></i>Gain +3 Acrobatics</li>
@@ -417,9 +363,14 @@
     <li><strong>Unladen Celerity:</strong><i class="flavorText"></i> If the only armor you are wearing is Light, you may spend one additional Stamina each Round in place of Energy.</li>
     <li><strong></strong><i class="flavorText"></i>When in combat, if a Round passes in which you do not Shift, you are Exposed until the end of the Round (the Round after the one in which you didn’t Shift).</li>
 </ul>
-    
-    <h4>Agile Dodger</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Agile Dodger</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +3 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>Gain +1 Agility</li>
     <li><strong></strong><i class="flavorText"></i>Gain +1 Evasion if you are not wearing any Heavy Armor.</li>
@@ -428,9 +379,14 @@
     <li><strong>Flawless Reflexes:</strong><i class="flavorText"></i> Once per Short Rest, when you fail to avoid a Swift Attack, you may spend 1 Agility to make the attack miss. For the rest of the Round, you may also spend 1 Agility to doge Swift Attacks that would have hit.</li>
     <li><strong></strong><i class="flavorText"></i>When you are hit by a Heavy weapon, you take an additional 1d4 damage.</li>
 </ul>
-    
-    <h4>Precise Swordsman</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Precise Swordsman</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +1 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>You roll an additional 1d4 on your Initiative rolls to attack with a sword.</li>
     <li><strong></strong><i class="flavorText"></i>When wielding a sword, it gains Devastate. If the sword already has Devastate, it instead gains +1 Precision.</li>
@@ -439,9 +395,14 @@
     <li><strong>Slight of Sword:</strong><i class="flavorText"></i> When performing a reasonable non-combat maneuver with your sword (such as quickly slicing the wick off a candle, balancing a leaf on the end of your sword, or throwing your sword several feet to cut a rope) you do not have to roll a Check, but may simply perform these actions successfully.</li>
     <li><strong></strong><i class="flavorText"></i>You have -1 Evasion if wielding a Shield.</li>
 </ul>
-    
-    <h4>Bloodthirsty Axeman</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Bloodthirsty Axeman</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +2 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>Gain +3 Upper Body Strength</li>
     <li><strong>Brutal Axe Attacks:</strong><i class="flavorText"></i> You may spend 1 Stamina or 2 Agility before an attack with an axe to give it +2 Brutal.</li>
@@ -450,18 +411,28 @@
     <li><strong>Invigorating Kill:</strong><i class="flavorText"></i> When you kill a Small or larger creature, you regain Aura equal to your Recovery Value.</li>
     <li><strong></strong><i class="flavorText"></i>You have -2 AR.</li>
 </ul>
-    
-    <h4>Flail Specialist</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Flail Specialist</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li><strong></strong><i class="flavorText"></i>+3 Upper Body Strength</li>
     <li><strong>Shield Bane:</strong><i class="flavorText"></i> When you make a melee attack with a flail against someone with a shield, you may spend +1 Energy to have Advantage on your Combat roll. If you miss, but would have hit without the target using its shield, you deal damage to the shield instead.</li>
     <li><strong>Wind-Up Flail Swing:</strong><i class="flavorText"> You wind up for a devastating attack by spinning your flail around your head.</i> Twice per Short Rest, when you make a melee attack with a flail, you may spend +1 Energy. If you do so and you hit, you deal additional damage equal to your MASDB x 2.</li>
     <li><strong>Flail Retaliation: </strong><i class="flavorText"></i> When you are hit by an attack from a creature you are facing, you may retaliate with a melee attack with a flail as an Immediate Interrupt using only 2 Energy, but have Disadvantage on your Combat roll.</li>
     <li><strong></strong><i class="flavorText"></i>When you are Unguarded, you have Disadvantage on your Combat rolls.</li>
 </ul>
-    
-    <h4>Quarterstaff Specialist</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Quarterstaff Specialist</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>+3 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>+1 Agility</li>
     <li><strong></strong><i class="flavorText"></i>You may always deal Non-Lethal damage with a quarterstaff.</li>
@@ -471,9 +442,14 @@
     <li><strong>Quarterstaff Follow-up:</strong><i class="flavorText"> After stabbing your quarterstaff straight into the vulnerable armpit of the goblin, you quickly swing your staff around to bash his chin.</i> When you score a Critical hit on a creature with an attack with your Quarterstaff, you gain 1 Agility and may make an additional attack against the target as an Immediate Interrupt by spending 1 Energy and 1 Stamina.</li>
     <li><strong></strong><i class="flavorText"></i>When you are Unguarded, you are also Shaken until the end of the Round.</li>
 </ul>
-    
-    <h4>Armor Master</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Armor Master</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>+1 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>You may treat your MPL as 2 higher for armor.</li>
     <li><strong></strong><i class="flavorText"></i>If your Energy Cost from wearing armor is greater than 2, you may reduce it by 1.</li>
@@ -483,18 +459,28 @@
     <li><strong></strong><i class="flavorText">You carry supplies for maintaining and fixing your armor, which often come in handy.</i> You can always fix your own armor by spending 1 hour during a Short Rest, though you must have your armor maintenance supplies. It may not always look pretty once it’s “fixed” but will still give the same mechanical advantage as the armor when it wasn’t Broken, at least when you use it.</li>
     <li><strong></strong><i class="flavorText"></i>When you are hit by a Crit, you take an additional 1d6 damage.</li>
 </ul>
-    
-    <h4>Aura Knight</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Aura Knight</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>+2 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>+1 Recovery Surge</li>
     <li><strong></strong><i class="flavorText"></i>+1 MPL</li>
     <li><strong>Dogged Perseverance:</strong><i class="flavorText"></i> If you have less health than 10 + your Aura Modifier, then you when you take damage, you can reduce it by your Halved Intelligence Modifier, Halved Wisdom Modifier, or Halved Charisma Modifier.</li>
     <li><strong>Armor Life-Link:</strong><i class="flavorText"></i> You may spend 1 day studying, wearing, and meditating with an armor set. From now on (as long as you interact with the armor frequently), when you are wearing the armor and it would be Broken, you may spend a Recovery Surge to keep the armor from being Broken.</li>
 </ul>
-    
-    <h4>Bastion of Fortitude</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Bastion of Fortitude</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Stamina equal to your either your Halved Strength Modifier or Halved Constitution Modifier. Alternatively, you may gain +1 Fortitude.</li>
     <li><strong></strong><i class="flavorText"></i>Gain +1 Fortitude</li>
     <li><strong></strong><i class="flavorText"></i>Gain Resistance to Disease or Poison.</li>
@@ -506,9 +492,14 @@
     <li><strong>Quick Recovery [feat]:</strong><i class="flavorText"></i> When you Catch Your Breath, you regain 2 Stamina instead of 1.</li>
     <li><strong></strong><i class="flavorText"></i>You have -1 Agility</li>
 </ul>
-    
-    <h4>Bastion of Will</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Bastion of Will</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Stamina equal to your either your Halved Wisdom Modifier or Halved Charisma Modifier. Alternatively, you may gain +1 Will.</li>
     <li><strong></strong><i class="flavorText"></i>+1 Will</li>
     <li><strong></strong><i class="flavorText"></i>Gain Resistance to Psionic damage.</li>
@@ -519,9 +510,14 @@
     <li><strong></strong><i class="flavorText"></i>You gain +10 on your first Death roll since your last Short Rest.</li>
     <li><strong></strong><i class="flavorText"></i>When you Sprint, you don’t gain +1m of movement.</li>
 </ul>
-    
-    <h4>Stalwart Warden</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Stalwart Warden</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +4 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>Gain +3 to any Knowledges about nature.</li>
     <li><strong></strong><i class="flavorText"></i>Gain Proficiency in Protection magic.</li>
@@ -530,18 +526,28 @@
     <li><strong>Sturdy:</strong><i class="flavorText"></i> You may spend 2 Stamina to gain Advantage on a Defense roll to avoid or resist a Combat Maneuver.</li>
     <li><strong></strong><i class="flavorText"></i>When you are Intimidated, you are Exposed as well as Shaken.</li>
 </ul>
-    
-    <h4>Expert Defender</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Expert Defender</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain +1 Stamina</li>
     <li><strong>Expert Defender:</strong><i class="flavorText"></i> When you take the Defend action, you can still make melee Swift attacks and attack Exposed targets with melee attacks without ending the defensive bonuses. You also cannot be Exposed while Defending.</li>
     <li><strong>Combat Senses:</strong><i class="flavorText"></i> You may spend 2 Energy to increase your Evasion by your Halved Intelligence, Halved Wisdom, or Halved Charisma Modifier until the end of the next Round.</li>
     <li><strong>Damage Resistant:</strong><i class="flavorText"> Whether it’s from luck or good technique, you always seem to come out of a fight a little better than expected.</i> When you are not Exposed and take damage, you take 1 less.</li>
     <li><strong></strong><i class="flavorText"></i> When you are hit by an attack from behind, you take an additional 1d6 damage.</li>
 </ul>
-    
-    <h4>Deceptive Renegade</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Deceptive Renegade</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Stamina equal to your Halved Charisma Modifier.</li>
     <li><strong></strong><i class="flavorText"></i>Gain +3 Deceive</li>
     <li><strong></strong><i class="flavorText"></i>Choose 1:
@@ -554,9 +560,14 @@
     <li><strong>Distracting Words:</strong><i class="flavorText"></i> When a creature attacks you with a melee attack, you may make a distracting remark, sound, or gesture by spending 1 Agility. The creature may make a Will Save or Insight Check with a DC of 5 + your Deceive Bonus. If they fail, they have Disadvantage on their Combat roll.</li>
     <li><strong></strong><i class="flavorText"></i>Choose Social Sense, Reason, or Inspire. You have a -5 to its Skill bonus.</li>
 </ul>
-    
-    <h4>Charismatic Hero</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Charismatic Hero</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Stamina equal to your Halved Charisma Modifier OR gain Aura equal to your Halved Charisma Modifier.</li>
     <li><strong></strong><i class="flavorText"></i>Choose 1:
     <br>&#9671; You may add your Charisma Modifier to the MASAB equation.
@@ -568,9 +579,14 @@
     <li><strong>Encouraging Words:</strong><i class="flavorText"></i> If another creature who can hear you is under an effect that a Save can end, you may spend 1 Energy and make an Inspire Check, contested by the DC of the Saving Throw. If you succeed, the targeted creature may immediately make a Save against the effect. You may only do this once per effect.</li>
     <li><strong></strong><i class="flavorText"></i>When you are Shaken and have a chance to drop items, the Chance Save has a DC of 15 instead of 5.</li>
 </ul>
-    
-    <h4>Discouraging Warrior</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Discouraging Warrior</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Stamina equal to your Halved Charisma Modifier.</li>
     <li><strong></strong><i class="flavorText"></i>Gain +3 Discourage</li>
     <li><strong></strong><i class="flavorText"></i>Choose 1:
@@ -583,9 +599,14 @@
     <li><strong>Insult to Injury:</strong><i class="flavorText"></i> When you wound a creature who can understand you (meaning you actually injure them, not just reduce their arura), you can add insult to injury by mocking them. The creature makes a Will Save or Reason Check with a DC equal to 5 + your Discourage Bonus. If they fail, the creature is emotionally wounded by your words and because of the emotions bubbling up inside them, they are Dazed and Exhausted until the end of the next Round.</li>
     <li><strong></strong><i class="flavorText"></i>You have -1 to your Recovery Value.</li>
 </ul>
-    
-    <h4>Intelligent Warrior</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Intelligent Warrior</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Stamina equal to your Halved Intelligence Modifier.</li>
     <li><strong></strong><i class="flavorText"></i>+1 MPL</li>
     <li><strong></strong><i class="flavorText"></i>Choose 1:
@@ -599,9 +620,14 @@
     <li><strong>Shared Calculations:</strong><i class="flavorText"></i> Once per Long Rest, when you use your Focused Calculations ability, you may share the benefits with up to 7 others who can see and hear you.</li>
     <li><strong></strong><i class="flavorText"></i>You have -1 to your Strength based Skills or your Wisdom based Skills.</li>
 </ul>
-    
-    <h4>Clever Leader</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Clever Leader</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Choose 1:
     <br>&#9671; You may add your Intelligence Modifier to the MASAB equation.
     <br>&#9671; You may add your Intelligence Modifier to the MASDB equation.
@@ -614,9 +640,14 @@
     <li><strong>Warning Shout:</strong><i class="flavorText"></i> Once per Short Rest, when you or an ally would be Shaken, Exhausted, Dazed, Blinded, Slowed, or Paralyzed you may spend 1 Energy and 2 Stamina as an Immediate Interrupt to prevent them from becoming so.</li>
     <li><strong></strong><i class="flavorText"></i>When you deal damage, you always deal 1 less (determined after all other modifiers).</li>
 </ul>
-    
-    <h4>Paragon of Prescient Combat</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Paragon of Prescient Combat</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>+3 Initiative</li>
     <li>+3 Awareness</li>
     <li><strong></strong><i class="flavorText"></i>Choose 1:
@@ -627,9 +658,14 @@
     <li><strong></strong><i class="flavorText"></i>Once per Long Rest, when you are Surprised, you may spend 1 Energy to not be Surprised.</li>
     <li><strong></strong><i class="flavorText"></i>You may spend 2 Energy to focus on a creature’s movements. Until the end of the encounter, or until you shift your focus to something else, you may add your Halved Wisdom Modifier to your Evasion when it is targeted by that creature.</li>
 </ul>
-    
-    <h4>Wise Guardian</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Wise Guardian</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>You gain Stamina equal to your Halved Wisdom Modifier.</li>
     <li><strong></strong><i class="flavorText"></i>+3 Initiative</li>
     <li><strong></strong><i class="flavorText"></i>Choose 1:
@@ -640,9 +676,14 @@
     <li><strong>Prescient Guidance:</strong><i class="flavorText"></i> Twice per Short Rest, when an ally up you are adjacent to fails a Defense roll, you may spend 2 Stamina to boost the targeted Defense by your Wisdom Modifier, possibly causing the roll to succeed.</li>
     <li><strong></strong><i class="flavorText"></i>You gain Proficiency in Protection Spells and learn one Protection Spell.</li>
 </ul>
-    
-    <h4>Paladin of Mercy</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Paladin of Mercy</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>+2 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>+1 MPL</li>
     <li><strong></strong><i class="flavorText"></i>When you make a melee attack, you may deal Non-Lethal damage at-will without a roll. You also gain +5 to all your attempts to deal Non-Lethal damage.</li>
@@ -650,17 +691,28 @@
     <li><strong></strong><i class="flavorText"></i>If you spend time to explain terms of surrender to a creature in which you and your companions will not harm them (takes at least 5 Energy), and they refuse to surrender, then for the rest of the encounter, you have Advantage on your Defense rolls when defending against attacks from the creature. Additionally, once per creature, when you deal damage to them, you deal an additional 1d10 damage. This ability only works on creatures that can understand you. The terms can be explained to a large group and all creatures in that group affected. If a creature agrees to your terms and you or your companions do not follow the terms, the Energy you gain every Round is reduced by 2 (to a minimum of 1 Energy gained per Round). If you weren’t the one to break the terms of surrender and did everything in your power (short of killing) to keep your companions from breaking them, then you only gain 1 less Energy each round (instead of 2). For every Long Rest you take, you remove 1 Energy worth of this penalty, until your total Energy per Round is what it would normally be.</li>
     <li><strong></strong><i class="flavorText"></i>You cannot gain any benefits for attacking a Surprising a creature (whether from Feats, Themes, or other abilities).</li>
 </ul>
-    
-    <h4>Battle Senses</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Battle Senses</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>+2 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>+3 Awareness</li>
     <li><strong>The Flow of Battle:</strong><i class="flavorText"></i> When viewing a fight, you may spend 4 Energy figuring out the flow of it. For the rest of that encounter, you cannot be Surprised in that combat, and you ignore any Disadvantage on your Evasion during that combat (meaning you cannot roll Evasion with Disadvantage and it does not cancel out Advantage). Also you choose 1 of the following conditions when you use the ability: Exposed, Unguarded, Shaken, Exhausted, Slowed, Dazed, Blinded. For the next 3 Rounds, when you would be affected by the chosen condition, you are not affected by it. This does not remove the condition from you if you are currently affected by it, though it ensures you cannot be affected again for the next 3 Rounds.</li>
     <li><strong></strong><i class="flavorText"></i>Once per Long Rest, when you use your Feel the Flow of Battle ability, you add 1d6 to your Initiative rolls for the rest of the encounter and gain Advantage on your next melee attack.</li>
     <li><strong></strong><i class="flavorText"></i>You have -5 Stamina when wearing Heavy armor, -3 Stamina when wearing no Heavy armor but also wearing armor that isn’t Light, and -1 Stamina if wearing Light armor and no armor that isn’t Light.</li>
 </ul>
-    <h4>Enraged Fighter</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Enraged Fighter</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>+1 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>You gain the Improved Rage feat (note that you must already have the Rage feat to make use of this feat). Additionally, you may gain the benefits of two Improved Rage options, instead of one.</li>
     <li><strong>Too Angry to Die[feat]:</strong><i class="flavorText"></i> While you are Raging (per the Rage feat), you have Advantage on all your Death rolls and Death Saves.</li>
@@ -669,18 +721,28 @@
     <br>&#9671; spend 2 Energy to make a melee attack against the one who damaged you</li>
     <li><strong></strong><i class="flavorText"></i>When you are damaged by an enemy’s attack when Exposed, you take an additional 1d4 damage.</li>
 </ul>
-    
-    <h4>Berserker</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Berserker</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Stamina equal to your Strength Modifier.</li>
     <li><strong>Berserk:</strong><i class="flavorText"></i> When your Aura Strength drops to 0 during combat, you go Berserk! This lasts for 2d4 rounds. While Berserk, you have Advantage on your Death rolls and Death saves and cannot be Exhausted. However, you still sustain wounds and will have to deal with them when your Berserking rage ends. While you are Berserk, you must try to attack at least one creature every Round, you have Advantage on all of your attack rolls, and you deal double damage on your melee attacks.</li>
     <li><strong></strong><i class="flavorText"></i>When you take damage from a Swift attack, you may spend 2 Stamina to half the damage you take.</li>
     <li><strong></strong><i class="flavorText"></i>When you have less Aura than double your Recovery Value, you deal an additional 1 damage on all your melee attacks. </li>
     <li><strong></strong><i class="flavorText"></i>When you are at or above your maximum Aura Strength, you have Disadvantage on your Defense rolls.</li>
 </ul>
-    
-    <h4>Leaping Striker</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Leaping Striker</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>+3 Stamina</li>
     <li><strong></strong><i class="flavorText"></i>+3 LBS</li>
     <li><strong></strong><i class="flavorText"></i>You gain +1m to your Jump Reach and Jump Distance.</li>
@@ -690,106 +752,160 @@
     <li><strong>Translocational Jump Attack [feat]:</strong><i class="flavorText"> You jump into the air faster than the eye can follow and blink down onto your target.</i> If you are Proficient in Translocation Magic, once per Short Rest, when you Jump, you are not Unguarded by it and do not provoke Swift Attacks for crossing the Reach of an opponent. If you jump at least 2m to an Exposed creature, you may spend 1 Energy and 1 Stamina to make a Reach0 attack against them as an Immediate Interrupt. After the attack, you usually land adjacent to the target (your choice where). If your Reach0 Attack is a Combat Maneuver, you do not have -5 AV. If the Reach0 Attack is not a Combat Maneuver, you may deal an additional 1d6 damage per Tier.</li>
     <li><strong></strong><i class="flavorText"></i></li>
 </ul>
+    </td>
+    </tr>
+</table>
+
+</div>
+<div class="clearBoth"></div>
+<!--
+    <table class="theme">
+    <tr>
+        <th class="themeName">Unarmed</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
+    <li></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+</ul>
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Unarmed</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
+    <li></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+    <li><strong></strong><i class="flavorText"></i></li>
+</ul>
+    </td>
+    </tr>
+</table>
+
+    <table class="theme">
+    <tr>
+        <th class="themeName">Unarmed</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span>
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Unarmed</th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span>
+    </td>
+    </tr>
+</table>-->
     
-    <h4></h4>
-<ul class="theme">
-    <li></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-</ul>
-    <h4></h4>
-<ul class="theme">
-    <li></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-</ul>
-    
-    <h4></h4>
-<ul class="theme">
-    <li></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-</ul>
     
 <h2>
 <span>Practices</span>
 </h2>
 <p>When you gain a Practice, you gain an additional 1 Knowledge Proficiency which must pertain to the Practice. You also choose to gain +1 Stamina, +2 Aura, or +3 to a Skill.
 </p>
-    
-    <h4>Thief</h4>
-<ul class="theme">
+<div class="themeWrapper">
+    <table class="theme">
+    <tr>
+        <th class="themeName">Thief<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in Stealth, Sleight of Hand, Disable Device, and Investigation.</li>
     <li><strong></strong><i class="flavorText"></i>You have Advantage on Stealth checks when in an area you are familiar with. It takes about 1 day of exploring and scoping out an area to become familiar with it enough for you to get the bonus, though if the area changes substantially this bonus does not apply (this includes the difference between an outdoor area at day and at night).</li>
     <li><strong>Practiced Lock-picker:</strong><i class="flavorText"> When picking a lock, you may spend 5 more rounds working on the lock up to a maximum of +15 to the check.</i></li>
     <li><strong></strong><i class="flavorText">You feel at home amongst shadows, which you seek out to hide your villainy.</i> Once per Long Rest, regardless of your Spell Proficiencies, you may cast the Hidden Shadow Space spell as an Incantation using only 2 Energy and successfully cast it regardless of your Cast roll.</li>
 </ul>
-    
-    <h4>Outlaw</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Outlaw<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in Stealth, Awareness, Deceive, and Discourage.</li>
     <li><strong></strong><i class="flavorText"></i>You gain Advantage on Awareness checks when in a bad part of town or amongst criminals you are unfamiliar with.</li>
     <li><strong>Luck [feat]:</strong><i class="flavorText"></i> Once per Long Rest, when you make a Chance roll, you may choose to re-roll it and use either result.</li>
     <li><strong>Skilled Luck [feat]:</strong><i class="flavorText"></i> Once per Long Rest, when you make a Skill Check, you may choose to re-roll it and use either result.</li>
     <li><strong></strong><i class="flavorText">You know how to talk your way out of sticky situations.</i> Once per Long Rest, you may choose to re-roll a Skill Check made to convince others your intentions are blameless.</li>
 </ul>
-    
-    <h4>Pick-Pocket</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Pick-Pocket<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in Stealth, Sleight of Hand, Deceive, and Initiative.</li>
     <li><strong></strong><i class="flavorText"></i>You gain +3 to Sleight of Hand.</li>
     <li><strong></strong><i class="flavorText"></i>You may gain Advantage on a Sleight of Hand check to lift something off someone if you distract them first. A check must always be made for this distraction, often contested by the passive Insight of the target. You are not made aware of whether or not your distraction succeeded, however you may decide to not pick-pocket at any time before you roll the Sleight of Hand check itself. Examples: You may distract them with conversation, and would make an Inspire, Deceive, or Intimidate check depending on the circumstance. You may distract by running into the target to push them over. This would likely require an Upper or Lower Body Strength check to see if you can push them over, and possibly a Deceive check to make it look unintentional.</li>
 </ul>
-    
-    <h4>Charlatan</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Charlatan<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in Deceive, Insight, and Social Sense.</li>
     <li><strong></strong><i class="flavorText"></i>Gain Proficiency in 2 of the following: Inspire, Discourage, Reason, Sleight of Hand, Influence magic, Illusion magic, Divination magic.</li>
     <li><strong>Master of Disguise[feat]:</strong><i class="flavorText"></i> You have Advantage on Checks made to disguise yourself and convince others you are someone else. </li>
     <li><strong>Practiced Disguise[feat]:</strong><i class="flavorText"></i> You may choose 1 particular disguise to be particularly proficient with. Anyone trying to see through your disguise has Disadvantage on their Insight Checks. You may spend 2 weeks practicing a new disguise to change the particular disguise you gain this benefit for.</li>
     <li><strong></strong><i class="flavorText"></i>You have Advantage on Checks to make it appear as if you know what you are doing, skilled at something, or knowledgeable about something.</li>
 </ul>
-    
-    <h4>Entertainer</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Entertainer<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in Inspire, Acrobatics, Social Sense, and 1 Skill of your choice.</li>
     <li><strong></strong><i class="flavorText"></i>You gain 3 Knowledge Skills based on a performing some talent.</li>
     <li><strong>Deft Entertainer:</strong><i class="flavorText"></i> You choose two types of entertainment that you are especially good at, such as juggling and playing the lute. You have Advantage on any checks made to entertain or distract with these items.</li>
 </ul>
-    
-    <h4>Artisan</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Artisan<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in 3 Knowledge Skills that are focused on creating objects.</li>
     <li><strong></strong><i class="flavorText"></i>Gain +3 to all crafting focused Knowledge Skills. Alternatively, you may gain +5 to one crafting focused Knowledge Skill you have.</li>
     <li><strong>Artistic:</strong><i class="flavorText"></i> You have Advantage on any rolls to create art that looks ascetically pleasing to you. This ability does not help you make something more functional. For instance, if you were trying to create beautiful armor with Craft(armor) you would roll as normal to make the armor, but could make an additional Check with Advantage to make it look particularly lovely. This ability can’t help you attack or defend in combat.</li>
 </ul>
-    
-    <h4>Priest</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Priest<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in Insight, Awareness, and Heal.</li>
     <li><strong></strong><i class="flavorText"></i>Choose Proficiency in 2 of the following: Investigation, Inspire, Reason, Light magic, Healing magic.</li>
     <li><strong></strong><i class="flavorText"></i>You may call upon your god once per Long Rest to do one of the following (note that your deity may deny you your request if it displeases them):
@@ -798,18 +914,28 @@
     <br>&#9671; Give guidance on a decision and the bigger the decision the more piety you must show.</li>
     <li><strong></strong><i class="flavorText"></i></li>
 </ul>
-    
-    <h4>Scholar</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Scholar<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in 2 Skills of your choice.</li>
     <li><strong></strong><i class="flavorText"></i>Gain double Proficiency in 2 Knowledges.</li>
     <li><strong></strong><i class="flavorText"></i>Choose 2 Knowledges. When rolling to remember something using that Knowledge, but not performing or crafting with the Knowledge, if the natural 1d20 roll is less than 10, you may treat it as a 10.</li>
     <li><strong></strong><i class="flavorText"></i>You read at an abnormally fast pace.</li>
     <li><strong></strong><i class="flavorText"></i>You have Advantage on any Checks to look for information in a library or in books.</li>
 </ul>
-    
-    <h4>Sailor</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Sailor<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in Upper Body Strength, Swim, and Acrobatics.</li>
     <li><strong></strong><i class="flavorText"></i>Gain Proficiency in Upper Body Strength, Swim, and Acrobatics.</li>
     <li><strong></strong><i class="flavorText"></i>Choose 2:
@@ -822,11 +948,16 @@
     <br>&#9671; <b>Skilled Climber[feat]:</b> You have Advantage on all of your Checks made to climb.
     <br>&#9671; Gain +1 MPL
     <br>&#9671; You Resist Disease and gain +1 Fortitude
-    <br>&#9671; You learn two languages and gain a Knowledge Skill about a place you traveled to</li>
+    <br>&#9671; You learn two languages and gain a Knowledge Skill about a place you traveled to.</li>
 </ul>
-    
-    <h4>Pirate</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Pirate<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in Investigate, Intimidate, and Acrobatics.</li>
     <li><strong></strong><i class="flavorText"></i>When you are drunk, you suffer no penalties to fighting.</li>
     <li><strong></strong><i class="flavorText"></i>Choose 2:
@@ -838,18 +969,28 @@
     <br>&#9671; <strong>Cutlass Proficiency:</strong><i class="flavorText"></i> When attacking with a cutlass which has the stats of a Cutlass, the weapon has +3 AV instead of +2 AV, has Brutal 1, and deals an additional 1d4 damage to Exposed creatures.
     <br>&#9671; Your starting gold is increased by 30% and you have +1MPL.</li>
 </ul>
-    
-    <h4>Foot Soldier</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Foot Soldier<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in Upper Body Strength, Lower Body Strength, and Heal.</li>
     <li><strong></strong><i class="flavorText"></i></li>
     <li><strong></strong><i class="flavorText">You’ve been trained to think clearly when afraid or in danger.</i> You have Advantage on your Will Saves to avoid the negative effects of fear or intimidation.</li>
     <li><strong></strong><i class="flavorText"></i>Weapons you wield with a MPL of 1 or 2, have +1 AV.</li>
     <li><strong></strong><i class="flavorText"></i>You may choose 1 weapon with a MPL of 1 or 2 to have +1 Evasion when you wield it. You may change the weapon you gain this benefit for by training with it for at least one day.</li>
 </ul>
-    
-    <h4>Champion</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Champion<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in Upper Body Strength, Initiative, and Inspire.</li>
     <li><strong></strong><i class="flavorText"></i>You are Proficient in Light, Medium, and Heavy armor, regardless of your MPL.</li>
     <li><strong></strong><i class="flavorText"></i>Choose 1:
@@ -858,25 +999,40 @@
     <br>&#9671; You gain +1 Fortitude and Proficiency in Lower Body Strength.
     <br>&#9671; You gain +1 Agility and 2 Knowledge Skills.</li>
     </ul>
-        
-    <h4>Brawler</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Brawler<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in Upper Body Strength, Lower Body Strength, Initiative, and Discourage</li>
     <li><strong>Dangerous Hands[feat]:</strong><i class="flavorText"></i> Your Unarmed Attacks deal an extra 1d4 damage as long as you are not wielding any weapons or shields.</li>
     <li><strong></strong>Improvised Expertise[feat]:<i class="flavorText"></i> WWhen you attack with an Improvised weapon, you may use the AV of your Unarmed attacks, but it does not count as an Unarmed attack.</li>
     <li><strong></strong><i class="flavorText"></i>Once per Short Rest, when you perform a Combat Maneuver, you may choose to have Advantage on the Combat roll.</li>
 </ul>
-    
-    <h4>Hunter</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Hunter<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in Upper Body Strength, Handle Animal, Awareness, and Swim</li>
     <li><strong></strong><i class="flavorText"></i>You gain +5 UBS for the purpose of calculating Draw Weight OR you may treat your MPL as +2 higher for Ranged Weapons.</li>
     <li><strong>Experienced Tracker:</strong><i class="flavorText"></i> You have Advantage on Checks to track a creature, identify footprints, and notice the signs of a creature’s passing.</li>
     <li><strong></strong><i class="flavorText"></i></li>
 </ul>
-    
-    <h4>Merchant</h4>
-<ul class="theme">
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Merchant<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span><ul>
     <li>Gain Proficiency in Investigate, Insight, Reason, and Discourage</li>
     <li><strong>Appraiser [feat]:</strong><i class="flavorText"></i></li>
     <li><strong></strong><i class="flavorText"></i> You have Advantage on Investigation Checks to determine the value of an object.</li>
@@ -885,69 +1041,39 @@
     <li><strong></strong><i class="flavorText"></i></li>
     <li><strong></strong><i class="flavorText"></i></li>
 </ul>
+    </td>
+    </tr>
+</table>
     
-    <h4></h4>
-<ul class="theme">
-    <li></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-</ul>
+    </div>
+    <div class="clearBoth"></div>
+<!--
+    <table class="theme">
+    <tr>
+        <th class="themeName"><span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span>
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Unarmed<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span>
+    </td>
+    </tr>
+</table>
+    <table class="theme">
+    <tr>
+        <th class="themeName">Unarmed<span class="nonCombat"></span></th>
+    </tr><tr>
+        <td colspan="1" class="themeContent"><span class=themeDescription></span>
+    </td>
+    </tr>
+</table>-->
     
-    <h4></h4>
-<ul class="theme">
-    <li></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-</ul>
-    <h4></h4>
-<ul class="theme">
-    <li></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-</ul>
     
-    <h4></h4>
-<ul class="theme">
-    <li></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-    <li><strong></strong><i class="flavorText"></i></li>
-</ul>
-<p>
-</p><p>
-</p><p>
-</p><p>
     
 </main>
 

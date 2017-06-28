@@ -4,180 +4,25 @@
 
 
 <head>
-<!--
-<link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
--->
-<link rel='stylesheet' href='rpgCSS.css'>
-<title>Skills</title>
-<meta charset="UTF-8">
-
+<link rel="icon" href="pictures/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="pictures/favicon.ico"/>
+<link rel="shortcut" href="pictures/favicon.ico" type="image/x-icon"/>
+<link rel='stylesheet' href='rpgCSS.css'/>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="SearchDatabase.js"></script>
+<title id="pageName">Skills</title>
+<meta charset="UTF-8"/>
 </head>
 
 
-<body>
 <!---->
-<nav>
-<div id="logo">
-	<a href="Index.html">Reality Check</a>
-</div>
-
-<ul class="topNav1">
-	<li><a href="General.html">General</a></li>
-	<li style="color:rgb(10, 210, 239);font-size:200%;"><a href="Skills.html">Skills</a></li>
-	<li><a href="Combat.html">Combat</a></li>
-	<li><a href="Items.html">Items</a></li>
-	<li><a href="Spellcasting.html">Spellcasting</a></li>
-	<li><a href="CharacterCreation.html">Character Creation</a></li>
-	<li><a href="Races.html">Races</a></li>
-	<li><a href="Spells.html">Spells</a></li>
-</ul>
-
-</nav>
-
-
-<!-- NAV 2 -->
-<div class="nav2">
-
-<ul>
-
-	<li class="nav2main general">
-		<span class="arrow2">&#9660; </span>
-		<a href="General.html">General</a>
-		<ul class="dropDown2">
-			<li><a href="General.html#RolePlaying">Role-Playing</a></li>
-			<li><a href="General.html#Rules">Rules</a></li>
-			<li><a href="General.html#Terminology">Terminology</a></li>
-		</ul>
-	</li>
-	
-	<li class="nav2main skills twoRows">
-		<span class="arrow2">&#9660; </span>
-		<a href="Skills.html">Skills</a>
-		<ul class="dropDown2">
-                <!--<li><a href="Skills.html#SkillRanks">Skill Ranks</a></li>-->
-				<li><a href="Skills.html#UBS">Upper Body Strength</a></li>
-				<li><a href="Skills.html#LBS">Lower Body Strength</a></li>
-				<li><a href="Skills.html#Swim">Swim</a></li>
-				<li><a href="Skills.html#Acrobatics">Acrobatics</a></li>
-				<li><a href="Skills.html#SleightOfHand">Sleight of Hand</a></li>
-				<li><a href="Skills.html#DisableDevice">Disable Device</a></li>
-				<li><a href="Skills.html#Stealth">Stealth</a></li>
-				<li><a href="Skills.html#Investigation">Investigation</a></li>
-				<li><a href="Skills.html#Awareness">Awareness</a></li>
-                <li><a href="Skills.html#Insight">Insight</a></li>
-			<li><ul>
-				<li><a href="Skills.html#Heal">Heal</a></li>
-                <li><a href="Skills.html#Initiative">Initiative</a></li>
-				<li><a href="Skills.html#Reason">Reason</a></li>
-				<li><a href="Skills.html#Inspire">Inspire</a></li>
-				<li><a href="Skills.html#Discourage">Discourage</a></li>
-                <li><a href="Skills.html#Intimidate">Intimidate</a></li>
-				<li><a href="Skills.html#Deceive">Deceive</a></li>
-				<li><a href="Skills.html#SocialSense">Social Sense</a></li>
-				<li><a href="Skills.html#HandleAnimal">Handle Animal</a></li>
-				<li><a href="Skills.html#Knowledge">Knowledges</a></li>
-				<!--<li><a href="Skills.html#Languages">Languages</a></li>-->
-			</ul></li>
-		</ul>
-	</li>
-		
-	<li class="nav2main combat twoRows">
-		<span class="arrow2">&#9660; </span>
-		<a href="Combat.html">Combat</a>
-		<ul class="dropDown2">
-			<li><a href="Combat.html#Actions">Actions</a></li>
-			<li><a href="Combat.html#Stamina">Stamina</a></li>
-            <li><a href="Combat.html#Agility">Agility</a></li>
-            <li><a href="Combat.html#Rounds">Rounds</a></li>
-            <li><a href="Combat.html#ActionOrder">Initiative</a></li>
-			<li><a href="Combat.html#MeleeAttacks">Melee Attacks</a></li>
-			<li><a href="Combat.html#RangedAttacks">Ranged Attacks</a></li>
-			<li><a href="Combat.html#Aura">Aura</a></li>
-            <li><a href="Combat.html#Defenses">Defenses</a></li>
-            <li><a href="Combat.html#WeaknessesAndResistances">Resistances</a></li>
-            <li><a href="Combat.html#CriticalHits">Critical Hits</a></li>
-            <li><a href="Combat.html#Facing">Facing</a></li>
-            
-            <li><ul>
-				<li><a href="Combat.html#Size">Size</a></li>
-                <li><a href="Combat.html#Exposed">Exposed</a></li>
-                <li><a href="Combat.html#Unguarded">Unguarded</a></li>
-                <li><a href="Combat.html#Surprise">Surprise</a></li>
-                <li><a href="Combat.html#NonLethalDamage">Non-Lethal Damage</a></li>
-                <li><a href="Combat.html#MPL">MPL</a></li>
-                <li><a href="Combat.html#ImprovisedWeapons">Improvised Weapons</a></li>
-                <li><a href="Combat.html#UnarmedAttacks">Unarmed Attacks</a></li>
-                <li><a href="Combat.html#CombatManeuvers">Combat Maneuvers</a></li>
-                <li><a href="Combat.html#Resting">Resting</a></li>
-                <li><a href="Combat.html#Death">Death</a></li>
-                <li><a href="Combat.html#Conditions">Conditions</a></li>
-			</ul></li>
-		</ul>
-	</li>
-	<li class="nav2main items">
-		<span class="arrow2">&#9660; </span>
-		<a href="Items.html">Items</a>
-		<ul class="dropDown2">
-			<li><a href="Items.html#Reach">Reach</a></li>
-			<li><a href="Items.html#WeaponProperties">Weapon Properties</a></li>
-			<li><a href="Items.html#MeleeWeapons">Melee Weapons</a></li>
-            <li><a href="Items.html#RangedWeapons">Ranged Weapons</a></li>
-			<li><a href="Items.html#Shields">Shields</a></li>
-			<li><a href="Items.html#ArmorSets">Armor Sets</a></li>
-            <li><a href="Items.html#BrokenArmor&Shields">Broken Armor &amp; Shields</a></li>
-		</ul>
-	</li>
-	<li class="nav2main spellcasting">
-		<span class="arrow2">&#9660; </span>
-		<a href="Spellcasting.html">Spellcasting</a>
-		<ul class="dropDown2">
-			<li><a href="Spellcasting.html#SchoolsofMagic">Schools of Magic</a></li>
-			<li><a href="Spellcasting.html#MethodsofMagic">Methods of Magic</a></li>
-			<li><a href="Spellcasting.html#ElementsofMagic">Elements of Magic</a></li>
-			<li><a href="Spellcasting.html#CastingSpells">Casting Spells</a></li>
-			<li><a href="Spellcasting.html#SpellcastingAbilities">Spellcasting Abilities</a></li>
-		</ul>
-	</li>
-		
-</ul>
-
-</div>
-
-
-<!-- NAV 3 -->
-<div class="nav3">
-
-<ul>
-	<li class="nav3main characterCreation">
-		<a href="CharacterCreation.html">Character Creation</a>
-	</li>
-    
-    <li class="nav3small feats">
-		<a href="Feats.html">Feats</a>
-	</li>
-	
-	<li class="nav3small themes">
-		<a href="Themes.html">Themes</a>
-	</li>
-    
-    <li class= "nav3small combatStyles">
-		<a href="CombatStyles.html">Combat Styles</a>
-	</li>
-
-	<li class="nav3main races">
-		<a href="Races.html">Races</a>
-	</li>
-	
-	<li class="nav3main spells">
-		<a href="Spells.html">Spells</a>
-	</li>
-		
-</ul>
-
-</div>
-
-
+<body onload="getNav()">
+<div id="navigationPlaceholder"></div>
 <main>
+<!---->
 
 <p>The presented Skills represent levels of competence and expertise in general areas which are categorized to encompass many different capabilities. Your expertise at a particular task is determined by how high the relevant Skill Bonus is.
 </p><p>Each Skill is assigned to a certain Ability Score (see <a href="CharacterCreation.html#AbilityScores">Ability Scores</a>). You add the relevant Halved Ability Modifier to the Skill Bonus.

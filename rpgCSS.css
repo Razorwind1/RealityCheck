@@ -74,6 +74,7 @@ main {
 	padding-top: 30px; padding-bottom: 50px;
 	clear: both;
 	font-size:100%;
+    min-height: 100vh; /*for the Search Database - viewport height changes. Maybe not the most supported unit.*/
 }
 a:visited {
 	color: blue; /*rgb(0, 0, 128)*/
@@ -84,13 +85,14 @@ a:active {
 #logo{
 	text-align: center; z-index: 20;
 	padding-top: 3px;
+    background:url("images/TransparentDiceSetPurple.png");
 }
 #logo a{
 	font-size: 50px; text-decoration: none; color: black;
 	letter-spacing:4px; text-shadow: 4px 5px 5px rgb(24, 103, 133);
 	font-weight: bold; font-family: "Book Antiqua", "Palatino Linotype", serif;
 }
-nav {
+.nav1 {
 	background-color:rgb(157, 208, 225);
 	background-image: 
 		linear-gradient( to bottom,
@@ -121,7 +123,7 @@ nav {
 }
 
 .topNav1 {
-	font-size: 130%; padding-top: 3px;
+	font-size: 22px; padding-top: 3px;
 	list-style-type: none; margin:0;
 	position: relative;
 	text-align: center;
@@ -470,11 +472,8 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
     font-family: "Book Antiqua", "Palatino Linotype", serif;
 	position: relative; /*to line up dropdowns*/
 }
-.nav3 ul > li.characterCreation {
-    margin-bottom: 5px;
-}
-.nav3 ul > li.races {
-    margin-top: 25px;
+.nav3 ul > li.searchOptions {
+    margin-bottom: 0px;
 }
 .nav3 ul li.nav3main > a{
 	text-decoration: none; text-align: right;
@@ -813,7 +812,7 @@ table {
 table caption {
 	font-family:Times, serif;
 	font-weight:bold; font-size:130%;
-	background-color:rgba(212, 247, 247, 0.7)/*rgb(209, 250, 250)/*rgb(41, 124, 163)*/; color: whit;
+	background-color:rgba(212, 247, 247, 0.7)/*rgb(209, 250, 250)/*rgb(41, 124, 163)*/;
 	border: 5px solid black; border-bottom:2px solid black;
 	border-radius:30px 30px 0 0;
     padding-left:1px; padding-right:1px;
@@ -938,14 +937,11 @@ table.invisible tr {
     float: left; position: relative;
     left: 50%;*/
 }
-/*.centerWrapper {
-    display: inline-block; float: left; position: relative;
-    left: -50%;
-}*/
 .featWrapper .feat {
     float: left;
 	margin-left:15px; margin-right:5px;
 }
+/*BOARDER-RADIUS FIREFOX BUG *** BOARDER-RADIUS FIREFOX BUG *** BOARDER-RADIUS FIREFOX BUG ..... well, let's just turn them all into flex boxes -_(:/)_- */
 .feat {
 	margin-bottom: 30px;
 	border: 5px solid black;
@@ -957,18 +953,18 @@ table.invisible tr {
     border-radius: 25px 0 0 0; border-right: solid black 2px;
     border-bottom: solid black 2px;
 }
-.requirements {
-    border-right: solid black 2px;
-    border-bottom: solid black 2px;
-}
 .tier {
     border-radius: 0 25px 0 0; border-bottom: solid black 2px;
 }
-.featContent {
+.tier:before {
+    content: "Tier: ";
+}
+.feat td.featContent {
+    background-color:rgba(222, 235, 247, .7);
     border-radius: 0 0 25px 25px;
     text-align:left; padding-left:15px;
 }
-.nonCombat:before {
+td .nonCombat:before {
     content:"NC";
     font-size:50%;
 }
@@ -979,18 +975,49 @@ table.invisible tr {
 .featDescription:after {
     content: '\A';
 }
-.featRequirment {
+
+/*Themes*/
+.themeWrapper .theme {
+    float: left;
+	margin-left:15px; margin-right:5px;
+}
+ul.theme {
+    margin-top:5px;
+}
+.theme {
+	margin-bottom: 30px;
+	border: 5px solid black;
+	border-radius:30px;
     
+}
+.theme th {
+    background-color: rgba(154, 229, 229, .8);
+    font-weight:bold; padding-left:20px;
+    font-size:24px; padding-right:15px;
+    border-radius: 25px 25px 0 0;
+    border-bottom: solid black 2px;
+}
+.themeContent {
+    background-color:rgba(214, 235, 245, .7);
+    border-radius: 0 0 25px 25px; 
+    text-align:left; padding-left:15px;
+}
+.themeDescription {
+    font-style: italic;
     white-space:pre-wrap;
 }
-.featRequirment:before {
-    content: '';
-}
-.featRequirment:after {
+.themeDescription:after {
     content: '\A';
 }
-.featList {
-    margin-left:20px;
+th .nonCombat:before {
+    content:" NC";
+    font-size:50%;
+}
+.theme ul {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 10px;
+    list-style-type: circle;
 }
 
 /*Combat Styles*/
@@ -1084,20 +1111,13 @@ table.invisible tr {
     content: "\25C7 \00A0";
 }
 
-/*-------------------*/
+/*-------------------*//*
 table.spell {
 	margin-right: 20px;
 	margin-bottom: 30px;
 	border: 5px solid black;
 	border-spacing:0; border-radius:30px;
     width:800px
-}
-table.spell td{
-	/*text-align:center;
-	padding-left:8px; padding-right:8px;
-	padding-top:4px; padding-bottom:4px;
-    margin:2px;
-	width:700px;*/
 }
 table.spell th {
     text-align:center;
@@ -1124,7 +1144,6 @@ table.spell .Type {
     background-color: rgba(212, 247, 247, .8);
     width: 100px;
     font-size: 18px;
-    /*font-size: 18px;*/
 }
 table.spell .DC {
     border: 1px solid black; border-top: none;
@@ -1149,13 +1168,7 @@ table.spell .ContentEnd {
 table.spell .FlavorText {
     
 }
-
-.optionWrapper{
-    
-}
-/*.styleCenteringWrapper {
-    display: inline-block;
-}*/
+*/
 
 .reallySmall {
     font-size:50%;
@@ -1163,9 +1176,6 @@ table.spell .FlavorText {
 h4 {
     margin:0; margin-top: 30px;
     text-decoration:underline;
-}
-ul.theme {
-    margin-top:5px;
 }
 .propBig {
     width: 700px;
@@ -1190,8 +1200,74 @@ img.HexGridSize {
     border-radius: 10%;
 }
 
+/*OPTIONS*/
+.optionsFlexBox {
+    background-color: rgb(24, 103, 133);
+    margin-top: 20px;
+    border: solid black 2px; border-left: none; border-right: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.optionsFlexBox a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.optionsFlexBox a:hover{
+    color: rgb(0, 225, 255);
+}
+.optionsFlexBox a.selectedOption{
+    color: rgb(0, 225, 255);
+    font-size: 200%;
+}
+.optionsFlexBox div {
+    /*background-color:rgb(94, 183, 213);
+	background-image: 
+		linear-gradient( to bottom,
+		rgb(157, 208, 225) 10%,
+		rgb(94, 183, 213) 31%,
+		rgb(64, 159, 217) 45%,
+		rgb(56, 135, 214) 65%,	
+		rgb(24, 103, 133) 85%,
+		rgb(19, 64, 83));
+    border: solid black 2px;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 0 5px 3px 5px;*/
+}
+/*DATRABASE SEARCH*/
+.databaseSearchBlock {
+    background-color: rgb(41, 124, 163);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.databaseSearchDiv {
+    color: white;
+    font-size: 17px;
+    font-family: "Book Antiqua", "Palatino Linotype", serif;
+    margin: 5px 10px 5px 0;
+    float:left;
+    /*display:block; float:left;
+	text-align:left;*/
+}
+.searchDatabaseWrapper{
+    display: none;
+}
+/*.searchDatabaseWrapper h2, .searchDatabaseWrapper p {
+    clear: none;
+    position: absolute;
+    display: none;
+}
+.searchDatabaseWrapper .styleWrapper {
+    clear: none;
+}
 
-
+div.searchDatabaseWrapper div.clearBoth {
+    position: absolute;
+    clear: none;
+    display: none;
+}*/
 
 footer {
 	color:#fff; 
@@ -1219,19 +1295,16 @@ footer div.color {
 	color: #ffff00;
 }
 
-
 div.clearBoth {
     clear: both;
 }
+
 .currentPage {
     color:rgb(10, 210, 239);
     font-size:200%;
 }
 
-iframe{
-    border:0;
-}
-
+/*
 form {
     background-color:azure;
     padding:10px;border-radius:25px;
@@ -1254,7 +1327,7 @@ textarea {
 input[type="submit"] {
 	margin-left:20px;
 }
-
+*/
 /*VIEWPORT STUFF*/
 @media only screen and (max-width: 2000px) {
     footer{
@@ -1265,23 +1338,23 @@ input[type="submit"] {
     }
 }
 @media only screen and (min-width: 1600px) {
-    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox {
+    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox, .themeWrapper .theme {
         width: 31.5%;
     }
-    .featWrapper .feat:nth-child(3n + 1), .styleWrapper .combatStyle:nth-child(3n + 1), .spellWrapper .spellFlexBox:nth-child(3n + 1)  {
+    .featWrapper .feat:nth-child(3n + 1), .styleWrapper .combatStyle:nth-child(3n + 1), .spellWrapper .spellFlexBox:nth-child(3n + 1), .themeWrapper .theme:nth-child(3n + 1)  {
     clear: both;
     }
 }
 @media only screen and (max-width: 1600px) {
-    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox {
+    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox, .themeWrapper .theme {
         width: 47%;
     }
-    .featWrapper .feat:nth-child(odd), .styleWrapper .combatStyle:nth-child(odd), .spellWrapper .spellFlexBox:nth-child(odd) {
+    .featWrapper .feat:nth-child(odd), .styleWrapper .combatStyle:nth-child(odd), .spellWrapper .spellFlexBox:nth-child(odd), .themeWrapper .theme:nth-child(odd) {
     clear: both;
     }
 }
 @media only screen and (max-width: 1000px) {
-    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox {
+    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox, .themeWrapper .theme {
         width: 96%;
     }
 }
