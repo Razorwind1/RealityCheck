@@ -11,16 +11,16 @@
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-<script type="text/javascript" src="SearchDatabase.js"></script>
+<script type="text/javascript" src="rpgJavascript.js"></script>
 <script type="text/javascript" src="enquireProd.js"></script>
-<script type="text/javascript" src="SearchOptions.js"></script>
+<script type="text/javascript" src="searchOptions.js"></script>
 <title id="pageName">Search Options</title>
 <meta charset="UTF-8"/>
 </head>
 
 
 <!---->
-<body onload="getNav(), getOptions()"> <!--TODO: If Edge, change background to be solid color-->
+<body id="searchOptionsBody" onload="getNav(), getOptions(), browserEdge()"> <!--TODO: If Edge, change background to be solid color-->
 <div id="navigationPlaceholder"></div>
 
 <div class="optionsFlexBox">
@@ -149,7 +149,7 @@
     
     <div class="databaseSearchDiv">
 <label for="myInput">Text:</label>
-<input type="" id="myInput" name="myInput" onkeyup="mySearch()" placeholder="Search for options..">
+<input type="text" id="myInput" name="myInput" onkeyup="mySearch()" placeholder="Search for options..">
     <label for="resetButton"></label>&nbsp;&nbsp;
         <button name="resetButton" type="button" vaule="Reset" onclick="resetSearchForm()">Clear Fields</button>
     </div>
@@ -191,7 +191,7 @@
 
 <!---->
 
-<footer>
+<footer id="searchOptionsFooter">
 <small>
 <br>
 -This website is a work in progress-
