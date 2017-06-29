@@ -938,32 +938,45 @@ table.invisible tr {
 }
 .featWrapper .feat {
     float: left;
-	margin-left:15px; margin-right:5px;
+	margin-left:10px; margin-right:5px;
 }
 /*BOARDER-RADIUS FIREFOX BUG *** BOARDER-RADIUS FIREFOX BUG *** BOARDER-RADIUS FIREFOX BUG ..... well, let's just turn them all into flex boxes -_(:/)_- */
 .feat {
 	margin-bottom: 30px;
 	border: 5px solid black;
 	border-radius:30px;
+    display: flex;
+    flex-flow: column;
 }
-.feat th {
+.feat .featRow1 {
+    display: flex;
+    flex-direction: row;
+}
+.feat .featName {
+    text-align: center;
+    background-color:rgba(173, 215, 235, 0.7);
     font-weight:bold; padding-left:20px;
     font-size:24px; padding-right:15px;
     border-radius: 25px 0 0 0; border-right: solid black 2px;
     border-bottom: solid black 2px;
+    flex: 3;
 }
 .tier {
+    text-align: center;
+    background-color:rgba(173, 215, 235, 0.7);
     border-radius: 0 25px 0 0; border-bottom: solid black 2px;
+    flex: 1;
+    padding-top: 4px;
 }
 .tier:before {
     content: "Tier: ";
 }
-.feat td.featContent {
+.feat .featContent {
     background-color:rgba(222, 235, 247, .7);
     border-radius: 0 0 25px 25px;
     text-align:left; padding-left:15px;
 }
-td .nonCombat:before {
+.nonCombat:before {
     content:"NC";
     font-size:50%;
 }
@@ -978,18 +991,21 @@ td .nonCombat:before {
 /*Themes*/
 .themeWrapper .theme {
     float: left;
-	margin-left:15px; margin-right:5px;
+	margin-left:10px; margin-right:5px;
 }
-ul.theme {
-    margin-top:5px;
+.theme ul {
+    
 }
 .theme {
 	margin-bottom: 30px;
 	border: 5px solid black;
-	border-radius:30px;
+	border-radius: 30px;
+    display: flex;
+    flex-direction: column;
     
 }
-.theme th {
+.themeName {
+    text-align: center;
     background-color: rgba(154, 229, 229, .8);
     font-weight:bold; padding-left:20px;
     font-size:24px; padding-right:15px;
@@ -1253,6 +1269,14 @@ img.HexGridSize {
 .searchDatabaseWrapper{
     display: none;
 }
+.visibleOption {
+    display: flex;
+    float: left;
+	margin-left:10px; margin-right:5px;
+}
+.invisibleOption{
+    display: none;
+}
 /*.searchDatabaseWrapper h2, .searchDatabaseWrapper p {
     clear: none;
     position: absolute;
@@ -1337,23 +1361,23 @@ input[type="submit"] {
     }
 }
 @media only screen and (min-width: 1600px) {
-    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox, .themeWrapper .theme {
+    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox, .themeWrapper .theme, .searchDatabaseWrapper .visibleOption {
         width: 31.5%;
     }
-    .featWrapper .feat:nth-child(3n + 1), .styleWrapper .combatStyle:nth-child(3n + 1), .spellWrapper .spellFlexBox:nth-child(3n + 1), .themeWrapper .theme:nth-child(3n + 1)  {
+    .featWrapper .feat:nth-of-type(3n + 1), .styleWrapper .combatStyle:nth-of-type(3n + 1), .spellWrapper .spellFlexBox:nth-of-type(3n + 1), .themeWrapper .theme:nth-of-type(3n + 1), .searchDatabaseWrapper .visibleOption:nth-of-type(3n + 1) {
     clear: both;
     }
 }
 @media only screen and (max-width: 1600px) {
-    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox, .themeWrapper .theme {
+    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox, .themeWrapper .theme, .searchDatabaseWrapper .visibleOption {
         width: 47%;
     }
-    .featWrapper .feat:nth-child(odd), .styleWrapper .combatStyle:nth-child(odd), .spellWrapper .spellFlexBox:nth-child(odd), .themeWrapper .theme:nth-child(odd) {
+    .featWrapper .feat:nth-of-type(odd), .styleWrapper .combatStyle:nth-of-type(odd), .spellWrapper .spellFlexBox:nth-of-type(odd), .themeWrapper .theme:nth-of-type(odd), .searchDatabaseWrapper .visibleOption:nth-of-type(odd) {
     clear: both;
     }
 }
 @media only screen and (max-width: 1000px) {
-    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox, .themeWrapper .theme {
+    .featWrapper .feat, .styleWrapper .combatStyle, .spellWrapper .spellFlexBox, .themeWrapper .theme, .searchDatabaseWrapper .visibleOption {
         width: 96%;
     }
 }
