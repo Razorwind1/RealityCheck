@@ -225,11 +225,11 @@ function mySearch() {
     $( document ).ready( SearchOptionMediaQueries );
 }
 
-function SearchOptionMediaQueries() { //usues esquire.js
-    alert("I exsist!Queries");
+function SearchOptionMediaQueries() { //uses esquire.js
+    //alert("I exsist!Queries");
     
 enquire.register("screen and (min-width:1600px)", function() { //for the largest screen size - 3 options accross
-            alert("I exsist!3");
+            //alert("I exsist!3");
             var optionsList = document.querySelectorAll("div.visibleOption");
             for (i=0; i<optionsList.length; i++) {
                 if (i !== 0 && i%3 === 0) {
@@ -242,7 +242,7 @@ enquire.register("screen and (min-width:1600px)", function() { //for the largest
     });
 enquire.register("screen and (max-width:1600px)", { //for the largest screen size - 2 options accross
         match : function() {
-            alert("I exsist!2");
+            //alert("I exsist!2");
             var optionsList = document.querySelectorAll("div.visibleOption");
             for (i=0; i<optionsList.length; i++) {
                 if (i !== 0 && i%2 === 0) {
