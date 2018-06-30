@@ -63,7 +63,8 @@ body {
 	margin-top: 0;
 	/*width: 85%;*/
 	min-width: 400px;
-	max-width: 2000px;
+	max-width: 2000px;margin-left: auto;
+	margin-right: auto;
     margin-bottom: 0;
 	/*background-color: #ffff00; /*only color that changed nav*/
 	/*box-shadow: 3px 3px #2E0000;
@@ -446,14 +447,14 @@ a.arrow:hover + a + ul, nav ul li ul:hover {
 	/*Z-INDEXES*/
 .general > span, .general > a{z-index:95;}
 .general > ul{z-index:90;}
-.skills > span, .skills > a{z-index:85;}
-.skills > ul{z-index:80;}
 .combat > span, .combat > a{z-index:75;}
 .combat > ul{z-index:70;}
 /*.characterCreation > span, .characterCreation > a{z-index:65;}
 .characterCreation > ul{z-index:60;}*/
 .items > span, .items > a{z-index:55;}
 .items > ul{z-index:50;}
+.skills > span, .skills > a{z-index:49;}
+.skills > ul{z-index:48;}
 .spellcasting > span, .spellcasting > a{z-index:45;}
 .spellcasting > ul{z-index:40;}
 
@@ -1060,7 +1061,8 @@ th .nonCombat:before {
     font-weight:bold; font-size:21px; text-align: center;
     padding-left:20px; padding-right:15px;
     flex: 0 1;
-    -webkit-flex: 0 1;
+	-webkit-flex: 0 1;
+	align-self: center;
     -webkit-align-self: center;
     
 }
